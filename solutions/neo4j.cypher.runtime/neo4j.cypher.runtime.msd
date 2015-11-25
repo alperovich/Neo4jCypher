@@ -4,8 +4,10 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-cypher-1.9.5.jar" type="java_classes" />
-    <modelRoot path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-kernel-1.9.5.jar" type="java_classes" />
+    <modelRoot contentPath="${module}/libs/neo4j-community-2.3.1-libs" type="java_classes">
+      <sourceRoot location="neo4j-kernel-2.3.1.jar" />
+      <sourceRoot location="neo4j-cypher-2.3.1.jar" />
+    </modelRoot>
   </models>
   <facets>
     <facet type="tests" />
@@ -16,20 +18,39 @@
     <facet type="tests" />
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/concurrentlinkedhashmap-lru-1.3.1.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/geronimo-jta_1.1_spec-1.1.1.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/lucene-core-3.6.2.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-cypher-1.9.5.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-graph-algo-1.9.5.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-graph-matching-1.9.5.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-jmx-1.9.5.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-kernel-1.9.5.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-lucene-index-1.9.5.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-shell-1.9.5.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/neo4j-udc-1.9.5.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/org.apache.servicemix.bundles.jline-0.9.94_1.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/scala-library-2.10.0.jar" />
-    <stubModelEntry path="${module}/libs/neo4j-community-1.9.5-libs/server-api-1.9.5.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/commons-lang3-3.3.2.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/concurrentlinkedhashmap-lru-1.4.2.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/jline-2.12.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/lucene-core-3.6.2.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-codegen-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-consistency-check-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-consistency-check-legacy-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-csv-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-cypher-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-cypher-compiler-1.9_2.11-2.0.5.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-cypher-compiler-2.2_2.11-2.2.6.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-cypher-compiler-2.3-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-cypher-frontend-2.3-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-function-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-graph-algo-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-graph-matching-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-import-tool-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-io-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-jmx-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-kernel-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-logging-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-lucene-index-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-primitive-collections-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-shell-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-udc-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/neo4j-unsafe-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/opencsv-2.3.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/parboiled-core-1.1.7.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/parboiled-scala_2.11-1.1.7.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/scala-library-2.11.7.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/scala-parser-combinators_2.11-1.0.4.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/scala-reflect-2.11.7.jar" />
+    <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/server-api-2.3.1.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

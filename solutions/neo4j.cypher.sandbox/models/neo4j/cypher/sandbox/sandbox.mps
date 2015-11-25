@@ -207,7 +207,6 @@
       <concept id="1268543411551983790" name="neo4j.cypher.structure.QuerySheet" flags="ng" index="ibhOH">
         <child id="1268543411552025426" name="statement" index="i8FVh" />
       </concept>
-      <concept id="3830435865999795756" name="neo4j.cypher.structure.AllExpression" flags="ng" index="iZhsc" />
       <concept id="3830435865999835403" name="neo4j.cypher.structure.DeleteStatement" flags="ng" index="iZB0F">
         <child id="3830435865999835404" name="expression" index="iZB0G" />
       </concept>
@@ -475,6 +474,23 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="Ppt_814riX" role="3cqZAp">
+          <node concept="2OqwBi" id="Ppt_814riY" role="3clFbG">
+            <node concept="37vLTw" id="Ppt_814riZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="58nzC$wjJeC" resolve="config" />
+            </node>
+            <node concept="liA8E" id="Ppt_814rj0" role="2OqNvi">
+              <ref role="37wK5l" to="k7g3:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <node concept="Xl_RD" id="Ppt_814rj1" role="37wK5m">
+                <property role="Xl_RC" value="allow_store_upgrade" />
+              </node>
+              <node concept="Xl_RD" id="Ppt_814rj2" role="37wK5m">
+                <property role="Xl_RC" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="Ppt_814qSz" role="3cqZAp" />
         <node concept="3clFbH" id="58nzC$wjNm8" role="3cqZAp" />
         <node concept="3cpWs8" id="58nzC$wjMDm" role="3cqZAp">
           <node concept="3cpWsn" id="58nzC$wjMDl" role="3cpWs9">
@@ -494,7 +510,7 @@
                   <node concept="liA8E" id="58nzC$wjMDs" role="2OqNvi">
                     <ref role="37wK5l" to="lh3y:~GraphDatabaseFactory.newEmbeddedDatabaseBuilder(java.lang.String):org.neo4j.graphdb.factory.GraphDatabaseBuilder" resolve="newEmbeddedDatabaseBuilder" />
                     <node concept="Xl_RD" id="58nzC$wjMDt" role="37wK5m">
-                      <property role="Xl_RC" value="solutions/neo4j.cypher.runtime/database" />
+                      <property role="Xl_RC" value="solutions/neo4j.cypher.runtime/database2" />
                     </node>
                   </node>
                 </node>
@@ -550,7 +566,7 @@
             <property role="TrG5h" value="pureStringQuery" />
             <node concept="17QB3L" id="58nzC$woY$S" role="1tU5fm" />
             <node concept="Xl_RD" id="58nzC$wkgAa" role="33vP2m">
-              <property role="Xl_RC" value="start n=node(*) where n.name! = 'my node' return n, n.name" />
+              <property role="Xl_RC" value="match (n) where not n.name = 'my node' return n, n.name" />
             </node>
           </node>
         </node>
@@ -1124,6 +1140,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="Ppt_810ddW" role="3cqZAp">
+          <node concept="2OqwBi" id="Ppt_810dTX" role="3clFbG">
+            <node concept="10M0yZ" id="Ppt_810ddV" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="Ppt_810e57" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="37vLTw" id="Ppt_810e7v" role="37wK5m">
+                <ref role="3cqZAo" node="58nzC$xKUT9" resolve="cypherRWQuery" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="58nzC$wC49n" role="1B3o_S" />
@@ -1261,7 +1291,7 @@
                   <node concept="liA8E" id="58nzC$x1pTZ" role="2OqNvi">
                     <ref role="37wK5l" to="lh3y:~GraphDatabaseFactory.newEmbeddedDatabaseBuilder(java.lang.String):org.neo4j.graphdb.factory.GraphDatabaseBuilder" resolve="newEmbeddedDatabaseBuilder" />
                     <node concept="Xl_RD" id="58nzC$x1pU0" role="37wK5m">
-                      <property role="Xl_RC" value="solutions/neo4j.cypher.runtime/database" />
+                      <property role="Xl_RC" value="solutions/neo4j.cypher.runtime/database2" />
                     </node>
                   </node>
                 </node>
@@ -1350,35 +1380,35 @@
               <node concept="1NBsrd" id="58nzC$xLbvn" role="1MRbE5">
                 <node concept="iZB7T" id="58nzC$xLbvp" role="1sMc22">
                   <node concept="ez$Vo" id="58nzC$xLbvr" role="1z092z">
-                    <node concept="3IyHr5" id="6USQXwQLUn9" role="ezKRT">
+                    <node concept="3IyDoh" id="Ppt_814MX5" role="ezKRT">
                       <property role="TrG5h" value="rel1" />
                       <property role="2nKEee" value="true" />
                       <property role="3sLl2T" value="false" />
                       <property role="eyfSn" value="false" />
                       <property role="eyfSh" value="0" />
                       <property role="eyfSm" value="0" />
-                      <node concept="3IzolE" id="6USQXwQLTuA" role="3IzolF">
-                        <property role="TrG5h" value="TYP1" />
-                      </node>
-                      <node concept="i84Ii" id="58nzC$xLdlg" role="3uHU7B">
+                      <node concept="i84Ii" id="Ppt_814MX8" role="3uHU7B">
                         <property role="TrG5h" value="n" />
                         <property role="3sLl2T" value="true" />
-                        <node concept="pdT0P" id="58nzC$xLdpy" role="2nRvO8">
+                        <node concept="pdT0P" id="Ppt_814MX9" role="2nRvO8">
                           <property role="TrG5h" value="name" />
-                          <node concept="1cppCj" id="58nzC$xLdsf" role="vXOir">
+                          <node concept="1cppCj" id="Ppt_814MXa" role="vXOir">
                             <property role="1cpQyM" value="my node" />
                           </node>
                         </node>
                       </node>
-                      <node concept="i84Ii" id="6USQXwQLAmO" role="3uHU7w">
+                      <node concept="i84Ii" id="Ppt_814MXb" role="3uHU7w">
                         <property role="TrG5h" value="m" />
                         <property role="3sLl2T" value="true" />
-                        <node concept="pdT0P" id="6USQXwQLAsf" role="2nRvO8">
+                        <node concept="pdT0P" id="Ppt_814MXc" role="2nRvO8">
                           <property role="TrG5h" value="name" />
-                          <node concept="1cppCj" id="6USQXwQLAHf" role="vXOir">
+                          <node concept="1cppCj" id="Ppt_814MXd" role="vXOir">
                             <property role="1cpQyM" value="franta" />
                           </node>
                         </node>
+                      </node>
+                      <node concept="3IzolE" id="6USQXwQLTuA" role="3IzolF">
+                        <property role="TrG5h" value="TYP1" />
                       </node>
                     </node>
                   </node>
@@ -1467,7 +1497,7 @@
                           <ref role="2W98As" node="58nzC$xLiZO" resolve="n" />
                         </node>
                         <node concept="vXAMB" id="58nzC$xLl7J" role="2OqNvi">
-                          <property role="TrG5h" value="name!" />
+                          <property role="TrG5h" value="name" />
                         </node>
                       </node>
                       <node concept="1cppCj" id="58nzC$xLlpk" role="3uHU7w">
@@ -1539,7 +1569,7 @@
                         <ref role="2W98As" node="58nzC$xLs_H" resolve="n" />
                       </node>
                       <node concept="vXAMB" id="58nzC$xLuKw" role="2OqNvi">
-                        <property role="TrG5h" value="name!" />
+                        <property role="TrG5h" value="name" />
                       </node>
                     </node>
                   </node>
@@ -1557,7 +1587,6 @@
                         <property role="TrG5h" value="name" />
                       </node>
                     </node>
-                    <node concept="iZhsc" id="6USQXwQQZ0J" role="pcflg" />
                   </node>
                 </node>
               </node>
@@ -2342,6 +2371,47 @@
   </node>
   <node concept="ibhOH" id="Ppt_80SzbB">
     <property role="TrG5h" value="test_01" />
+    <node concept="i8Ge6" id="Ppt_810m3M" role="i8FVh">
+      <property role="TrG5h" value="adkljsfk" />
+      <node concept="1Ntjij" id="Ppt_810m3O" role="1Nt0EE">
+        <node concept="1LlUBW" id="Ppt_810m3Q" role="1Ntjik" />
+      </node>
+      <node concept="1NjeZw" id="Ppt_810m4P" role="i84I1">
+        <node concept="peicq" id="Ppt_810m4R" role="30hOVj">
+          <node concept="i84Ij" id="Ppt_810m4T" role="i9ID4">
+            <node concept="i8koZ" id="Ppt_810mj7" role="i8kop" />
+            <node concept="i84Ii" id="Ppt_810m4X" role="i84Il">
+              <property role="TrG5h" value="a" />
+            </node>
+          </node>
+        </node>
+        <node concept="RjJQ4" id="Ppt_810m4Z" role="peicx">
+          <node concept="peh7w" id="Ppt_810m51" role="RjJQ2">
+            <node concept="2OqwBi" id="Ppt_810mp2" role="pcflg">
+              <node concept="vXAMB" id="Ppt_810msn" role="2OqNvi">
+                <property role="TrG5h" value="name" />
+              </node>
+              <node concept="2W98At" id="Ppt_812fBQ" role="2Oq$k0">
+                <ref role="2W98As" node="Ppt_810mjr" resolve="c" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pcvyH" id="Ppt_810mja" role="pcfli">
+          <node concept="ez$Vo" id="Ppt_810mjk" role="iTD1L">
+            <node concept="3IyHr5" id="Ppt_810mkd" role="ezKRT">
+              <node concept="i84Ii" id="Ppt_810mjr" role="3uHU7B">
+                <property role="TrG5h" value="c" />
+              </node>
+              <node concept="i84Ii" id="Ppt_812f9A" role="3uHU7w">
+                <property role="TrG5h" value="b" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="i9CtR" id="Ppt_810m4r" role="i8FVh" />
     <node concept="i8Ge6" id="Ppt_80SBZt" role="i8FVh">
       <property role="TrG5h" value="a_test" />
       <node concept="1Ntjij" id="Ppt_80SBZv" role="1Nt0EE">
