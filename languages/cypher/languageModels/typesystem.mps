@@ -2485,18 +2485,37 @@
     <property role="TrG5h" value="typeof_QueryStringExpression" />
     <property role="3GE5qa" value="query.expression.typed" />
     <node concept="3clFbS" id="58nzC$xnaOD" role="18ibNy">
-      <node concept="1Z5TYs" id="58nzC$xnaRr" role="3cqZAp">
-        <node concept="mw_s8" id="58nzC$xnaRM" role="1ZfhKB">
-          <node concept="2c44tf" id="58nzC$xnaRI" role="mwGJk">
-            <node concept="17QB3L" id="58nzC$xnaV1" role="2c44tc" />
-          </node>
+      <node concept="3SKdUt" id="3o8vehZoRrG" role="3cqZAp">
+        <node concept="3SKdUq" id="3o8vehZoRrQ" role="3SKWNk">
+          <property role="3SKdUp" value="TODO: This could be:" />
         </node>
-        <node concept="mw_s8" id="58nzC$xnaRu" role="1ZfhK$">
-          <node concept="1Z2H0r" id="58nzC$xnaOM" role="mwGJk">
-            <node concept="1YBJjd" id="58nzC$xnaPx" role="1Z2MuG">
-              <ref role="1YBMHb" node="58nzC$xnaOF" resolve="queryStringExpression" />
+      </node>
+      <node concept="3SKdUt" id="3o8vehZoRwM" role="3cqZAp">
+        <node concept="3SKWN0" id="3o8vehZoRwN" role="3SKWNk">
+          <node concept="1Z5TYs" id="58nzC$xnaRr" role="3SKWNf">
+            <node concept="mw_s8" id="58nzC$xnaRM" role="1ZfhKB">
+              <node concept="2c44tf" id="58nzC$xnaRI" role="mwGJk">
+                <node concept="17QB3L" id="58nzC$xnaV1" role="2c44tc" />
+              </node>
+            </node>
+            <node concept="mw_s8" id="58nzC$xnaRu" role="1ZfhK$">
+              <node concept="1Z2H0r" id="58nzC$xnaOM" role="mwGJk">
+                <node concept="1YBJjd" id="58nzC$xnaPx" role="1Z2MuG">
+                  <ref role="1YBMHb" node="58nzC$xnaOF" resolve="queryStringExpression" />
+                </node>
+              </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3SKdUt" id="3o8vehZoRyc" role="3cqZAp">
+        <node concept="3SKdUq" id="3o8vehZoRyq" role="3SKWNk">
+          <property role="3SKdUp" value="That would be wrong. The return statement for string queries has" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="3o8vehZoRyF" role="3cqZAp">
+        <node concept="3SKdUq" id="3o8vehZoRyV" role="3SKWNk">
+          <property role="3SKdUp" value="to be changed to only return strings in order to allow correct checking here..." />
         </node>
       </node>
     </node>
@@ -3168,6 +3187,46 @@
     <node concept="1YaCAy" id="1FOqM2KCO0E" role="1YuTPh">
       <property role="TrG5h" value="mae" />
       <ref role="1YaFvo" to="qgu4:1FOqM2Kqxlk" resolve="IndexedCypherResultRowMemberAccessExpression" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3o8vehZjKkQ">
+    <property role="TrG5h" value="typeof_QueryStringStatement" />
+    <property role="3GE5qa" value="query.statement" />
+    <node concept="3clFbS" id="3o8vehZjKkR" role="18ibNy">
+      <node concept="34ab3g" id="3o8vehZjIKY" role="3cqZAp">
+        <property role="35gtTG" value="info" />
+        <node concept="Xl_RD" id="3o8vehZjIKZ" role="34bqiv">
+          <property role="Xl_RC" value="querytstring statement type checking" />
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="3o8vehZjIL0" role="3cqZAp">
+        <node concept="mw_s8" id="3o8vehZjIL1" role="1ZfhKB">
+          <node concept="1Z2H0r" id="3o8vehZjIL2" role="mwGJk">
+            <node concept="2OqwBi" id="3o8vehZjIL3" role="1Z2MuG">
+              <node concept="1YBJjd" id="3o8vehZjNpb" role="2Oq$k0">
+                <ref role="1YBMHb" node="3o8vehZjKkT" resolve="queryStringStatement" />
+              </node>
+              <node concept="3TrEf2" id="3o8vehZl6pq" role="2OqNvi">
+                <ref role="3Tt5mk" to="qgu4:3o8vehZjFyi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="3o8vehZjIL6" role="1ZfhK$">
+          <node concept="2OqwBi" id="3o8vehZjIL7" role="mwGJk">
+            <node concept="1YBJjd" id="3o8vehZjNo0" role="2Oq$k0">
+              <ref role="1YBMHb" node="3o8vehZjKkT" resolve="queryStringStatement" />
+            </node>
+            <node concept="3TrEf2" id="3o8vehZkzY8" role="2OqNvi">
+              <ref role="3Tt5mk" to="qgu4:3o8vehZjFyf" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3o8vehZjKkT" role="1YuTPh">
+      <property role="TrG5h" value="queryStringStatement" />
+      <ref role="1YaFvo" to="qgu4:3o8vehZjFye" resolve="QueryStringStatement" />
     </node>
   </node>
 </model>

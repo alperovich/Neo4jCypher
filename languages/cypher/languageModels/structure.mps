@@ -133,7 +133,7 @@
   <node concept="1TIwiD" id="16qLoc3I0o5">
     <property role="TrG5h" value="QueryTupleStatement" />
     <property role="3GE5qa" value="query.statement" />
-    <property role="34LRSv" value="query" />
+    <property role="34LRSv" value="QueryTupleTyped" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="58nzC$xoSgz" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -328,6 +328,7 @@
   <node concept="1TIwiD" id="16qLoc3J4bO">
     <property role="TrG5h" value="QueryEmptyStatement" />
     <property role="3GE5qa" value="query.statement" />
+    <property role="34LRSv" value="EmptyQuery" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="PrWs8" id="16qLoc3J5cK" role="PzmwI">
       <ref role="PrY4T" node="16qLoc3J5cH" resolve="IQuerySheetStatement" />
@@ -2047,6 +2048,42 @@
     </node>
     <node concept="PrWs8" id="1FOqM2KBC77" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3o8vehZjFye">
+    <property role="TrG5h" value="QueryStringStatement" />
+    <property role="3GE5qa" value="query.statement" />
+    <property role="34LRSv" value="QueryStringTyped" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyj" id="3o8vehZjFyf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3o8vehZmTGe" resolve="CypherQueryStringType" />
+    </node>
+    <node concept="PrWs8" id="3o8vehZjFyg" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="3o8vehZjFyh" role="PzmwI">
+      <ref role="PrY4T" node="16qLoc3J5cH" resolve="IQuerySheetStatement" />
+    </node>
+    <node concept="1TJgyj" id="3o8vehZjFyi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="queryExpression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="58nzC$xmP_C" resolve="QueryStringExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3o8vehZmTGe">
+    <property role="3GE5qa" value="query.expression.typed" />
+    <property role="TrG5h" value="CypherQueryStringType" />
+    <property role="34LRSv" value="cypherStringTupleType" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="1TJgyj" id="3o8vehZmTGf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="stringType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:hP7QB7G" resolve="StringType" />
     </node>
   </node>
 </model>

@@ -22,9 +22,9 @@
     <import index="npgh" ref="r:198dc929-1daf-4fd6-a7d4-c87445a0712a(neo4j.cypher.behavior)" />
     <import index="cx9y" ref="r:309aeee7-bee8-445c-b31d-35928d1da75f(jetbrains.mps.baseLanguage.tuples.structure)" />
     <import index="wr1s" ref="r:0f9ddbb6-f761-4bd7-8dde-1e5300bd28c2(jetbrains.mps.lang.project.editor)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="qe67" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.style(MPS.Editor/jetbrains.mps.openapi.editor.style@java_stub)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="qe67" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.style(MPS.Editor/jetbrains.mps.openapi.editor.style@java_stub)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -3289,6 +3289,47 @@
         <ref role="1k5W1q" to="tpen:hXb$V4T" resolve="RightBracket" />
       </node>
       <node concept="l2Vlx" id="KRIhzHwYa_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3o8vehZjHkc">
+    <property role="3GE5qa" value="query.statement" />
+    <ref role="1XX52x" to="qgu4:3o8vehZjFye" resolve="QueryStringStatement" />
+    <node concept="3EZMnI" id="3o8vehZjHkd" role="2wV5jI">
+      <node concept="3F1sOY" id="3o8vehZjHke" role="3EZMnx">
+        <ref role="1NtTu8" to="qgu4:3o8vehZjFyf" />
+      </node>
+      <node concept="3F0A7n" id="3o8vehZjHkf" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="3o8vehZjHkg" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="3o8vehZjHkh" role="3EZMnx">
+        <ref role="1NtTu8" to="qgu4:3o8vehZjFyi" />
+        <node concept="lj46D" id="3o8vehZjHki" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="3o8vehZjHkj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3o8vehZjHkk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3o8vehZmUpd">
+    <property role="3GE5qa" value="query.expression.typed" />
+    <ref role="1XX52x" to="qgu4:3o8vehZmTGe" resolve="CypherQueryStringType" />
+    <node concept="3EZMnI" id="3o8vehZmULD" role="2wV5jI">
+      <node concept="3F0ifn" id="3o8vehZmULK" role="3EZMnx">
+        <property role="3F0ifm" value="cypherQuery" />
+        <node concept="11LMrY" id="3o8vehZmUM2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3o8vehZmULU" role="3EZMnx">
+        <ref role="1NtTu8" to="qgu4:3o8vehZmTGf" />
+      </node>
+      <node concept="l2Vlx" id="3o8vehZmULG" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -11,8 +11,8 @@
     <import index="qgu4" ref="r:f744ecfb-e681-4d00-8f57-1ca9664f32ee(neo4j.cypher.structure)" />
     <import index="dmyu" ref="r:c6eeedda-084d-4659-9c4d-80b7768f2bb2(jetbrains.mps.baseLanguage.textGen)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2607,6 +2607,38 @@
         <node concept="lc7rE" id="1FOqM2KITM1" role="3cqZAp">
           <node concept="la8eA" id="1FOqM2KITM2" role="lcghm">
             <property role="lacIc" value="toString()" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3o8vehZjO1F">
+    <property role="3GE5qa" value="query.statement" />
+    <ref role="WuzLi" to="qgu4:3o8vehZjFye" resolve="QueryStringStatement" />
+    <node concept="11bSqf" id="3o8vehZjO1G" role="11c4hB">
+      <node concept="3clFbS" id="3o8vehZjO1H" role="2VODD2">
+        <node concept="lc7rE" id="3o8vehZjOKN" role="3cqZAp">
+          <node concept="l9hG8" id="3o8vehZjOL1" role="lcghm">
+            <node concept="2OqwBi" id="3o8vehZjPa5" role="lb14g">
+              <node concept="117lpO" id="3o8vehZjOLL" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3o8vehZjZqt" role="2OqNvi">
+                <ref role="3Tt5mk" to="qgu4:3o8vehZjFyi" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="3o8vehZjZvi" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3o8vehZmVak">
+    <property role="3GE5qa" value="query.expression.typed" />
+    <ref role="WuzLi" to="qgu4:3o8vehZmTGe" resolve="CypherQueryStringType" />
+    <node concept="11bSqf" id="3o8vehZmVal" role="11c4hB">
+      <node concept="3clFbS" id="3o8vehZmVam" role="2VODD2">
+        <node concept="lc7rE" id="3o8vehZmVbX" role="3cqZAp">
+          <node concept="la8eA" id="3o8vehZmVcb" role="lcghm">
+            <property role="lacIc" value="String" />
           </node>
         </node>
       </node>
