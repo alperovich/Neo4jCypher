@@ -1,0 +1,4 @@
+# We do not check in temporary Java source files
+source_gen/
+source_gen.caches/
+classes_gen/
