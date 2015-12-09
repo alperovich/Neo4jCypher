@@ -19,7 +19,8 @@
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="45ot" ref="f:java_stub#8be426ea-f02f-4221-9d9f-9eb718c2d998#org.neo4j.cypher.javacompat(neo4j.cypher.runtime/org.neo4j.cypher.javacompat@java_stub)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="8dm4" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.internal.collections.runtime(MPS.Core/jetbrains.mps.internal.collections.runtime@java_stub)" />
+    <import index="aygn" ref="970ab891-376f-4ab9-bad6-5554500b08bf/f:java_stub#970ab891-376f-4ab9-bad6-5554500b08bf#com.sun.jersey.api.client(jersey.runtime/com.sun.jersey.api.client@java_stub)" />
+    <import index="fvpr" ref="970ab891-376f-4ab9-bad6-5554500b08bf/f:java_stub#970ab891-376f-4ab9-bad6-5554500b08bf#com.sun.jersey.api.client.filter(jersey.runtime/com.sun.jersey.api.client.filter@java_stub)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -54,6 +55,10 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
@@ -79,6 +84,9 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -99,6 +107,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -121,6 +130,9 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -138,6 +150,9 @@
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -161,6 +176,7 @@
         <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
@@ -2462,6 +2478,562 @@
       </node>
     </node>
     <node concept="i9CtR" id="Ppt_80SBZW" role="i8FVh" />
+  </node>
+  <node concept="312cEu" id="2sYLsCGccqS">
+    <property role="TrG5h" value="Example_Java_REST" />
+    <node concept="2YIFZL" id="2sYLsCGccqT" role="jymVt">
+      <property role="TrG5h" value="main" />
+      <node concept="37vLTG" id="2sYLsCGccqU" role="3clF46">
+        <property role="TrG5h" value="args" />
+        <node concept="10Q1$e" id="2sYLsCGccqV" role="1tU5fm">
+          <node concept="17QB3L" id="2sYLsCGccqW" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="2sYLsCGccqX" role="3clF45" />
+      <node concept="3Tm1VV" id="2sYLsCGccqY" role="1B3o_S" />
+      <node concept="3clFbS" id="2sYLsCGccqZ" role="3clF47">
+        <node concept="3clFbF" id="2sYLsCGchzs" role="3cqZAp">
+          <node concept="2OqwBi" id="2sYLsCGchzt" role="3clFbG">
+            <node concept="10M0yZ" id="2sYLsCGchzu" role="2Oq$k0">
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="2sYLsCGchzv" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="2sYLsCGchzw" role="37wK5m">
+                <property role="Xl_RC" value="Starting Example REST Call to a running Neo4j instance ..." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2sYLsCGchz$" role="3cqZAp">
+          <node concept="2OqwBi" id="2sYLsCGchz_" role="3clFbG">
+            <node concept="10M0yZ" id="2sYLsCGchzA" role="2Oq$k0">
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="2sYLsCGchzB" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2sYLsCGchzC" role="37wK5m">
+                <node concept="2OqwBi" id="2sYLsCGchzD" role="3uHU7w">
+                  <node concept="3VsKOn" id="2sYLsCGchzE" role="2Oq$k0">
+                    <ref role="3VsUkX" node="2sYLsCGccqS" resolve="Example_Java_REST" />
+                  </node>
+                  <node concept="liA8E" id="2sYLsCGchzF" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Class.getCanonicalName():java.lang.String" resolve="getCanonicalName" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2sYLsCGchzG" role="3uHU7B">
+                  <property role="Xl_RC" value="Class: " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2sYLsCGchzK" role="3cqZAp" />
+        <node concept="3clFbF" id="1vasS$BJ_K" role="3cqZAp">
+          <node concept="2OqwBi" id="1vasS$BJ_H" role="3clFbG">
+            <node concept="10M0yZ" id="1vasS$BJ_I" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="1vasS$BJ_J" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="1vasS$DiHf" role="37wK5m">
+                <node concept="Xl_RD" id="1vasS$DfHW" role="3uHU7B">
+                  <property role="Xl_RC" value="========== Status: " />
+                </node>
+                <node concept="2OqwBi" id="1vasS$DeNw" role="3uHU7w">
+                  <node concept="2OqwBi" id="1vasS$Dd_d" role="2Oq$k0">
+                    <node concept="1rXfSq" id="1vasS$BJJ0" role="2Oq$k0">
+                      <ref role="37wK5l" node="1vasS$BImy" resolve="getWebResource" />
+                      <node concept="1rXfSq" id="1vasS$BJJ1" role="37wK5m">
+                        <ref role="37wK5l" node="2sYLsCGcxkS" resolve="getBaseURI" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="1vasS$De71" role="2OqNvi">
+                      <ref role="37wK5l" to="aygn:~WebResource.get(java.lang.Class):java.lang.Object" resolve="get" />
+                      <node concept="3VsKOn" id="1vasS$Dei3" role="37wK5m">
+                        <ref role="3VsUkX" to="aygn:~ClientResponse" resolve="ClientResponse" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1vasS$Dfup" role="2OqNvi">
+                    <ref role="37wK5l" to="aygn:~ClientResponse.getStatus():int" resolve="getStatus" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1vasS$Do5E" role="3cqZAp" />
+        <node concept="3clFbH" id="1vasS$Do6N" role="3cqZAp" />
+        <node concept="3cpWs8" id="2sYLsCGchzL" role="3cqZAp">
+          <node concept="3cpWsn" id="2sYLsCGchzM" role="3cpWs9">
+            <property role="TrG5h" value="testQuery" />
+            <node concept="3uibUv" id="2sYLsCGchzN" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+            </node>
+            <node concept="1NjeTL" id="2sYLsCGchzO" role="33vP2m">
+              <node concept="pcvyH" id="2sYLsCGchzP" role="pcfli">
+                <node concept="ez$Vo" id="2sYLsCGchzQ" role="iTD1L">
+                  <node concept="3IyHr5" id="2sYLsCGchzR" role="ezKRT">
+                    <node concept="i84Ii" id="2sYLsCGchzS" role="3uHU7B">
+                      <property role="TrG5h" value="A" />
+                    </node>
+                    <node concept="i84Ii" id="2sYLsCGchzT" role="3uHU7w">
+                      <property role="TrG5h" value="B" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="RjJQ4" id="2sYLsCGchzU" role="peicx">
+                <node concept="peh7w" id="2sYLsCGchzV" role="RjJQ2">
+                  <node concept="2W98At" id="1vasS$E2va" role="pcflg">
+                    <ref role="2W98As" node="2sYLsCGchzS" resolve="A" />
+                  </node>
+                </node>
+              </node>
+              <node concept="peicq" id="2sYLsCGchzZ" role="30hOVj">
+                <node concept="i84Ij" id="2sYLsCGch$0" role="i9ID4">
+                  <node concept="i8koZ" id="2sYLsCGch$1" role="i8kop" />
+                  <node concept="i84Ii" id="2sYLsCGch$2" role="i84Il">
+                    <property role="TrG5h" value="Q" />
+                  </node>
+                </node>
+              </node>
+              <node concept="pcvyE" id="2sYLsCGch$3" role="pcflj">
+                <node concept="1css09" id="1vasS$E1F3" role="iYdWe">
+                  <node concept="Xl_RD" id="1vasS$E1G3" role="3uHU7w">
+                    <property role="Xl_RC" value="MS03" />
+                  </node>
+                  <node concept="2OqwBi" id="2sYLsCGch$4" role="3uHU7B">
+                    <node concept="2W98At" id="2sYLsCGch$5" role="2Oq$k0">
+                      <ref role="2W98As" node="2sYLsCGchzS" resolve="A" />
+                    </node>
+                    <node concept="vXAMB" id="2sYLsCGch$6" role="2OqNvi">
+                      <property role="TrG5h" value="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2sYLsCGch$7" role="3cqZAp" />
+        <node concept="3clFbF" id="2GbXco_PF6e" role="3cqZAp">
+          <node concept="37vLTI" id="2GbXco_PFsa" role="3clFbG">
+            <node concept="Xl_RD" id="2GbXco_PFAa" role="37vLTx">
+              <property role="Xl_RC" value="MATCH (a:Sensor) RETURN a.name" />
+            </node>
+            <node concept="37vLTw" id="2GbXco_PF6c" role="37vLTJ">
+              <ref role="3cqZAo" node="2sYLsCGchzM" resolve="testQuery" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2sYLsCGch$8" role="3cqZAp">
+          <node concept="2OqwBi" id="2sYLsCGch$9" role="3clFbG">
+            <node concept="10M0yZ" id="2sYLsCGch$a" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2sYLsCGch$b" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="2sYLsCGch$c" role="37wK5m">
+                <property role="Xl_RC" value="========== Start of querying into cypher" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2sYLsCGch$g" role="3cqZAp">
+          <node concept="2OqwBi" id="2sYLsCGch$h" role="3clFbG">
+            <node concept="10M0yZ" id="2sYLsCGch$i" role="2Oq$k0">
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="2sYLsCGch$j" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2sYLsCGch$k" role="37wK5m">
+                <node concept="37vLTw" id="2sYLsCGch$l" role="3uHU7w">
+                  <ref role="3cqZAo" node="2sYLsCGchzM" resolve="testQuery" />
+                </node>
+                <node concept="Xl_RD" id="2sYLsCGch$m" role="3uHU7B">
+                  <property role="Xl_RC" value="Pure query string: " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2sYLsCGch$v" role="3cqZAp">
+          <node concept="2OqwBi" id="2sYLsCGch$w" role="3clFbG">
+            <node concept="10M0yZ" id="2sYLsCGch$x" role="2Oq$k0">
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+            </node>
+            <node concept="liA8E" id="2sYLsCGch$y" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="2sYLsCGch$z" role="37wK5m">
+                <property role="Xl_RC" value="========== End of querying into cypher" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2sYLsCGccr0" role="3cqZAp" />
+        <node concept="3clFbF" id="2sYLsCGcHHU" role="3cqZAp">
+          <node concept="2OqwBi" id="2sYLsCGcHHR" role="3clFbG">
+            <node concept="10M0yZ" id="2sYLsCGcHHS" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2sYLsCGcHHT" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="1rXfSq" id="2sYLsCGcIgL" role="37wK5m">
+                <ref role="37wK5l" node="2sYLsCGcxkE" resolve="getCypherBaseURI" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2sYLsCGcIX_" role="3cqZAp">
+          <node concept="2OqwBi" id="2sYLsCGcIXy" role="3clFbG">
+            <node concept="10M0yZ" id="2sYLsCGcIXz" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2sYLsCGcIX$" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="1rXfSq" id="2sYLsCGcJcJ" role="37wK5m">
+                <ref role="37wK5l" node="2sYLsCGcxkZ" resolve="cyperToRest" />
+                <node concept="37vLTw" id="2sYLsCGcJtM" role="37wK5m">
+                  <ref role="3cqZAo" node="2sYLsCGchzM" resolve="testQuery" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1vasS$Ddd1" role="3cqZAp" />
+        <node concept="3clFbF" id="1vasS$DRrx" role="3cqZAp">
+          <node concept="2OqwBi" id="1vasS$DRrJ" role="3clFbG">
+            <node concept="10M0yZ" id="1vasS$DRxh" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="1vasS$DRrK" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="1vasS$DRrz" role="37wK5m">
+                <node concept="Xl_RD" id="1vasS$DRr$" role="3uHU7B">
+                  <property role="Xl_RC" value="Pure query string: " />
+                </node>
+                <node concept="37vLTw" id="1vasS$DRTB" role="3uHU7w">
+                  <ref role="3cqZAo" node="2sYLsCGchzM" resolve="testQuery" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1vasS$DWry" role="3cqZAp">
+          <node concept="3cpWsn" id="1vasS$DWrz" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="1vasS$DWr$" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+            </node>
+            <node concept="1rXfSq" id="1vasS$DRrB" role="33vP2m">
+              <ref role="37wK5l" node="1vasS$DpDV" resolve="executeQuery" />
+              <node concept="37vLTw" id="1vasS$DS3V" role="37wK5m">
+                <ref role="3cqZAo" node="2sYLsCGchzM" resolve="testQuery" />
+              </node>
+              <node concept="1rXfSq" id="1vasS$DRrD" role="37wK5m">
+                <ref role="37wK5l" node="1vasS$BImy" resolve="getWebResource" />
+                <node concept="1rXfSq" id="1vasS$DTbd" role="37wK5m">
+                  <ref role="37wK5l" node="2sYLsCGcxkE" resolve="getCypherBaseURI" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1vasS$DTVS" role="3cqZAp">
+          <node concept="2OqwBi" id="1vasS$DTVP" role="3clFbG">
+            <node concept="10M0yZ" id="1vasS$DTVQ" role="2Oq$k0">
+              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
+              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="1vasS$DTVR" role="2OqNvi">
+              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="1vasS$DYi9" role="37wK5m">
+                <node concept="37vLTw" id="1vasS$DYtM" role="3uHU7w">
+                  <ref role="3cqZAo" node="1vasS$DWrz" resolve="result" />
+                </node>
+                <node concept="Xl_RD" id="1vasS$DX9W" role="3uHU7B">
+                  <property role="Xl_RC" value="Query result: " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1vasS$DjRL" role="3cqZAp" />
+        <node concept="3clFbH" id="1vasS$BIbw" role="3cqZAp" />
+        <node concept="3clFbH" id="1vasS$AO$m" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2sYLsCGcwX5" role="jymVt" />
+    <node concept="2YIFZL" id="1vasS$BImy" role="jymVt">
+      <property role="TrG5h" value="getWebResource" />
+      <node concept="37vLTG" id="1vasS$BImz" role="3clF46">
+        <property role="TrG5h" value="URI" />
+        <node concept="3uibUv" id="1vasS$BIm$" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1vasS$Dc4H" role="3clF45">
+        <ref role="3uigEE" to="aygn:~WebResource" resolve="WebResource" />
+      </node>
+      <node concept="3Tm1VV" id="1vasS$BImA" role="1B3o_S" />
+      <node concept="3clFbS" id="1vasS$BImB" role="3clF47">
+        <node concept="3cpWs8" id="1vasS$D51E" role="3cqZAp">
+          <node concept="3cpWsn" id="1vasS$D51F" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="3uibUv" id="1vasS$D51G" role="1tU5fm">
+              <ref role="3uigEE" to="aygn:~WebResource" resolve="WebResource" />
+            </node>
+            <node concept="2OqwBi" id="1vasS$D5ew" role="33vP2m">
+              <node concept="2YIFZM" id="1vasS$D5aK" role="2Oq$k0">
+                <ref role="37wK5l" to="aygn:~Client.create():com.sun.jersey.api.client.Client" resolve="create" />
+                <ref role="1Pybhc" to="aygn:~Client" resolve="Client" />
+              </node>
+              <node concept="liA8E" id="1vasS$D5t9" role="2OqNvi">
+                <ref role="37wK5l" to="aygn:~Client.resource(java.lang.String):com.sun.jersey.api.client.WebResource" resolve="resource" />
+                <node concept="37vLTw" id="1vasS$D5ws" role="37wK5m">
+                  <ref role="3cqZAo" node="1vasS$BImz" resolve="URI" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1vasS$D656" role="3cqZAp">
+          <node concept="2OqwBi" id="1vasS$D6ga" role="3clFbG">
+            <node concept="37vLTw" id="1vasS$D654" role="2Oq$k0">
+              <ref role="3cqZAo" node="1vasS$D51F" resolve="res" />
+            </node>
+            <node concept="liA8E" id="1vasS$D6BR" role="2OqNvi">
+              <ref role="37wK5l" to="fvpr:~Filterable.addFilter(com.sun.jersey.api.client.filter.ClientFilter):void" resolve="addFilter" />
+              <node concept="2ShNRf" id="1vasS$D6Em" role="37wK5m">
+                <node concept="1pGfFk" id="1vasS$D87g" role="2ShVmc">
+                  <ref role="37wK5l" to="fvpr:~HTTPBasicAuthFilter.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="HTTPBasicAuthFilter" />
+                  <node concept="Xl_RD" id="1vasS$D89O" role="37wK5m">
+                    <property role="Xl_RC" value="neo4j" />
+                  </node>
+                  <node concept="Xl_RD" id="1vasS$D8eL" role="37wK5m">
+                    <property role="Xl_RC" value="csra" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1vasS$Dbnd" role="3cqZAp">
+          <node concept="37vLTw" id="1vasS$Dbxh" role="3cqZAk">
+            <ref role="3cqZAo" node="1vasS$D51F" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="2sYLsCGcxkE" role="jymVt">
+      <property role="TrG5h" value="getCypherBaseURI" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="2sYLsCGcxkF" role="3clF47">
+        <node concept="3SKdUt" id="2sYLsCGcxkG" role="3cqZAp">
+          <node concept="3SKWN0" id="2sYLsCGcxkH" role="3SKWNk">
+            <node concept="3cpWs8" id="2sYLsCGcxkI" role="3SKWNf">
+              <node concept="3cpWsn" id="2sYLsCGcxkJ" role="3cpWs9">
+                <property role="3TUv4t" value="true" />
+                <property role="TrG5h" value="URI_TX" />
+                <node concept="3uibUv" id="2sYLsCGcxkK" role="1tU5fm">
+                  <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+                </node>
+                <node concept="Xl_RD" id="2sYLsCGcxkL" role="33vP2m">
+                  <property role="Xl_RC" value="transaction/commit" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2sYLsCGcxkM" role="3cqZAp">
+          <node concept="3cpWs3" id="2sYLsCGcxkN" role="3cqZAk">
+            <node concept="1rXfSq" id="2sYLsCGcxkO" role="3uHU7B">
+              <ref role="37wK5l" node="2sYLsCGcxkS" resolve="getBaseURI" />
+            </node>
+            <node concept="Xl_RD" id="2sYLsCGcxkP" role="3uHU7w">
+              <property role="Xl_RC" value="db/data/cypher" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="2sYLsCGcxkQ" role="1B3o_S" />
+      <node concept="3uibUv" id="2sYLsCGcxkR" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="2sYLsCGcxkS" role="jymVt">
+      <property role="TrG5h" value="getBaseURI" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="2sYLsCGcxkT" role="3clF47">
+        <node concept="3cpWs6" id="2sYLsCGcxkU" role="3cqZAp">
+          <node concept="Xl_RD" id="2sYLsCGcxkV" role="3cqZAk">
+            <property role="Xl_RC" value="http://neo4j:csra@calcit:7474/" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="2sYLsCGcxkW" role="1B3o_S" />
+      <node concept="3uibUv" id="2sYLsCGcxkX" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2sYLsCGcxkY" role="jymVt" />
+    <node concept="2tJIrI" id="1vasS$DNeD" role="jymVt" />
+    <node concept="2tJIrI" id="1vasS$DNvq" role="jymVt" />
+    <node concept="2tJIrI" id="1vasS$DNS9" role="jymVt" />
+    <node concept="2YIFZL" id="1vasS$DpDV" role="jymVt">
+      <property role="TrG5h" value="executeQuery" />
+      <node concept="37vLTG" id="1vasS$DpDW" role="3clF46">
+        <property role="TrG5h" value="query" />
+        <node concept="3uibUv" id="1vasS$DpDX" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1vasS$DpDY" role="3clF46">
+        <property role="TrG5h" value="resource" />
+        <node concept="3uibUv" id="1vasS$Dv3P" role="1tU5fm">
+          <ref role="3uigEE" to="aygn:~WebResource" resolve="WebResource" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1vasS$DM42" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      </node>
+      <node concept="3Tm1VV" id="1vasS$DpE1" role="1B3o_S" />
+      <node concept="3clFbS" id="1vasS$DpE2" role="3clF47">
+        <node concept="3cpWs8" id="1vasS$DuA$" role="3cqZAp">
+          <node concept="3cpWsn" id="1vasS$DuAz" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="response" />
+            <node concept="3uibUv" id="1vasS$DuA_" role="1tU5fm">
+              <ref role="3uigEE" to="aygn:~ClientResponse" resolve="ClientResponse" />
+            </node>
+            <node concept="2OqwBi" id="1vasS$DuAA" role="33vP2m">
+              <node concept="2OqwBi" id="1vasS$DuAB" role="2Oq$k0">
+                <node concept="2OqwBi" id="1vasS$DuAC" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1vasS$Dzei" role="2Oq$k0">
+                    <node concept="37vLTw" id="1vasS$Dzeh" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1vasS$DpDY" resolve="resource" />
+                    </node>
+                    <node concept="liA8E" id="1vasS$Dzej" role="2OqNvi">
+                      <ref role="37wK5l" to="aygn:~WebResource.accept(java.lang.String...):com.sun.jersey.api.client.WebResource$Builder" resolve="accept" />
+                      <node concept="Xl_RD" id="1vasS$DuAE" role="37wK5m">
+                        <property role="Xl_RC" value="application/json" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1vasS$DuAF" role="2OqNvi">
+                    <ref role="37wK5l" to="aygn:~PartialRequestBuilder.type(java.lang.String):com.sun.jersey.api.client.RequestBuilder" resolve="type" />
+                    <node concept="Xl_RD" id="1vasS$DuAG" role="37wK5m">
+                      <property role="Xl_RC" value="application/json" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="1vasS$DuAH" role="2OqNvi">
+                  <ref role="37wK5l" to="aygn:~PartialRequestBuilder.entity(java.lang.Object):com.sun.jersey.api.client.RequestBuilder" resolve="entity" />
+                  <node concept="1rXfSq" id="1vasS$DGqD" role="37wK5m">
+                    <ref role="37wK5l" node="2sYLsCGcxkZ" resolve="cyperToRest" />
+                    <node concept="37vLTw" id="1vasS$DGyZ" role="37wK5m">
+                      <ref role="3cqZAo" node="1vasS$DpDW" resolve="query" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="1vasS$DuAJ" role="2OqNvi">
+                <ref role="37wK5l" to="aygn:~WebResource$Builder.post(java.lang.Class):java.lang.Object" resolve="post" />
+                <node concept="3VsKOn" id="1vasS$DuAL" role="37wK5m">
+                  <ref role="3VsUkX" to="aygn:~ClientResponse" resolve="ClientResponse" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1vasS$DpE3" role="3cqZAp" />
+        <node concept="3cpWs8" id="1vasS$DInx" role="3cqZAp">
+          <node concept="3cpWsn" id="1vasS$DInw" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="1vasS$DIny" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+            </node>
+            <node concept="2OqwBi" id="1vasS$DInE" role="33vP2m">
+              <node concept="37vLTw" id="1vasS$DInD" role="2Oq$k0">
+                <ref role="3cqZAo" node="1vasS$DuAz" resolve="response" />
+              </node>
+              <node concept="liA8E" id="1vasS$DInF" role="2OqNvi">
+                <ref role="37wK5l" to="aygn:~ClientResponse.getEntity(java.lang.Class):java.lang.Object" resolve="getEntity" />
+                <node concept="3VsKOn" id="1vasS$DIn_" role="37wK5m">
+                  <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1vasS$DJNk" role="3cqZAp">
+          <node concept="2OqwBi" id="1vasS$DJNq" role="3clFbG">
+            <node concept="37vLTw" id="1vasS$DJNp" role="2Oq$k0">
+              <ref role="3cqZAo" node="1vasS$DuAz" resolve="response" />
+            </node>
+            <node concept="liA8E" id="1vasS$DJNr" role="2OqNvi">
+              <ref role="37wK5l" to="aygn:~ClientResponse.close():void" resolve="close" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1vasS$DI4z" role="3cqZAp" />
+        <node concept="3cpWs6" id="1vasS$DL5b" role="3cqZAp">
+          <node concept="37vLTw" id="1vasS$DLpR" role="3cqZAk">
+            <ref role="3cqZAo" node="1vasS$DInw" resolve="result" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="2sYLsCGcxkZ" role="jymVt">
+      <property role="TrG5h" value="cyperToRest" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2sYLsCGcxl0" role="3clF47">
+        <node concept="3cpWs6" id="2sYLsCGcxl1" role="3cqZAp">
+          <node concept="3cpWs3" id="2sYLsCGcxl2" role="3cqZAk">
+            <node concept="3cpWs3" id="2sYLsCGcxl3" role="3uHU7B">
+              <node concept="Xl_RD" id="2sYLsCGcxl4" role="3uHU7B">
+                <property role="Xl_RC" value="{\&quot;query\&quot; : \&quot;" />
+              </node>
+              <node concept="37vLTw" id="2sYLsCGcxl5" role="3uHU7w">
+                <ref role="3cqZAo" node="2sYLsCGcxl9" resolve="cypherQuery" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2sYLsCGcxl6" role="3uHU7w">
+              <property role="Xl_RC" value="\&quot;} ]}" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="2sYLsCGcxl7" role="1B3o_S" />
+      <node concept="3uibUv" id="2sYLsCGcxl8" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+      </node>
+      <node concept="37vLTG" id="2sYLsCGcxl9" role="3clF46">
+        <property role="TrG5h" value="cypherQuery" />
+        <node concept="3uibUv" id="2sYLsCGcxla" role="1tU5fm">
+          <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2sYLsCGcxbB" role="jymVt" />
+    <node concept="2tJIrI" id="2sYLsCGcx48" role="jymVt" />
+    <node concept="3Tm1VV" id="2sYLsCGccrP" role="1B3o_S" />
   </node>
 </model>
 
