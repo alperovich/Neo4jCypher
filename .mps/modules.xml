@@ -3,6 +3,9 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/cypher/cypher.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/cypher_eise/eise.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/eise_cypher/eise_cypher.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/eise_cypher/sandbox/eise_cypher.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/neo4j.cypher.runtime/neo4j.cypher.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/neo4j.cypher.sandbox/neo4j.cypher.sandbox.msd" folder="" />
     </projectModules>
