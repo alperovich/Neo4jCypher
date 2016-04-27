@@ -12,7 +12,6 @@
   </languages>
   <imports>
     <import index="qgu4" ref="r:f744ecfb-e681-4d00-8f57-1ca9664f32ee(neo4j.cypher.structure)" />
-    <import index="taas" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/java:jetbrains.mps.baseLanguage.structure(jetbrains.mps.baseLanguage/)" />
     <import index="z4od" ref="r:1549d4d9-195d-4192-a8ca-9bdca0139ffa(neo4j.cypher.typesystem)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpf8" ref="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
