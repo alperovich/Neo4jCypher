@@ -272,6 +272,13 @@
       <concept id="3693218355997296634" name="neo4j.cypher.structure.CypherResultTupleType" flags="ig" index="38qNlW">
         <child id="3693218355997297034" name="tupleType" index="38qNGc" />
       </concept>
+      <concept id="3893499198692046990" name="neo4j.cypher.structure.QueryStringStatement" flags="ng" index="19hGhE">
+        <child id="3893499198692046991" name="type" index="19hGhF" />
+        <child id="3893499198692046994" name="queryExpression" index="19hGhQ" />
+      </concept>
+      <concept id="3893499198692891406" name="neo4j.cypher.structure.CypherQueryStringType" flags="ig" index="19kYvE">
+        <child id="3893499198692891407" name="stringType" index="19kYvF" />
+      </concept>
       <concept id="5530189148631438178" name="neo4j.cypher.structure.OrderByStatement" flags="ng" index="1cmFVp">
         <child id="5530189148631438181" name="expressions" index="1cmFVu" />
       </concept>
@@ -2408,6 +2415,8 @@
         <node concept="pcvyH" id="Ppt_810mja" role="pcfli">
           <node concept="ez$Vo" id="Ppt_810mjk" role="iTD1L">
             <node concept="3IyHr5" id="Ppt_810mkd" role="ezKRT">
+              <property role="2nKEee" value="true" />
+              <property role="TrG5h" value="dffserf" />
               <node concept="i84Ii" id="Ppt_810mjr" role="3uHU7B">
                 <property role="TrG5h" value="c" />
               </node>
@@ -2420,6 +2429,34 @@
       </node>
     </node>
     <node concept="i9CtR" id="Ppt_810m4r" role="i8FVh" />
+    <node concept="19hGhE" id="6T$Np6N_trm" role="i8FVh">
+      <property role="TrG5h" value="aaaa" />
+      <node concept="19kYvE" id="6T$Np6N_tro" role="19hGhF">
+        <node concept="17QB3L" id="6T$Np6N_trq" role="19kYvF" />
+      </node>
+      <node concept="1NjeTL" id="6T$Np6N_tuy" role="19hGhQ">
+        <node concept="RjJQ4" id="6T$Np6N_tuA" role="peicx">
+          <node concept="peh7w" id="6T$Np6N_tuC" role="RjJQ2">
+            <node concept="2W98At" id="6T$Np6N_GJP" role="pcflg">
+              <ref role="2W98As" node="6T$Np6N_GIX" resolve="q" />
+            </node>
+          </node>
+        </node>
+        <node concept="pcvyH" id="6T$Np6N_tyR" role="pcfli">
+          <node concept="ez$Vo" id="6T$Np6N_tz1" role="iTD1L">
+            <node concept="3IyDoh" id="6T$Np6N_GIx" role="ezKRT">
+              <node concept="i84Ii" id="6T$Np6N_GJp" role="3uHU7w">
+                <property role="TrG5h" value="b" />
+              </node>
+              <node concept="i84Ii" id="6T$Np6N_GIX" role="3uHU7B">
+                <property role="TrG5h" value="q" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="i9CtR" id="6T$Np6N_tvj" role="i8FVh" />
     <node concept="i8Ge6" id="Ppt_80SBZt" role="i8FVh">
       <property role="TrG5h" value="a_test" />
       <node concept="1Ntjij" id="Ppt_80SBZv" role="1Nt0EE">
