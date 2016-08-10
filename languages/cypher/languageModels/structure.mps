@@ -271,6 +271,11 @@
     <node concept="PrWs8" id="3DtxdVAALxv" role="PzmwI">
       <ref role="PrY4T" node="43EsJCzUTxt" resolve="ICreateExpression" />
     </node>
+    <node concept="1TJgyj" id="32SKCeNNjZt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" node="32SKCeNLlD2" resolve="NodeType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="16qLoc3ISdV">
     <property role="TrG5h" value="Index" />
@@ -2261,6 +2266,24 @@
       <property role="20kJfa" value="amount" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="32SKCeNLlD2">
+    <property role="1pbfSe" value="461497147" />
+    <property role="3GE5qa" value="lang.propertyContainer.node" />
+    <property role="TrG5h" value="NodeType" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="PrWs8" id="32SKCeNLlD3" role="PzmwI">
+      <ref role="PrY4T" node="4MZbrG0SUaY" resolve="ICypherExpression" />
+    </node>
+    <node concept="PrWs8" id="32SKCeNLlDe" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="PrWs8" id="32SKCeNLlDw" role="PzmwI">
+      <ref role="PrY4T" node="3OK0$AEU8Bt" resolve="IMatchExpression" />
+    </node>
+    <node concept="PrWs8" id="32SKCeNLlDS" role="PzmwI">
+      <ref role="PrY4T" node="4cE2yDdCZmO" resolve="IInnerMatchExpression" />
     </node>
   </node>
 </model>
