@@ -2081,7 +2081,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="3OK0$AEWa3q" role="3EZMnx">
-        <property role="2czwfO" value="|" />
+        <property role="2czwfO" value="|:" />
         <ref role="1NtTu8" to="qgu4:2l6GyzbMNt3" />
         <node concept="l2Vlx" id="3OK0$AEWa3r" role="2czzBx" />
         <node concept="tppnM" id="3OK0$AEWaN9" role="sWeuL">
