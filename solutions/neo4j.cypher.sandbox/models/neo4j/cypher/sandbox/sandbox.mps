@@ -180,7 +180,6 @@
       </concept>
       <concept id="1268543411552161286" name="neo4j.cypher.structure.ReadWriteQueryExpression" flags="ng" index="i84I5">
         <child id="3830435865999835421" name="writeStatement" index="iZB0X" />
-        <child id="3830435865999835348" name="matchStatement" index="iZB7O" />
         <child id="3830435865999835350" name="whereStatement" index="iZB7Q" />
         <child id="3830435865999835352" name="returnStatementBlock" index="iZB7S" />
         <child id="4660597163991665344" name="startStatement" index="30hOUH" />
@@ -205,17 +204,11 @@
       <concept id="1268543411551983790" name="neo4j.cypher.structure.QuerySheet" flags="ng" index="ibhOH">
         <child id="1268543411552025426" name="statement" index="i8FVh" />
       </concept>
-      <concept id="3830435865999835403" name="neo4j.cypher.structure.DeleteStatement" flags="ng" index="iZB0F">
-        <child id="3830435865999835404" name="expression" index="iZB0G" />
-      </concept>
       <concept id="3830435865999835373" name="neo4j.cypher.structure.SetStatement" flags="ng" index="iZB7d">
         <child id="3830435865999835376" name="setAssignmentStatement" index="iZB7g" />
       </concept>
       <concept id="3830435865999835353" name="neo4j.cypher.structure.CreateStatement" flags="ng" index="iZB7T">
         <child id="4677677581647667801" name="pathExpression" index="1z092z" />
-      </concept>
-      <concept id="8807834474661724166" name="neo4j.cypher.structure.DeleteExpression" flags="ng" index="2kBnrf">
-        <child id="8807834474661767156" name="expression" index="2kBd4X" />
       </concept>
       <concept id="4409026550619307840" name="neo4j.cypher.structure.IPropertyContainer" flags="ng" index="2nRvO9">
         <property id="4205663719920292967" name="inDefinitionMode" index="3sLl2T" />
@@ -255,15 +248,7 @@
       </concept>
       <concept id="2979687674397788067" name="neo4j.cypher.structure.ReturnStatementBlock" flags="ng" index="RjJQ4">
         <child id="2979687674397788069" name="returnStatement" index="RjJQ2" />
-        <child id="2979687674397766687" name="skipStatement" index="RjOSS" />
         <child id="2979687674397766685" name="orderByStatement" index="RjOSU" />
-      </concept>
-      <concept id="2979687674397743082" name="neo4j.cypher.structure.SkipStatement" flags="ng" index="RjURd">
-        <child id="6746204763277602026" name="limitItems" index="sEJAn" />
-        <child id="6746204763277602022" name="skipItems" index="sEJAr" />
-      </concept>
-      <concept id="1325020284374319148" name="neo4j.cypher.structure.CypherIntegerConstant" flags="ng" index="2ScIF1">
-        <property id="1068580320021" name="value" index="3cmrfI" />
       </concept>
       <concept id="7918996842015188022" name="neo4j.cypher.structure.NamedPropertyContainerRef" flags="ng" index="2W98At">
         <reference id="7918996842015188023" name="propertyContainer" index="2W98As" />
@@ -296,7 +281,6 @@
       </concept>
       <concept id="2686030116060668985" name="neo4j.cypher.structure.LRRelationship" flags="ng" index="3IyDoh" />
       <concept id="2686030116060685549" name="neo4j.cypher.structure.UndirectedRelationship" flags="ng" index="3IyHr5" />
-      <concept id="2686030116060677025" name="neo4j.cypher.structure.RLRelationship" flags="ng" index="3IyJ69" />
       <concept id="2686030116060608322" name="neo4j.cypher.structure.RelationshipType" flags="ng" index="3IzolE" />
       <concept id="5915353355186285349" name="neo4j.cypher.structure.Neo4jExec" flags="ng" index="1MRamG">
         <child id="5915353355186287628" name="query" index="1MRbE5" />
@@ -1048,111 +1032,7 @@
           <node concept="3cpWsn" id="58nzC$xKUT9" role="3cpWs9">
             <property role="TrG5h" value="cypherRWQuery" />
             <node concept="17QB3L" id="58nzC$xKUT4" role="1tU5fm" />
-            <node concept="1NjeWV" id="58nzC$xKV3T" role="33vP2m">
-              <node concept="peicq" id="58nzC$xKV3V" role="30hOUH">
-                <node concept="i84Ij" id="58nzC$xKV3X" role="i9ID4">
-                  <node concept="i84Ii" id="58nzC$xKV3Z" role="i84Il">
-                    <property role="TrG5h" value="kk" />
-                  </node>
-                  <node concept="i8koZ" id="58nzC$xKV5u" role="i8kop" />
-                </node>
-                <node concept="i84Ij" id="58nzC$xKV5W" role="i9ID4">
-                  <node concept="i84Ii" id="58nzC$xKV5X" role="i84Il">
-                    <property role="TrG5h" value="dfs1231" />
-                  </node>
-                  <node concept="i8koZ" id="58nzC$xKV77" role="i8kop" />
-                </node>
-              </node>
-              <node concept="pcvyH" id="58nzC$xKV7_" role="iZB7O">
-                <node concept="ez$Vo" id="58nzC$xKV8g" role="iTD1L">
-                  <node concept="pdiTN" id="58nzC$xKV8V" role="ezKRT">
-                    <ref role="pdiTK" node="58nzC$xKV3Z" resolve="kk" />
-                  </node>
-                </node>
-                <node concept="ez$Vo" id="58nzC$xKV9$" role="iTD1L">
-                  <node concept="pdiTN" id="58nzC$xKVah" role="ezKRT">
-                    <ref role="pdiTK" node="58nzC$xKV5X" resolve="dfs1231" />
-                  </node>
-                </node>
-              </node>
-              <node concept="iZB7T" id="58nzC$xKVd1" role="iZB0X">
-                <node concept="ez$Vo" id="58nzC$xKVd3" role="1z092z">
-                  <node concept="3IyJ69" id="58nzC$xKVgk" role="ezKRT">
-                    <node concept="pdiTN" id="58nzC$xKVho" role="3uHU7w">
-                      <ref role="pdiTK" node="58nzC$xKV3Z" resolve="kk" />
-                    </node>
-                    <node concept="pdiTN" id="58nzC$xKVeY" role="3uHU7B">
-                      <ref role="pdiTK" node="58nzC$xKV3Z" resolve="kk" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="ez$Vo" id="58nzC$xKVmL" role="1z092z">
-                  <node concept="3IyHr5" id="58nzC$xKVor" role="ezKRT">
-                    <node concept="pdiTN" id="58nzC$xKVnw" role="3uHU7B">
-                      <ref role="pdiTK" node="58nzC$xKV3Z" resolve="kk" />
-                    </node>
-                    <node concept="pdiTN" id="58nzC$xKVpz" role="3uHU7w">
-                      <ref role="pdiTK" node="58nzC$xKV5X" resolve="dfs1231" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="iZB7d" id="58nzC$xKVra" role="iZB0X">
-                <node concept="1HNscR" id="58nzC$xKVrc" role="iZB7g">
-                  <node concept="2W98At" id="58nzC$xKVse" role="1HNscS">
-                    <ref role="2W98As" node="58nzC$xKV3Z" resolve="kk" />
-                  </node>
-                  <node concept="2W98At" id="58nzC$xKVsT" role="1HNscT">
-                    <ref role="2W98As" node="58nzC$xKV3Z" resolve="kk" />
-                  </node>
-                </node>
-                <node concept="1HNscR" id="58nzC$xKVx0" role="iZB7g">
-                  <node concept="2OqwBi" id="58nzC$xKVyx" role="1HNscS">
-                    <node concept="2W98At" id="58nzC$xKVxE" role="2Oq$k0">
-                      <ref role="2W98As" node="58nzC$xKV3Z" resolve="kk" />
-                    </node>
-                    <node concept="vXAMB" id="58nzC$xKVBu" role="2OqNvi">
-                      <property role="TrG5h" value="sdfss" />
-                    </node>
-                  </node>
-                  <node concept="1cppCj" id="58nzC$xKVC_" role="1HNscT">
-                    <property role="1cpQyM" value="sd\'f" />
-                  </node>
-                </node>
-              </node>
-              <node concept="iZB0F" id="58nzC$xKVP9" role="iZB0X">
-                <node concept="2kBnrf" id="58nzC$xKVPb" role="iZB0G">
-                  <node concept="2W98At" id="58nzC$xKVQj" role="2kBd4X">
-                    <ref role="2W98As" node="58nzC$xKV5X" resolve="dfs1231" />
-                  </node>
-                </node>
-              </node>
-              <node concept="RjJQ4" id="58nzC$xKVSO" role="iZB7S">
-                <node concept="peh7w" id="58nzC$xKVSP" role="RjJQ2">
-                  <node concept="2W98At" id="58nzC$xKVTD" role="pcflg">
-                    <ref role="2W98As" node="58nzC$xKV3Z" resolve="kk" />
-                  </node>
-                </node>
-                <node concept="1cmFVp" id="58nzC$xKVUc" role="RjOSU">
-                  <node concept="2OqwBi" id="58nzC$xKVVA" role="1cmFVu">
-                    <node concept="2W98At" id="58nzC$xKVUL" role="2Oq$k0">
-                      <ref role="2W98As" node="58nzC$xKV3Z" resolve="kk" />
-                    </node>
-                    <node concept="vXAMB" id="58nzC$xKW15" role="2OqNvi">
-                      <property role="TrG5h" value="dfaaaa" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="RjURd" id="58nzC$xKW2E" role="RjOSS">
-                  <node concept="2ScIF1" id="58nzC$xKW3n" role="sEJAr">
-                    <property role="3cmrfI" value="34" />
-                  </node>
-                  <node concept="2ScIF1" id="58nzC$xKW4l" role="sEJAn">
-                    <property role="3cmrfI" value="63" />
-                  </node>
-                </node>
-              </node>
-            </node>
+            <node concept="1NjeWV" id="2pQxhJq45iW" role="33vP2m" />
           </node>
         </node>
         <node concept="3clFbF" id="Ppt_810ddW" role="3cqZAp">
