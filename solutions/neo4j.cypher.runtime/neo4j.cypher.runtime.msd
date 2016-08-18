@@ -8,6 +8,10 @@
       <sourceRoot location="neo4j-kernel-2.3.1.jar" />
       <sourceRoot location="neo4j-cypher-2.3.1.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}/libs/graphstream" type="java_classes">
+      <sourceRoot location="gs-core-1.3.jar" />
+      <sourceRoot location="gs-ui-1.3.jar" />
+    </modelRoot>
   </models>
   <facets>
     <facet type="tests" />
@@ -51,6 +55,8 @@
     <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/scala-parser-combinators_2.11-1.0.4.jar" />
     <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/scala-reflect-2.11.7.jar" />
     <stubModelEntry path="${module}/libs/neo4j-community-2.3.1-libs/server-api-2.3.1.jar" />
+    <stubModelEntry path="${module}/libs/graphstream/gs-core-1.3.jar" />
+    <stubModelEntry path="${module}/libs/graphstream/gs-ui-1.3.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

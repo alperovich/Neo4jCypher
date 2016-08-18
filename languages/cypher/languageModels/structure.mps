@@ -2392,5 +2392,12 @@
       <ref role="PrY4T" node="4cE2yDdCZmO" resolve="IInnerMatchExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1HHyIiEUyhc">
+    <property role="EcuMT" value="1976388526210163788" />
+    <property role="3GE5qa" value="query.statement" />
+    <property role="TrG5h" value="QueryStringVisualisationStatement" />
+    <property role="34LRSv" value="QueryVisualisation" />
+    <ref role="1TJDcQ" node="3o8vehZjFye" resolve="QueryStringStatement" />
+  </node>
 </model>
 

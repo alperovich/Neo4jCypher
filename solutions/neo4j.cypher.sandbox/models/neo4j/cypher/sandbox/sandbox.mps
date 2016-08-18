@@ -214,6 +214,7 @@
         <property id="4205663719920292967" name="inDefinitionMode" index="3sLl2T" />
         <child id="4409026550619307841" name="property" index="2nRvO8" />
       </concept>
+      <concept id="4409026550619358918" name="neo4j.cypher.structure.EmptyNode" flags="ng" index="2nRGif" />
       <concept id="4395952758104028948" name="neo4j.cypher.structure.WhereStatement" flags="ng" index="pcvyE">
         <child id="3830435865999486510" name="expression" index="iYdWe" />
       </concept>
@@ -246,6 +247,7 @@
       <concept id="1942295127442515793" name="neo4j.cypher.structure.CypherResultIteratorTupleType" flags="ig" index="2EQCLL">
         <child id="1942295127442515799" name="tupleType" index="2EQCLR" />
       </concept>
+      <concept id="1976388526210163788" name="neo4j.cypher.structure.QueryStringVisualisationStatement" flags="ng" index="2LxUUC" />
       <concept id="2979687674397788067" name="neo4j.cypher.structure.ReturnStatementBlock" flags="ng" index="RjJQ4">
         <child id="2979687674397788069" name="returnStatement" index="RjJQ2" />
         <child id="2979687674397766685" name="orderByStatement" index="RjOSU" />
@@ -2387,6 +2389,34 @@
       </node>
     </node>
     <node concept="i9CtR" id="Ppt_80SBZW" role="i8FVh" />
+  </node>
+  <node concept="ibhOH" id="1HHyIiEVIqw">
+    <property role="TrG5h" value="VisualisationExample" />
+    <node concept="2LxUUC" id="5ZiVtMJeu5N" role="i8FVh">
+      <property role="TrG5h" value="aa" />
+      <node concept="19kYvE" id="5ZiVtMJeu5O" role="19hGhF">
+        <node concept="17QB3L" id="5ZiVtMJeu5P" role="19kYvF" />
+      </node>
+      <node concept="1NjeTL" id="5ZiVtMJeu69" role="19hGhQ">
+        <node concept="RjJQ4" id="5ZiVtMJeu6b" role="peicx">
+          <node concept="peh7w" id="5ZiVtMJeu6d" role="RjJQ2">
+            <node concept="2W98At" id="5ZiVtMJgPS_" role="pcflg">
+              <ref role="2W98As" node="5ZiVtMJgPSb" resolve="a" />
+            </node>
+          </node>
+        </node>
+        <node concept="pcvyH" id="5ZiVtMJeZWb" role="pcfli">
+          <node concept="ez$Vo" id="5ZiVtMJeZWj" role="iTD1L">
+            <node concept="3IyHr5" id="5ZiVtMJgPRM" role="ezKRT">
+              <node concept="i84Ii" id="5ZiVtMJgPSb" role="3uHU7B">
+                <property role="TrG5h" value="a" />
+              </node>
+              <node concept="2nRGif" id="5ZiVtMJgPR_" role="3uHU7w" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
