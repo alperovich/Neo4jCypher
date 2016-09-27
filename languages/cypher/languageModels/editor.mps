@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="2" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -4437,20 +4437,24 @@
     <ref role="1XX52x" to="qgu4:1HHyIiEUyhc" resolve="QueryStringVisualisationStatement" />
     <node concept="3EZMnI" id="1HHyIiEUz4F" role="2wV5jI">
       <node concept="2iRkQZ" id="1HHyIiEUz4I" role="2iSdaV" />
-      <node concept="3EZMnI" id="1HHyIiEUz67" role="3EZMnx">
-        <node concept="2iRfu4" id="1HHyIiEUz68" role="2iSdaV" />
-        <node concept="3F1sOY" id="1HHyIiEUz5x" role="3EZMnx">
-          <ref role="1NtTu8" to="qgu4:3o8vehZjFyf" resolve="type" />
+      <node concept="3EZMnI" id="2kuPcAvoZVC" role="3EZMnx">
+        <node concept="2iRkQZ" id="2kuPcAvoZVD" role="2iSdaV" />
+        <node concept="3EZMnI" id="1HHyIiEUz67" role="3EZMnx">
+          <node concept="2iRfu4" id="1HHyIiEUz68" role="2iSdaV" />
+          <node concept="3F1sOY" id="1HHyIiEUz5x" role="3EZMnx">
+            <ref role="1NtTu8" to="qgu4:3o8vehZjFyf" resolve="type" />
+          </node>
+          <node concept="3F0A7n" id="1HHyIiEUz6C" role="3EZMnx">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="3F0ifn" id="1HHyIiEUz74" role="3EZMnx">
+            <property role="3F0ifm" value="=" />
+          </node>
+          <node concept="3F1sOY" id="1HHyIiEUz8y" role="3EZMnx">
+            <ref role="1NtTu8" to="qgu4:3o8vehZjFyi" resolve="queryExpression" />
+          </node>
         </node>
-        <node concept="3F0A7n" id="1HHyIiEUz6C" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="3F0ifn" id="1HHyIiEUz74" role="3EZMnx">
-          <property role="3F0ifm" value="=" />
-        </node>
-        <node concept="3F1sOY" id="1HHyIiEUz8y" role="3EZMnx">
-          <ref role="1NtTu8" to="qgu4:3o8vehZjFyi" resolve="queryExpression" />
-        </node>
+        <node concept="3F0ifn" id="2kuPcAvphFp" role="3EZMnx" />
         <node concept="3EZMnI" id="5ZiVtMJ4K$I" role="3EZMnx">
           <node concept="3gTLQM" id="1HHyIiEUzcv" role="3EZMnx">
             <node concept="3Fmcul" id="1HHyIiEUzcx" role="3FoqZy">

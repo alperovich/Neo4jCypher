@@ -118,6 +118,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -214,7 +217,6 @@
         <property id="4205663719920292967" name="inDefinitionMode" index="3sLl2T" />
         <child id="4409026550619307841" name="property" index="2nRvO8" />
       </concept>
-      <concept id="4409026550619358918" name="neo4j.cypher.structure.EmptyNode" flags="ng" index="2nRGif" />
       <concept id="4395952758104028948" name="neo4j.cypher.structure.WhereStatement" flags="ng" index="pcvyE">
         <child id="3830435865999486510" name="expression" index="iYdWe" />
       </concept>
@@ -2311,6 +2313,8 @@
       </node>
     </node>
     <node concept="i9CtR" id="Ppt_810m4r" role="i8FVh" />
+    <node concept="i9CtR" id="IlMDKr3Uip" role="i8FVh" />
+    <node concept="i9CtR" id="IlMDKr3UlQ" role="i8FVh" />
     <node concept="19hGhE" id="6T$Np6N_trm" role="i8FVh">
       <property role="TrG5h" value="aaaa" />
       <node concept="19kYvE" id="6T$Np6N_tro" role="19hGhF">
@@ -2326,12 +2330,17 @@
         </node>
         <node concept="pcvyH" id="6T$Np6N_tyR" role="pcfli">
           <node concept="ez$Vo" id="6T$Np6N_tz1" role="iTD1L">
-            <node concept="3IyDoh" id="6T$Np6N_GIx" role="ezKRT">
-              <node concept="i84Ii" id="6T$Np6N_GJp" role="3uHU7w">
-                <property role="TrG5h" value="b" />
+            <node concept="3IyHr5" id="IlMDKr3T4U" role="ezKRT">
+              <node concept="pdiTN" id="IlMDKr3Ugg" role="3uHU7w">
+                <ref role="pdiTK" node="6T$Np6N_GJp" resolve="b" />
               </node>
-              <node concept="i84Ii" id="6T$Np6N_GIX" role="3uHU7B">
-                <property role="TrG5h" value="q" />
+              <node concept="3IyDoh" id="6T$Np6N_GIx" role="3uHU7B">
+                <node concept="i84Ii" id="6T$Np6N_GIX" role="3uHU7B">
+                  <property role="TrG5h" value="q" />
+                </node>
+                <node concept="i84Ii" id="6T$Np6N_GJp" role="3uHU7w">
+                  <property role="TrG5h" value="b" />
+                </node>
               </node>
             </node>
           </node>
@@ -2367,21 +2376,26 @@
         </node>
         <node concept="pcvyH" id="Ppt_80SC0F" role="pcfli">
           <node concept="ez$Vo" id="Ppt_80SGyt" role="iTD1L">
-            <node concept="3IyDoh" id="Ppt_8103VM" role="ezKRT">
-              <property role="TrG5h" value="r" />
-              <property role="2nKEee" value="true" />
-              <property role="3sLl2T" value="false" />
-              <property role="eyfSn" value="false" />
-              <property role="eyfSh" value="0" />
-              <property role="eyfSm" value="0" />
-              <node concept="i84Ii" id="Ppt_8103VO" role="3uHU7B">
-                <property role="TrG5h" value="x" />
+            <node concept="3IyHr5" id="IlMDKr7T_L" role="ezKRT">
+              <node concept="pdiTN" id="IlMDKrbHrW" role="3uHU7w">
+                <ref role="pdiTK" node="Ppt_8103VP" resolve="b" />
               </node>
-              <node concept="i84Ii" id="Ppt_8103VP" role="3uHU7w">
-                <property role="TrG5h" value="b" />
-              </node>
-              <node concept="3IzolE" id="Ppt_80SVgF" role="3IzolF">
-                <property role="TrG5h" value="Sensor" />
+              <node concept="3IyDoh" id="Ppt_8103VM" role="3uHU7B">
+                <property role="TrG5h" value="r" />
+                <property role="2nKEee" value="true" />
+                <property role="3sLl2T" value="false" />
+                <property role="eyfSn" value="false" />
+                <property role="eyfSh" value="0" />
+                <property role="eyfSm" value="0" />
+                <node concept="i84Ii" id="Ppt_8103VO" role="3uHU7B">
+                  <property role="TrG5h" value="x" />
+                </node>
+                <node concept="3IzolE" id="Ppt_80SVgF" role="3IzolF">
+                  <property role="TrG5h" value="Sensor" />
+                </node>
+                <node concept="i84Ii" id="Ppt_8103VP" role="3uHU7w">
+                  <property role="TrG5h" value="b" />
+                </node>
               </node>
             </node>
           </node>
@@ -2392,26 +2406,16 @@
   </node>
   <node concept="ibhOH" id="1HHyIiEVIqw">
     <property role="TrG5h" value="VisualisationExample" />
-    <node concept="2LxUUC" id="5ZiVtMJeu5N" role="i8FVh">
+    <node concept="2LxUUC" id="3lZnuiiEnL8" role="i8FVh">
       <property role="TrG5h" value="aa" />
-      <node concept="19kYvE" id="5ZiVtMJeu5O" role="19hGhF">
-        <node concept="17QB3L" id="5ZiVtMJeu5P" role="19kYvF" />
+      <node concept="19kYvE" id="3lZnuiiEnL9" role="19hGhF">
+        <node concept="17QB3L" id="3lZnuiiEnLa" role="19kYvF" />
       </node>
-      <node concept="1NjeTL" id="5ZiVtMJeu69" role="19hGhQ">
-        <node concept="RjJQ4" id="5ZiVtMJeu6b" role="peicx">
-          <node concept="peh7w" id="5ZiVtMJeu6d" role="RjJQ2">
-            <node concept="2W98At" id="5ZiVtMJgPS_" role="pcflg">
-              <ref role="2W98As" node="5ZiVtMJgPSb" resolve="a" />
-            </node>
-          </node>
-        </node>
-        <node concept="pcvyH" id="5ZiVtMJeZWb" role="pcfli">
-          <node concept="ez$Vo" id="5ZiVtMJeZWj" role="iTD1L">
-            <node concept="3IyHr5" id="5ZiVtMJgPRM" role="ezKRT">
-              <node concept="i84Ii" id="5ZiVtMJgPSb" role="3uHU7B">
-                <property role="TrG5h" value="a" />
-              </node>
-              <node concept="2nRGif" id="5ZiVtMJgPR_" role="3uHU7w" />
+      <node concept="1NjeTL" id="3lZnuiiEnLl" role="19hGhQ">
+        <node concept="RjJQ4" id="3lZnuiiEnLn" role="peicx">
+          <node concept="peh7w" id="3lZnuiiEnLp" role="RjJQ2">
+            <node concept="3clFbT" id="1JVY6CxghKd" role="pcflg">
+              <property role="3clFbU" value="true" />
             </node>
           </node>
         </node>
