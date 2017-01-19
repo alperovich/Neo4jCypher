@@ -535,7 +535,7 @@
     <node concept="1TJgyj" id="3kCsi0BNI5h" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="pathExpression" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <property role="IQ2ns" value="3830435865999368529" />
       <ref role="20lvS9" node="4cE2yDdD4jM" resolve="PathExpression" />
     </node>
@@ -702,6 +702,7 @@
     <property role="3GE5qa" value="lang.statement.return" />
     <property role="TrG5h" value="ReturnStatement" />
     <property role="EcuMT" value="4395952758104563294" />
+    <ref role="1TJDcQ" node="4MZbrG0TkEb" resolve="CypherStatement" />
     <node concept="1TJgyj" id="3O1zVS$cnFI" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="returnExpression" />
