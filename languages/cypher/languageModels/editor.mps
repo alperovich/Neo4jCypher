@@ -10,8 +10,6 @@
   </languages>
   <imports>
     <import index="qgu4" ref="r:f744ecfb-e681-4d00-8f57-1ca9664f32ee(neo4j.cypher.structure)" />
-    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
@@ -22,14 +20,12 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="npgh" ref="r:198dc929-1daf-4fd6-a7d4-c87445a0712a(neo4j.cypher.behavior)" />
-    <import index="cx9y" ref="r:309aeee7-bee8-445c-b31d-35928d1da75f(jetbrains.mps.baseLanguage.tuples.structure)" />
     <import index="wr1s" ref="r:0f9ddbb6-f761-4bd7-8dde-1e5300bd28c2(jetbrains.mps.lang.project.editor)" />
     <import index="fdpz" ref="8be426ea-f02f-4221-9d9f-9eb718c2d998/java:org.graphstream.graph.implementations(neo4j.cypher.runtime/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="thk4" ref="8be426ea-f02f-4221-9d9f-9eb718c2d998/java:org.graphstream.graph(neo4j.cypher.runtime/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="xyqd" ref="8be426ea-f02f-4221-9d9f-9eb718c2d998/java:org.graphstream.ui.view(neo4j.cypher.runtime/)" />
-    <import index="tirk" ref="8be426ea-f02f-4221-9d9f-9eb718c2d998/java:org.graphstream.ui.swingViewer(neo4j.cypher.runtime/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -4953,6 +4949,25 @@
       </node>
       <node concept="Vb9p2" id="m8YdCdIbnf" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7_lh_jBnR59">
+    <property role="3GE5qa" value="query.statement" />
+    <ref role="1XX52x" to="qgu4:7_lh_jBnQvx" resolve="QueryStringStatmentUntyped" />
+    <node concept="3EZMnI" id="7_lh_jBnR5A" role="2wV5jI">
+      <node concept="2iRfu4" id="7_lh_jBnR5B" role="2iSdaV" />
+      <node concept="3F1sOY" id="7_lh_jBnR5C" role="3EZMnx">
+        <ref role="1NtTu8" to="qgu4:3o8vehZjFyf" resolve="type" />
+      </node>
+      <node concept="3F0A7n" id="7_lh_jBnR5D" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="7_lh_jBnR5E" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="7_lh_jBnR5F" role="3EZMnx">
+        <ref role="1NtTu8" to="qgu4:3o8vehZjFyi" resolve="queryExpression" />
       </node>
     </node>
   </node>

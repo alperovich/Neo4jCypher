@@ -3,15 +3,10 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="fa0e36f7-2d65-493a-8638-2d9c4dbffdf7" name="neo4j.cypher" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="3ior" ref="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" />
     <import index="cx9y" ref="r:309aeee7-bee8-445c-b31d-35928d1da75f(jetbrains.mps.baseLanguage.tuples.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -2397,6 +2392,13 @@
     <property role="3GE5qa" value="query.statement" />
     <property role="TrG5h" value="QueryStringVisualisationStatement" />
     <property role="34LRSv" value="QueryVisualisation" />
+    <ref role="1TJDcQ" node="3o8vehZjFye" resolve="QueryStringStatement" />
+  </node>
+  <node concept="1TIwiD" id="7_lh_jBnQvx">
+    <property role="EcuMT" value="8742971582082672609" />
+    <property role="3GE5qa" value="query.statement" />
+    <property role="TrG5h" value="QueryStringStatmentUntyped" />
+    <property role="34LRSv" value="QueryString" />
     <ref role="1TJDcQ" node="3o8vehZjFye" resolve="QueryStringStatement" />
   </node>
 </model>
