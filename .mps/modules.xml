@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/cypher/cypher.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/neo4j.cypher.build/neo4j.cypher.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/neo4j.cypher.runtime/neo4j.cypher.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/neo4j.cypher.sandbox/neo4j.cypher.sandbox.msd" folder="" />
     </projectModules>
