@@ -196,7 +196,7 @@
   <node concept="1l3spW" id="6ZkA9WG7jRI">
     <property role="TrG5h" value="Neo4jCypher_corlab" />
     <property role="2DA0ip" value="../../" />
-    <node concept="2igEWh" id="5kxyU3O4pAR" role="1hWBAP">
+    <node concept="2igEWh" id="7dePTtb0Sd$" role="1hWBAP">
       <property role="2igJW4" value="true" />
     </node>
     <node concept="10PD9b" id="6ZkA9WG7jRJ" role="10PD9s" />
@@ -323,6 +323,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="7dePTtb14bL" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="7dePTtb14h7" role="2JcizS">
+        <ref role="398BVh" node="6ZkA9WG7jRR" resolve="mps_home" />
       </node>
     </node>
     <node concept="2sgV4H" id="6ZkA9WG7jRS" role="1l3spa">
@@ -477,6 +483,32 @@
           <node concept="NbPM2" id="6ZkA9WG7jTA" role="1TblLm">
             <node concept="3Mxwew" id="6ZkA9WG7jTB" role="3MwsjC">
               <property role="3MwjfP" value="1.0" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3981dG" id="7dePTtb1ieO" role="39821P">
+        <node concept="3_J27D" id="7dePTtb1ieQ" role="Nbhlr">
+          <node concept="3Mxwew" id="7dePTtb1ilG" role="3MwsjC">
+            <property role="3MwjfP" value="Neo4jCypher-plugin.zip" />
+          </node>
+        </node>
+        <node concept="m$_wl" id="7dePTtb1ilJ" role="39821P">
+          <ref role="m_rDy" node="6ZkA9WG7jSG" resolve="Neo4jCypher_corlab" />
+          <node concept="2HvfSZ" id="7dePTtb1iw2" role="39821P">
+            <node concept="398BVA" id="7dePTtb1i_g" role="2HvfZ0">
+              <ref role="398BVh" node="6ZkA9WG7lwG" resolve="runtime_lib_path" />
+              <node concept="2Ry0Ak" id="7dePTtb1iEw" role="iGT6I">
+                <property role="2Ry0Am" value="graphstream" />
+              </node>
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="7dePTtb1iJO" role="39821P">
+            <node concept="398BVA" id="7dePTtb1iPa" role="2HvfZ0">
+              <ref role="398BVh" node="6ZkA9WG7lwG" resolve="runtime_lib_path" />
+              <node concept="2Ry0Ak" id="7dePTtb1iUq" role="iGT6I">
+                <property role="2Ry0Am" value="neo4j-community-2.3.1-libs" />
+              </node>
             </node>
           </node>
         </node>
@@ -1000,12 +1032,6 @@
                 <property role="2Ry0Am" value="cypher.mpl" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6ZkA9WG7jY6" role="3bR37C">
-          <node concept="3bR9La" id="6ZkA9WG7jY7" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
         <node concept="1SiIV0" id="6ZkA9WG7jY8" role="3bR37C">
