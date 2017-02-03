@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,170,0" name="neo4j.cypher.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/1325020284374000547">
+    <file name="AggregateFunction_Constraints.java">
+      <node id="1325020284374000547" at="16,42,17,148" concept="11" />
+      <node id="1325020284374000547" at="21,46,22,16" concept="6" />
+      <node id="1325020284374000547" at="25,199,26,102" concept="5" />
+      <node id="1325020284374000547" at="26,102,27,0" concept="8" />
+      <node id="1325020284374000547" at="28,51,29,71" concept="2" />
+      <node id="1325020284374000547" at="30,5,31,0" concept="8" />
+      <node id="1325020284374000547" at="31,0,32,18" concept="6" />
+      <node id="1325020284374078791" at="34,169,35,48" concept="7" />
+      <node id="1325020284374078776" at="35,48,36,228" concept="6" />
+      <node id="1325020284374000547" at="38,0,39,0" concept="9" trace="canBeAncesctorBreakingPoint" />
+      <node id="1325020284374000547" at="16,0,19,0" concept="1" trace="AggregateFunction_Constraints#()V" />
+      <node id="1325020284374000547" at="27,0,30,5" concept="3" />
+      <node id="1325020284374000547" at="20,0,24,0" concept="4" trace="hasOwnCanBeAncestorMethod#()Z" />
+      <node id="1325020284374000547" at="34,0,38,0" concept="10" trace="static_canBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="1325020284374000547" at="24,0,34,0" concept="4" trace="canBeAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="1325020284374000547" at="16,42,17,148" />
+      <scope id="1325020284374000547" at="21,46,22,16" />
+      <scope id="1325020284374000547" at="28,51,29,71" />
+      <scope id="1325020284374000549" at="34,169,36,228" />
+      <scope id="1325020284374000547" at="16,0,19,0" />
+      <scope id="1325020284374000547" at="20,0,24,0" />
+      <scope id="1325020284374000547" at="34,0,38,0">
+        <var name="childConcept" id="1325020284374000547" />
+        <var name="childNode" id="1325020284374000547" />
+        <var name="link" id="1325020284374000547" />
+        <var name="node" id="1325020284374000547" />
+        <var name="operationContext" id="1325020284374000547" />
+        <var name="parentNode" id="1325020284374000547" />
+      </scope>
+      <scope id="1325020284374000547" at="25,199,32,18">
+        <var name="result" id="1325020284374000547" />
+      </scope>
+      <scope id="1325020284374000547" at="24,0,34,0">
+        <var name="checkingNodeContext" id="1325020284374000547" />
+        <var name="childConcept" id="1325020284374000547" />
+        <var name="childNode" id="1325020284374000547" />
+        <var name="context" id="1325020284374000547" />
+        <var name="link" id="1325020284374000547" />
+        <var name="node" id="1325020284374000547" />
+        <var name="parentNode" id="1325020284374000547" />
+      </scope>
+      <unit id="1325020284374000547" at="15,0,40,0" name="neo4j.cypher.constraints.AggregateFunction_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/1942295127442504115">
+    <file name="CypherResultIteratorMethod_Constraints.java">
+      <node id="1942295127442504115" at="18,51,19,157" concept="11" />
+      <node id="1942295127442504115" at="23,43,24,16" concept="6" />
+      <node id="1942295127442504115" at="27,200,28,96" concept="5" />
+      <node id="1942295127442504115" at="28,96,29,0" concept="8" />
+      <node id="1942295127442504115" at="30,51,31,67" concept="2" />
+      <node id="1942295127442504115" at="32,5,33,0" concept="8" />
+      <node id="1942295127442504115" at="33,0,34,18" concept="6" />
+      <node id="1942295127442506898" at="37,197,38,19" concept="6" />
+      <node id="1942295127442506905" at="39,5,40,348" concept="5" />
+      <node id="1942295127442506912" at="40,348,41,311" concept="5" />
+      <node id="1942295127442506922" at="42,31,43,19" concept="6" />
+      <node id="1942295127442506927" at="44,5,45,0" concept="8" />
+      <node id="1942295127442506928" at="45,0,46,16" concept="6" />
+      <node id="1942295127442504115" at="48,0,49,0" concept="9" trace="canBeChildBreakingPoint" />
+      <node id="1942295127442504115" at="18,0,21,0" concept="1" trace="CypherResultIteratorMethod_Constraints#()V" />
+      <node id="1942295127442504115" at="29,0,32,5" concept="3" />
+      <node id="1942295127442506896" at="36,148,39,5" concept="3" />
+      <node id="1942295127442506920" at="41,311,44,5" concept="3" />
+      <node id="1942295127442504115" at="22,0,26,0" concept="4" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="1942295127442504115" at="26,0,36,0" concept="4" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="1942295127442504115" at="36,0,48,0" concept="10" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <scope id="1942295127442504115" at="18,51,19,157" />
+      <scope id="1942295127442504115" at="23,43,24,16" />
+      <scope id="1942295127442504115" at="30,51,31,67" />
+      <scope id="1942295127442506897" at="37,197,38,19" />
+      <scope id="1942295127442506921" at="42,31,43,19" />
+      <scope id="1942295127442504115" at="18,0,21,0" />
+      <scope id="1942295127442504115" at="22,0,26,0" />
+      <scope id="1942295127442504115" at="27,200,34,18">
+        <var name="result" id="1942295127442504115" />
+      </scope>
+      <scope id="1942295127442504115" at="26,0,36,0">
+        <var name="checkingNodeContext" id="1942295127442504115" />
+        <var name="childConcept" id="1942295127442504115" />
+        <var name="link" id="1942295127442504115" />
+        <var name="node" id="1942295127442504115" />
+        <var name="operationContext" id="1942295127442504115" />
+        <var name="parentNode" id="1942295127442504115" />
+      </scope>
+      <scope id="1942295127442506129" at="36,148,46,16">
+        <var name="instance" id="1942295127442506906" />
+        <var name="resultType" id="1942295127442506913" />
+      </scope>
+      <scope id="1942295127442504115" at="36,0,48,0">
+        <var name="childConcept" id="1942295127442504115" />
+        <var name="link" id="1942295127442504115" />
+        <var name="node" id="1942295127442504115" />
+        <var name="operationContext" id="1942295127442504115" />
+        <var name="parentNode" id="1942295127442504115" />
+      </scope>
+      <unit id="1942295127442504115" at="17,0,50,0" name="neo4j.cypher.constraints.CypherResultIteratorMethod_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/1942295127444000597">
+    <file name="CypherResultIteratorHasNextMethod_Constraints.java">
+      <node id="1942295127444000597" at="18,58,19,164" concept="11" />
+      <node id="1942295127444000597" at="23,43,24,16" concept="6" />
+      <node id="1942295127444000597" at="27,200,28,96" concept="5" />
+      <node id="1942295127444000597" at="28,96,29,0" concept="8" />
+      <node id="1942295127444000597" at="30,51,31,67" concept="2" />
+      <node id="1942295127444000597" at="32,5,33,0" concept="8" />
+      <node id="1942295127444000597" at="33,0,34,18" concept="6" />
+      <node id="1942295127444002623" at="37,197,38,19" concept="6" />
+      <node id="1942295127444002630" at="39,5,40,348" concept="5" />
+      <node id="1942295127444002637" at="40,348,41,319" concept="5" />
+      <node id="1942295127444002647" at="42,31,43,19" concept="6" />
+      <node id="1942295127444002652" at="44,5,45,0" concept="8" />
+      <node id="1942295127444002653" at="45,0,46,16" concept="6" />
+      <node id="1942295127444000597" at="48,0,49,0" concept="9" trace="canBeChildBreakingPoint" />
+      <node id="1942295127444000597" at="18,0,21,0" concept="1" trace="CypherResultIteratorHasNextMethod_Constraints#()V" />
+      <node id="1942295127444000597" at="29,0,32,5" concept="3" />
+      <node id="1942295127444002621" at="36,148,39,5" concept="3" />
+      <node id="1942295127444002645" at="41,319,44,5" concept="3" />
+      <node id="1942295127444000597" at="22,0,26,0" concept="4" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="1942295127444000597" at="26,0,36,0" concept="4" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="1942295127444000597" at="36,0,48,0" concept="10" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <scope id="1942295127444000597" at="18,58,19,164" />
+      <scope id="1942295127444000597" at="23,43,24,16" />
+      <scope id="1942295127444000597" at="30,51,31,67" />
+      <scope id="1942295127444002622" at="37,197,38,19" />
+      <scope id="1942295127444002646" at="42,31,43,19" />
+      <scope id="1942295127444000597" at="18,0,21,0" />
+      <scope id="1942295127444000597" at="22,0,26,0" />
+      <scope id="1942295127444000597" at="27,200,34,18">
+        <var name="result" id="1942295127444000597" />
+      </scope>
+      <scope id="1942295127444000597" at="26,0,36,0">
+        <var name="checkingNodeContext" id="1942295127444000597" />
+        <var name="childConcept" id="1942295127444000597" />
+        <var name="link" id="1942295127444000597" />
+        <var name="node" id="1942295127444000597" />
+        <var name="operationContext" id="1942295127444000597" />
+        <var name="parentNode" id="1942295127444000597" />
+      </scope>
+      <scope id="1942295127444001854" at="36,148,46,16">
+        <var name="instance" id="1942295127444002631" />
+        <var name="resultType" id="1942295127444002638" />
+      </scope>
+      <scope id="1942295127444000597" at="36,0,48,0">
+        <var name="childConcept" id="1942295127444000597" />
+        <var name="link" id="1942295127444000597" />
+        <var name="node" id="1942295127444000597" />
+        <var name="operationContext" id="1942295127444000597" />
+        <var name="parentNode" id="1942295127444000597" />
+      </scope>
+      <unit id="1942295127444000597" at="17,0,50,0" name="neo4j.cypher.constraints.CypherResultIteratorHasNextMethod_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/1942295127445244496">
+    <file name="CypherResultIteratorNextMethod_Constraints.java">
+      <node id="1942295127445244496" at="18,55,19,161" concept="11" />
+      <node id="1942295127445244496" at="23,43,24,16" concept="6" />
+      <node id="1942295127445244496" at="27,200,28,96" concept="5" />
+      <node id="1942295127445244496" at="28,96,29,0" concept="8" />
+      <node id="1942295127445244496" at="30,51,31,67" concept="2" />
+      <node id="1942295127445244496" at="32,5,33,0" concept="8" />
+      <node id="1942295127445244496" at="33,0,34,18" concept="6" />
+      <node id="1942295127445245267" at="37,197,38,19" concept="6" />
+      <node id="1942295127445245274" at="39,5,40,348" concept="5" />
+      <node id="1942295127445245281" at="40,348,41,319" concept="5" />
+      <node id="1942295127445245291" at="42,31,43,19" concept="6" />
+      <node id="1942295127445245296" at="44,5,45,0" concept="8" />
+      <node id="1942295127445245297" at="45,0,46,16" concept="6" />
+      <node id="1942295127445244496" at="48,0,49,0" concept="9" trace="canBeChildBreakingPoint" />
+      <node id="1942295127445244496" at="18,0,21,0" concept="1" trace="CypherResultIteratorNextMethod_Constraints#()V" />
+      <node id="1942295127445244496" at="29,0,32,5" concept="3" />
+      <node id="1942295127445245265" at="36,148,39,5" concept="3" />
+      <node id="1942295127445245289" at="41,319,44,5" concept="3" />
+      <node id="1942295127445244496" at="22,0,26,0" concept="4" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="1942295127445244496" at="26,0,36,0" concept="4" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="1942295127445244496" at="36,0,48,0" concept="10" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <scope id="1942295127445244496" at="18,55,19,161" />
+      <scope id="1942295127445244496" at="23,43,24,16" />
+      <scope id="1942295127445244496" at="30,51,31,67" />
+      <scope id="1942295127445245266" at="37,197,38,19" />
+      <scope id="1942295127445245290" at="42,31,43,19" />
+      <scope id="1942295127445244496" at="18,0,21,0" />
+      <scope id="1942295127445244496" at="22,0,26,0" />
+      <scope id="1942295127445244496" at="27,200,34,18">
+        <var name="result" id="1942295127445244496" />
+      </scope>
+      <scope id="1942295127445244496" at="26,0,36,0">
+        <var name="checkingNodeContext" id="1942295127445244496" />
+        <var name="childConcept" id="1942295127445244496" />
+        <var name="link" id="1942295127445244496" />
+        <var name="node" id="1942295127445244496" />
+        <var name="operationContext" id="1942295127445244496" />
+        <var name="parentNode" id="1942295127445244496" />
+      </scope>
+      <scope id="1942295127445244498" at="36,148,46,16">
+        <var name="instance" id="1942295127445245275" />
+        <var name="resultType" id="1942295127445245282" />
+      </scope>
+      <scope id="1942295127445244496" at="36,0,48,0">
+        <var name="childConcept" id="1942295127445244496" />
+        <var name="link" id="1942295127445244496" />
+        <var name="node" id="1942295127445244496" />
+        <var name="operationContext" id="1942295127445244496" />
+        <var name="parentNode" id="1942295127445244496" />
+      </scope>
+      <unit id="1942295127445244496" at="17,0,50,0" name="neo4j.cypher.constraints.CypherResultIteratorNextMethod_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/2394186179449127053">
+    <file name="PropertyOperation_Constraints.java">
+      <node id="2394186179449127053" at="16,42,17,148" concept="11" />
+      <node id="2394186179449127053" at="21,43,22,16" concept="6" />
+      <node id="2394186179449127053" at="25,200,26,96" concept="5" />
+      <node id="2394186179449127053" at="26,96,27,0" concept="8" />
+      <node id="2394186179449127053" at="28,51,29,67" concept="2" />
+      <node id="2394186179449127053" at="30,5,31,0" concept="8" />
+      <node id="2394186179449127053" at="31,0,32,18" concept="6" />
+      <node id="5205855332950450178" at="34,148,35,702" concept="6" />
+      <node id="2394186179449127053" at="37,0,38,0" concept="9" trace="canBeChildBreakingPoint" />
+      <node id="2394186179449127053" at="16,0,19,0" concept="1" trace="PropertyOperation_Constraints#()V" />
+      <node id="2394186179449127053" at="27,0,30,5" concept="3" />
+      <node id="2394186179449127053" at="34,0,37,0" concept="10" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="2394186179449127053" at="20,0,24,0" concept="4" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="2394186179449127053" at="24,0,34,0" concept="4" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="2394186179449127053" at="16,42,17,148" />
+      <scope id="2394186179449127053" at="21,43,22,16" />
+      <scope id="2394186179449127053" at="28,51,29,67" />
+      <scope id="2394186179449128394" at="34,148,35,702" />
+      <scope id="2394186179449127053" at="16,0,19,0" />
+      <scope id="2394186179449127053" at="34,0,37,0">
+        <var name="childConcept" id="2394186179449127053" />
+        <var name="link" id="2394186179449127053" />
+        <var name="node" id="2394186179449127053" />
+        <var name="operationContext" id="2394186179449127053" />
+        <var name="parentNode" id="2394186179449127053" />
+      </scope>
+      <scope id="2394186179449127053" at="20,0,24,0" />
+      <scope id="2394186179449127053" at="25,200,32,18">
+        <var name="result" id="2394186179449127053" />
+      </scope>
+      <scope id="2394186179449127053" at="24,0,34,0">
+        <var name="checkingNodeContext" id="2394186179449127053" />
+        <var name="childConcept" id="2394186179449127053" />
+        <var name="link" id="2394186179449127053" />
+        <var name="node" id="2394186179449127053" />
+        <var name="operationContext" id="2394186179449127053" />
+        <var name="parentNode" id="2394186179449127053" />
+      </scope>
+      <unit id="2394186179449127053" at="15,0,39,0" name="neo4j.cypher.constraints.PropertyOperation_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/3693218355999920429">
+    <file name="CypherQueryExecuteMethod_Constraints.java">
+      <node id="3693218355999920429" at="18,49,19,155" concept="11" />
+      <node id="3693218355999920429" at="23,43,24,16" concept="6" />
+      <node id="3693218355999920429" at="27,200,28,96" concept="5" />
+      <node id="3693218355999920429" at="28,96,29,0" concept="8" />
+      <node id="3693218355999920429" at="30,51,31,67" concept="2" />
+      <node id="3693218355999920429" at="32,5,33,0" concept="8" />
+      <node id="3693218355999920429" at="33,0,34,18" concept="6" />
+      <node id="3693218356000163007" at="37,197,38,19" concept="6" />
+      <node id="1343296446925671011" at="39,5,40,348" concept="5" />
+      <node id="3693218356000192151" at="40,348,41,309" concept="5" />
+      <node id="3693218356000219862" at="42,30,43,19" concept="6" />
+      <node id="3693218356000189723" at="44,5,45,0" concept="8" />
+      <node id="3693218356000174441" at="45,0,46,16" concept="6" />
+      <node id="3693218355999920429" at="48,0,49,0" concept="9" trace="canBeChildBreakingPoint" />
+      <node id="3693218355999920429" at="18,0,21,0" concept="1" trace="CypherQueryExecuteMethod_Constraints#()V" />
+      <node id="3693218355999920429" at="29,0,32,5" concept="3" />
+      <node id="3693218356000156337" at="36,148,39,5" concept="3" />
+      <node id="3693218356000207153" at="41,309,44,5" concept="3" />
+      <node id="3693218355999920429" at="22,0,26,0" concept="4" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="3693218355999920429" at="26,0,36,0" concept="4" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="3693218355999920429" at="36,0,48,0" concept="10" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <scope id="3693218355999920429" at="18,49,19,155" />
+      <scope id="3693218355999920429" at="23,43,24,16" />
+      <scope id="3693218355999920429" at="30,51,31,67" />
+      <scope id="3693218356000156340" at="37,197,38,19" />
+      <scope id="3693218356000207156" at="42,30,43,19" />
+      <scope id="3693218355999920429" at="18,0,21,0" />
+      <scope id="3693218355999920429" at="22,0,26,0" />
+      <scope id="3693218355999920429" at="27,200,34,18">
+        <var name="result" id="3693218355999920429" />
+      </scope>
+      <scope id="3693218355999920429" at="26,0,36,0">
+        <var name="checkingNodeContext" id="3693218355999920429" />
+        <var name="childConcept" id="3693218355999920429" />
+        <var name="link" id="3693218355999920429" />
+        <var name="node" id="3693218355999920429" />
+        <var name="operationContext" id="3693218355999920429" />
+        <var name="parentNode" id="3693218355999920429" />
+      </scope>
+      <scope id="3693218355999928181" at="36,148,46,16">
+        <var name="instance" id="1343296446925671012" />
+        <var name="queryType" id="3693218356000192152" />
+      </scope>
+      <scope id="3693218355999920429" at="36,0,48,0">
+        <var name="childConcept" id="3693218355999920429" />
+        <var name="link" id="3693218355999920429" />
+        <var name="node" id="3693218355999920429" />
+        <var name="operationContext" id="3693218355999920429" />
+        <var name="parentNode" id="3693218355999920429" />
+      </scope>
+      <unit id="3693218355999920429" at="17,0,50,0" name="neo4j.cypher.constraints.CypherQueryExecuteMethod_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/4677677581647714315">
+    <file name="CreateStatement_Constraints.java">
+      <node id="4677677581647714315" at="14,40,15,146" concept="11" />
+      <node id="4677677581647714315" at="19,46,20,16" concept="6" />
+      <node id="4677677581647714315" at="23,199,24,102" concept="5" />
+      <node id="4677677581647714315" at="24,102,25,0" concept="8" />
+      <node id="4677677581647714315" at="26,51,27,71" concept="2" />
+      <node id="4677677581647714315" at="28,5,29,0" concept="8" />
+      <node id="4677677581647714315" at="29,0,30,18" concept="6" />
+      <node id="4677677581647714395" at="32,169,33,16" concept="6" />
+      <node id="4677677581647714315" at="35,0,36,0" concept="9" trace="canBeAncesctorBreakingPoint" />
+      <node id="4677677581647714315" at="14,0,17,0" concept="1" trace="CreateStatement_Constraints#()V" />
+      <node id="4677677581647714315" at="25,0,28,5" concept="3" />
+      <node id="4677677581647714315" at="32,0,35,0" concept="10" trace="static_canBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="4677677581647714315" at="18,0,22,0" concept="4" trace="hasOwnCanBeAncestorMethod#()Z" />
+      <node id="4677677581647714315" at="22,0,32,0" concept="4" trace="canBeAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="4677677581647714315" at="14,40,15,146" />
+      <scope id="4677677581647714315" at="19,46,20,16" />
+      <scope id="4677677581647714315" at="26,51,27,71" />
+      <scope id="4677677581647714317" at="32,169,33,16" />
+      <scope id="4677677581647714315" at="14,0,17,0" />
+      <scope id="4677677581647714315" at="32,0,35,0">
+        <var name="childConcept" id="4677677581647714315" />
+        <var name="childNode" id="4677677581647714315" />
+        <var name="link" id="4677677581647714315" />
+        <var name="node" id="4677677581647714315" />
+        <var name="operationContext" id="4677677581647714315" />
+        <var name="parentNode" id="4677677581647714315" />
+      </scope>
+      <scope id="4677677581647714315" at="18,0,22,0" />
+      <scope id="4677677581647714315" at="23,199,30,18">
+        <var name="result" id="4677677581647714315" />
+      </scope>
+      <scope id="4677677581647714315" at="22,0,32,0">
+        <var name="checkingNodeContext" id="4677677581647714315" />
+        <var name="childConcept" id="4677677581647714315" />
+        <var name="childNode" id="4677677581647714315" />
+        <var name="context" id="4677677581647714315" />
+        <var name="link" id="4677677581647714315" />
+        <var name="node" id="4677677581647714315" />
+        <var name="parentNode" id="4677677581647714315" />
+      </scope>
+      <unit id="4677677581647714315" at="13,0,37,0" name="neo4j.cypher.constraints.CreateStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/4677677581647803809">
+    <file name="INamedNullableIdentifier_Constraints.java">
+      <node id="4677677581647803809" at="19,49,20,164" concept="11" />
+      <node id="4677677581647803809" at="24,84,25,119" concept="5" />
+      <node id="4677677581647803809" at="28,40,29,20" concept="6" />
+      <node id="4677677581647803809" at="32,70,33,37" concept="5" />
+      <node id="4677677581647803814" at="33,37,34,374" concept="6" />
+      <node id="4677677581647803809" at="36,7,37,22" concept="6" />
+      <node id="4677677581647803809" at="19,0,22,0" concept="1" trace="INamedNullableIdentifier_Constraints#()V" />
+      <node id="4677677581647803809" at="27,0,31,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="4677677581647803809" at="31,0,36,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="4677677581647803809" at="25,119,36,7" concept="2" />
+      <node id="4677677581647803809" at="23,0,39,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="4677677581647803809" at="19,49,20,164" />
+      <scope id="4677677581647803809" at="28,40,29,20" />
+      <scope id="4677677581647803809" at="32,70,34,374">
+        <var name="propertyName" id="4677677581647803809" />
+      </scope>
+      <scope id="4677677581647803809" at="19,0,22,0" />
+      <scope id="4677677581647803809" at="27,0,31,0" />
+      <scope id="4677677581647803809" at="31,0,36,0">
+        <var name="node" id="4677677581647803809" />
+        <var name="propertyValue" id="4677677581647803809" />
+      </scope>
+      <scope id="4677677581647803809" at="24,84,37,22">
+        <var name="properties" id="4677677581647803809" />
+      </scope>
+      <scope id="4677677581647803809" at="23,0,39,0" />
+      <unit id="4677677581647803809" at="26,137,36,5" name="neo4j.cypher.constraints.INamedNullableIdentifier_Constraints$1" />
+      <unit id="4677677581647803809" at="18,0,40,0" name="neo4j.cypher.constraints.INamedNullableIdentifier_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/4839691926370503390">
+    <file name="NamedPropertyContainerRef_Constraints.java">
+      <node id="4839691926370503390" at="35,50,36,156" concept="11" />
+      <node id="4839691926370503390" at="39,0,40,0" concept="9" trace="LOG" />
+      <node id="4839691926370503390" at="41,90,42,131" concept="5" />
+      <node id="4839691926370503390" at="45,44,46,20" concept="6" />
+      <node id="5911057593638596073" at="53,142,54,0" concept="8" />
+      <node id="5911057593638596077" at="56,40,57,572" concept="2" />
+      <node id="5911057593638596090" at="59,13,60,0" concept="8" />
+      <node id="5911057593638596091" at="60,0,61,46" concept="7" />
+      <node id="5911057593638596093" at="61,46,62,637" concept="5" />
+      <node id="5911057593638685398" at="64,40,65,58" concept="2" />
+      <node id="5911057593638596101" at="67,13,68,142" concept="5" />
+      <node id="5911057593638596107" at="68,142,69,0" concept="8" />
+      <node id="5911057593638596108" at="69,0,70,61" concept="5" />
+      <node id="5911057593638596114" at="70,61,71,0" concept="8" />
+      <node id="5911057593638596115" at="71,0,72,100" concept="7" />
+      <node id="5911057593638596131" at="74,43,75,270" concept="5" />
+      <node id="5911057593638598190" at="75,270,76,0" concept="8" />
+      <node id="5911057593638598192" at="76,0,77,39" concept="5" />
+      <node id="5911057593638682368" at="77,39,78,0" concept="8" />
+      <node id="5911057593638682370" at="79,42,80,561" concept="2" />
+      <node id="5911057593638682369" at="81,17,82,0" concept="8" />
+      <node id="5911057593638596138" at="82,0,83,0" concept="8" />
+      <node id="5911057593638599022" at="84,63,85,32" concept="2" />
+      <node id="5911057593638596158" at="87,44,88,212" concept="2" />
+      <node id="5911057593638596181" at="89,19,90,0" concept="8" />
+      <node id="5911057593638596184" at="92,46,93,59" concept="2" />
+      <node id="5911057593638596186" at="94,21,95,34" concept="2" />
+      <node id="5911057593638598196" at="97,17,98,0" concept="8" />
+      <node id="5911057593638691451" at="101,53,102,195" concept="6" />
+      <node id="5911057593638596204" at="107,15,108,0" concept="8" />
+      <node id="5911057593638596218" at="110,43,111,226" concept="5" />
+      <node id="5911057593638596226" at="111,226,112,66" concept="2" />
+      <node id="5911057593638596230" at="113,42,114,790" concept="2" />
+      <node id="5911057593638596262" at="115,17,116,0" concept="8" />
+      <node id="5911057593638596266" at="118,15,119,0" concept="8" />
+      <node id="5911057593638596267" at="119,0,120,25" concept="6" />
+      <node id="4839691926370503390" at="123,63,124,58" concept="6" />
+      <node id="4839691926370503390" at="128,7,129,22" concept="6" />
+      <node id="4839691926370503390" at="131,0,132,0" concept="9" trace="breakingNode_gvwt0r_a0a1a0a0a1a0b0a1a2" />
+      <node id="5911057593638691507" at="132,55,133,43" concept="6" />
+      <node id="4839691926370503390" at="35,0,38,0" concept="1" trace="NamedPropertyContainerRef_Constraints#()V" />
+      <node id="5911057593638596077" at="55,220,58,15" concept="3" />
+      <node id="5911057593638685398" at="63,48,66,15" concept="3" />
+      <node id="5911057593638682370" at="78,0,81,17" concept="3" />
+      <node id="5911057593638596158" at="86,71,89,19" concept="3" />
+      <node id="5911057593638596184" at="91,118,94,21" concept="3" />
+      <node id="5911057593638691447" at="101,0,104,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5911057593638596230" at="112,66,115,17" concept="3" />
+      <node id="5911057593638691507" at="132,0,135,0" concept="10" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4839691926370503390" at="44,0,48,0" concept="4" trace="hasOwnScopeProvider#()Z" />
+      <node id="4839691926370503390" at="122,0,126,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="5911057593638596075" at="54,0,59,13" concept="3" />
+      <node id="5911057593638685341" at="62,637,67,13" concept="3" />
+      <node id="5911057593638598207" at="99,29,104,22" concept="2" />
+      <node id="5911057593638596182" at="90,0,96,19" concept="3" />
+      <node id="5911057593638598198" at="98,0,105,17" concept="3" />
+      <node id="5911057593638596216" at="110,0,118,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5911057593638596212" at="108,0,118,15" concept="2" />
+      <node id="5911057593638596139" at="83,0,97,17" concept="3" />
+      <node id="5911057593638596129" at="74,0,107,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5911057593638596117" at="72,100,107,15" concept="2" />
+      <node id="4839691926370503390" at="52,0,122,0" concept="4" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="4839691926370503390" at="50,56,126,10" concept="6" />
+      <node id="4839691926370503390" at="48,0,128,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4839691926370503390" at="42,131,128,7" concept="2" />
+      <node id="4839691926370503390" at="40,0,131,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="4839691926370503390" at="35,50,36,156" />
+      <scope id="4839691926370503390" at="45,44,46,20" />
+      <scope id="5911057593638596077" at="56,40,57,572" />
+      <scope id="5911057593638685398" at="64,40,65,58" />
+      <scope id="5911057593638682370" at="79,42,80,561" />
+      <scope id="5911057593638596140" at="84,63,85,32" />
+      <scope id="5911057593638596158" at="87,44,88,212" />
+      <scope id="5911057593638596184" at="92,46,93,59" />
+      <scope id="5911057593638691448" at="101,53,102,195" />
+      <scope id="5911057593638596230" at="113,42,114,790" />
+      <scope id="4839691926370503390" at="123,63,124,58" />
+      <scope id="5911057593638691507" at="132,55,133,43" />
+      <scope id="4839691926370503390" at="35,0,38,0" />
+      <scope id="5911057593638596076" at="55,220,58,15" />
+      <scope id="5911057593638685342" at="63,48,66,15" />
+      <scope id="5911057593638691447" at="101,0,104,0">
+        <var name="it" id="5911057593638691447" />
+      </scope>
+      <scope id="5911057593638691507" at="132,0,135,0">
+        <var name="str" id="5911057593638691507" />
+      </scope>
+      <scope id="4839691926370503390" at="44,0,48,0" />
+      <scope id="5911057593638596183" at="91,118,95,34" />
+      <scope id="4839691926370503390" at="122,0,126,0" />
+      <scope id="5911057593638598199" at="99,29,104,22" />
+      <scope id="5911057593638596217" at="110,43,116,0">
+        <var name="cypherStatement" id="5911057593638596219" />
+      </scope>
+      <scope id="5911057593638596216" at="110,0,118,0">
+        <var name="it" id="5911057593638596216" />
+      </scope>
+      <scope id="5911057593638596157" at="86,71,96,19" />
+      <scope id="5911057593638596130" at="74,43,105,17">
+        <var name="addAll" id="5911057593638598193" />
+        <var name="currNodeOrder" id="5911057593638596132" />
+      </scope>
+      <scope id="5911057593638596129" at="74,0,107,0">
+        <var name="it" id="5911057593638596129" />
+      </scope>
+      <scope id="4839691926370503393" at="53,142,120,25">
+        <var name="currCypherStatement" id="5911057593638596094" />
+        <var name="currCypherStatementOrder" id="5911057593638596102" />
+        <var name="nodes" id="5911057593638596109" />
+      </scope>
+      <scope id="4839691926370503390" at="52,0,122,0">
+        <var name="_context" id="4839691926370503390" />
+        <var name="operationContext" id="4839691926370503390" />
+      </scope>
+      <scope id="4839691926370503390" at="50,56,126,10" />
+      <scope id="4839691926370503390" at="48,0,128,0" />
+      <scope id="4839691926370503390" at="41,90,129,22">
+        <var name="references" id="4839691926370503390" />
+      </scope>
+      <scope id="4839691926370503390" at="40,0,131,0" />
+      <unit id="5911057593638691447" at="100,312,104,19" name="neo4j.cypher.constraints.NamedPropertyContainerRef_Constraints$4" />
+      <unit id="5911057593638596216" at="109,54,118,13" name="neo4j.cypher.constraints.NamedPropertyContainerRef_Constraints$3" />
+      <unit id="5911057593638596129" at="73,462,107,13" name="neo4j.cypher.constraints.NamedPropertyContainerRef_Constraints$3" />
+      <unit id="4839691926370503390" at="51,19,126,9" name="neo4j.cypher.constraints.NamedPropertyContainerRef_Constraints$2" />
+      <unit id="4839691926370503390" at="43,165,128,5" name="neo4j.cypher.constraints.NamedPropertyContainerRef_Constraints$1" />
+      <unit id="4839691926370503390" at="34,0,136,0" name="neo4j.cypher.constraints.NamedPropertyContainerRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/4839691926370625591">
+    <file name="PathExpression_Constraints.java">
+      <node id="4839691926370625591" at="16,39,17,145" concept="11" />
+      <node id="4839691926370625591" at="21,44,22,16" concept="6" />
+      <node id="4839691926370625591" at="25,188,26,96" concept="5" />
+      <node id="4839691926370625591" at="26,96,27,0" concept="8" />
+      <node id="4839691926370625591" at="28,51,29,68" concept="2" />
+      <node id="4839691926370625591" at="30,5,31,0" concept="8" />
+      <node id="4839691926370625591" at="31,0,32,18" concept="6" />
+      <node id="6746204763277484831" at="34,148,35,694" concept="6" />
+      <node id="4839691926370625591" at="37,0,38,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="4839691926370625591" at="16,0,19,0" concept="1" trace="PathExpression_Constraints#()V" />
+      <node id="4839691926370625591" at="27,0,30,5" concept="3" />
+      <node id="4839691926370625591" at="34,0,37,0" concept="10" trace="static_canBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="4839691926370625591" at="20,0,24,0" concept="4" trace="hasOwnCanBeParentMethod#()Z" />
+      <node id="4839691926370625591" at="24,0,34,0" concept="4" trace="canBeParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="4839691926370625591" at="16,39,17,145" />
+      <scope id="4839691926370625591" at="21,44,22,16" />
+      <scope id="4839691926370625591" at="28,51,29,68" />
+      <scope id="4839691926370625593" at="34,148,35,694" />
+      <scope id="4839691926370625591" at="16,0,19,0" />
+      <scope id="4839691926370625591" at="34,0,37,0">
+        <var name="childConcept" id="4839691926370625591" />
+        <var name="childNode" id="4839691926370625591" />
+        <var name="link" id="4839691926370625591" />
+        <var name="node" id="4839691926370625591" />
+        <var name="operationContext" id="4839691926370625591" />
+      </scope>
+      <scope id="4839691926370625591" at="20,0,24,0" />
+      <scope id="4839691926370625591" at="25,188,32,18">
+        <var name="result" id="4839691926370625591" />
+      </scope>
+      <scope id="4839691926370625591" at="24,0,34,0">
+        <var name="checkingNodeContext" id="4839691926370625591" />
+        <var name="childConcept" id="4839691926370625591" />
+        <var name="childNode" id="4839691926370625591" />
+        <var name="link" id="4839691926370625591" />
+        <var name="node" id="4839691926370625591" />
+        <var name="operationContext" id="4839691926370625591" />
+      </scope>
+      <unit id="4839691926370625591" at="15,0,39,0" name="neo4j.cypher.constraints.PathExpression_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/4839691926370705316">
+    <file name="NamedPathRef_Constraints.java">
+      <node id="4839691926370705316" at="28,37,29,143" concept="11" />
+      <node id="4839691926370705316" at="33,90,34,131" concept="5" />
+      <node id="4839691926370705316" at="37,44,38,20" concept="6" />
+      <node id="4839691926370705334" at="47,47,48,183" concept="6" />
+      <node id="4839691926370705316" at="53,63,54,58" concept="6" />
+      <node id="4839691926370705316" at="58,7,59,22" concept="6" />
+      <node id="4839691926370705316" at="61,0,62,0" concept="9" trace="breakingNode_crvowm_a0a1a0a0a1a0b0a1a2" />
+      <node id="4839691926370705316" at="28,0,31,0" concept="1" trace="NamedPathRef_Constraints#()V" />
+      <node id="4839691926370705332" at="47,0,50,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4839691926370705316" at="36,0,40,0" concept="4" trace="hasOwnScopeProvider#()Z" />
+      <node id="4839691926370705316" at="52,0,56,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4839691926370705320" at="45,142,50,15" concept="6" />
+      <node id="4839691926370705316" at="44,0,52,0" concept="4" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="4839691926370705316" at="42,56,56,10" concept="6" />
+      <node id="4839691926370705316" at="40,0,58,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4839691926370705316" at="34,131,58,7" concept="2" />
+      <node id="4839691926370705316" at="32,0,61,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="4839691926370705316" at="28,37,29,143" />
+      <scope id="4839691926370705316" at="37,44,38,20" />
+      <scope id="4839691926370705333" at="47,47,48,183" />
+      <scope id="4839691926370705316" at="53,63,54,58" />
+      <scope id="4839691926370705316" at="28,0,31,0" />
+      <scope id="4839691926370705332" at="47,0,50,0">
+        <var name="it" id="4839691926370705332" />
+      </scope>
+      <scope id="4839691926370705316" at="36,0,40,0" />
+      <scope id="4839691926370705316" at="52,0,56,0" />
+      <scope id="4839691926370705319" at="45,142,50,15" />
+      <scope id="4839691926370705316" at="44,0,52,0">
+        <var name="_context" id="4839691926370705316" />
+        <var name="operationContext" id="4839691926370705316" />
+      </scope>
+      <scope id="4839691926370705316" at="42,56,56,10" />
+      <scope id="4839691926370705316" at="40,0,58,0" />
+      <scope id="4839691926370705316" at="33,90,59,22">
+        <var name="references" id="4839691926370705316" />
+      </scope>
+      <scope id="4839691926370705316" at="32,0,61,0" />
+      <unit id="4839691926370705332" at="46,465,50,13" name="neo4j.cypher.constraints.NamedPathRef_Constraints$3" />
+      <unit id="4839691926370705316" at="43,19,56,9" name="neo4j.cypher.constraints.NamedPathRef_Constraints$2" />
+      <unit id="4839691926370705316" at="35,162,58,5" name="neo4j.cypher.constraints.NamedPathRef_Constraints$1" />
+      <unit id="4839691926370705316" at="27,0,63,0" name="neo4j.cypher.constraints.NamedPathRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/4839691926370779342">
+    <file name="PathFunction_Constraints.java">
+      <node id="4839691926370779342" at="16,37,17,143" concept="11" />
+      <node id="4839691926370779342" at="21,44,22,16" concept="6" />
+      <node id="4839691926370779342" at="25,188,26,96" concept="5" />
+      <node id="4839691926370779342" at="26,96,27,0" concept="8" />
+      <node id="4839691926370779342" at="28,51,29,68" concept="2" />
+      <node id="4839691926370779342" at="30,5,31,0" concept="8" />
+      <node id="4839691926370779342" at="31,0,32,18" concept="6" />
+      <node id="4839691926370779346" at="34,148,35,456" concept="6" />
+      <node id="4839691926370779342" at="37,0,38,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="4839691926370779342" at="16,0,19,0" concept="1" trace="PathFunction_Constraints#()V" />
+      <node id="4839691926370779342" at="27,0,30,5" concept="3" />
+      <node id="4839691926370779342" at="34,0,37,0" concept="10" trace="static_canBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="4839691926370779342" at="20,0,24,0" concept="4" trace="hasOwnCanBeParentMethod#()Z" />
+      <node id="4839691926370779342" at="24,0,34,0" concept="4" trace="canBeParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="4839691926370779342" at="16,37,17,143" />
+      <scope id="4839691926370779342" at="21,44,22,16" />
+      <scope id="4839691926370779342" at="28,51,29,68" />
+      <scope id="4839691926370779345" at="34,148,35,456" />
+      <scope id="4839691926370779342" at="16,0,19,0" />
+      <scope id="4839691926370779342" at="34,0,37,0">
+        <var name="childConcept" id="4839691926370779342" />
+        <var name="childNode" id="4839691926370779342" />
+        <var name="link" id="4839691926370779342" />
+        <var name="node" id="4839691926370779342" />
+        <var name="operationContext" id="4839691926370779342" />
+      </scope>
+      <scope id="4839691926370779342" at="20,0,24,0" />
+      <scope id="4839691926370779342" at="25,188,32,18">
+        <var name="result" id="4839691926370779342" />
+      </scope>
+      <scope id="4839691926370779342" at="24,0,34,0">
+        <var name="checkingNodeContext" id="4839691926370779342" />
+        <var name="childConcept" id="4839691926370779342" />
+        <var name="childNode" id="4839691926370779342" />
+        <var name="link" id="4839691926370779342" />
+        <var name="node" id="4839691926370779342" />
+        <var name="operationContext" id="4839691926370779342" />
+      </scope>
+      <unit id="4839691926370779342" at="15,0,39,0" name="neo4j.cypher.constraints.PathFunction_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/5206628397327010374">
+    <file name="ReturnStatement_Constraints.java">
+      <node id="5206628397327010374" at="16,40,17,146" concept="11" />
+      <node id="5206628397327010374" at="21,46,22,16" concept="6" />
+      <node id="5206628397327010374" at="25,199,26,102" concept="5" />
+      <node id="5206628397327010374" at="26,102,27,0" concept="8" />
+      <node id="5206628397327010374" at="28,51,29,71" concept="2" />
+      <node id="5206628397327010374" at="30,5,31,0" concept="8" />
+      <node id="5206628397327010374" at="31,0,32,18" concept="6" />
+      <node id="5206628397327010377" at="34,169,35,3345" concept="6" />
+      <node id="5206628397327010374" at="37,0,38,0" concept="9" trace="canBeAncesctorBreakingPoint" />
+      <node id="5206628397327010374" at="16,0,19,0" concept="1" trace="ReturnStatement_Constraints#()V" />
+      <node id="5206628397327010374" at="27,0,30,5" concept="3" />
+      <node id="5206628397327010374" at="34,0,37,0" concept="10" trace="static_canBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="5206628397327010374" at="20,0,24,0" concept="4" trace="hasOwnCanBeAncestorMethod#()Z" />
+      <node id="5206628397327010374" at="24,0,34,0" concept="4" trace="canBeAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="5206628397327010374" at="16,40,17,146" />
+      <scope id="5206628397327010374" at="21,46,22,16" />
+      <scope id="5206628397327010374" at="28,51,29,71" />
+      <scope id="5206628397327010376" at="34,169,35,3345" />
+      <scope id="5206628397327010374" at="16,0,19,0" />
+      <scope id="5206628397327010374" at="34,0,37,0">
+        <var name="childConcept" id="5206628397327010374" />
+        <var name="childNode" id="5206628397327010374" />
+        <var name="link" id="5206628397327010374" />
+        <var name="node" id="5206628397327010374" />
+        <var name="operationContext" id="5206628397327010374" />
+        <var name="parentNode" id="5206628397327010374" />
+      </scope>
+      <scope id="5206628397327010374" at="20,0,24,0" />
+      <scope id="5206628397327010374" at="25,199,32,18">
+        <var name="result" id="5206628397327010374" />
+      </scope>
+      <scope id="5206628397327010374" at="24,0,34,0">
+        <var name="checkingNodeContext" id="5206628397327010374" />
+        <var name="childConcept" id="5206628397327010374" />
+        <var name="childNode" id="5206628397327010374" />
+        <var name="context" id="5206628397327010374" />
+        <var name="link" id="5206628397327010374" />
+        <var name="node" id="5206628397327010374" />
+        <var name="parentNode" id="5206628397327010374" />
+      </scope>
+      <unit id="5206628397327010374" at="15,0,39,0" name="neo4j.cypher.constraints.ReturnStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/5206628397327733824">
+    <file name="WhereStatement_Constraints.java">
+      <node id="5206628397327733824" at="16,39,17,145" concept="11" />
+      <node id="5206628397327733824" at="21,46,22,16" concept="6" />
+      <node id="5206628397327733824" at="25,199,26,102" concept="5" />
+      <node id="5206628397327733824" at="26,102,27,0" concept="8" />
+      <node id="5206628397327733824" at="28,51,29,71" concept="2" />
+      <node id="5206628397327733824" at="30,5,31,0" concept="8" />
+      <node id="5206628397327733824" at="31,0,32,18" concept="6" />
+      <node id="5206628397327733827" at="34,169,35,3124" concept="6" />
+      <node id="5206628397327733824" at="37,0,38,0" concept="9" trace="canBeAncesctorBreakingPoint" />
+      <node id="5206628397327733824" at="16,0,19,0" concept="1" trace="WhereStatement_Constraints#()V" />
+      <node id="5206628397327733824" at="27,0,30,5" concept="3" />
+      <node id="5206628397327733824" at="34,0,37,0" concept="10" trace="static_canBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="5206628397327733824" at="20,0,24,0" concept="4" trace="hasOwnCanBeAncestorMethod#()Z" />
+      <node id="5206628397327733824" at="24,0,34,0" concept="4" trace="canBeAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="5206628397327733824" at="16,39,17,145" />
+      <scope id="5206628397327733824" at="21,46,22,16" />
+      <scope id="5206628397327733824" at="28,51,29,71" />
+      <scope id="5206628397327733826" at="34,169,35,3124" />
+      <scope id="5206628397327733824" at="16,0,19,0" />
+      <scope id="5206628397327733824" at="34,0,37,0">
+        <var name="childConcept" id="5206628397327733824" />
+        <var name="childNode" id="5206628397327733824" />
+        <var name="link" id="5206628397327733824" />
+        <var name="node" id="5206628397327733824" />
+        <var name="operationContext" id="5206628397327733824" />
+        <var name="parentNode" id="5206628397327733824" />
+      </scope>
+      <scope id="5206628397327733824" at="20,0,24,0" />
+      <scope id="5206628397327733824" at="25,199,32,18">
+        <var name="result" id="5206628397327733824" />
+      </scope>
+      <scope id="5206628397327733824" at="24,0,34,0">
+        <var name="checkingNodeContext" id="5206628397327733824" />
+        <var name="childConcept" id="5206628397327733824" />
+        <var name="childNode" id="5206628397327733824" />
+        <var name="context" id="5206628397327733824" />
+        <var name="link" id="5206628397327733824" />
+        <var name="node" id="5206628397327733824" />
+        <var name="parentNode" id="5206628397327733824" />
+      </scope>
+      <unit id="5206628397327733824" at="15,0,39,0" name="neo4j.cypher.constraints.WhereStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/5530189148631460158">
+    <file name="OrderByStatement_Constraints.java">
+      <node id="5530189148631460158" at="16,41,17,147" concept="11" />
+      <node id="5530189148631460158" at="21,44,22,16" concept="6" />
+      <node id="5530189148631460158" at="25,188,26,96" concept="5" />
+      <node id="5530189148631460158" at="26,96,27,0" concept="8" />
+      <node id="5530189148631460158" at="28,51,29,68" concept="2" />
+      <node id="5530189148631460158" at="30,5,31,0" concept="8" />
+      <node id="5530189148631460158" at="31,0,32,18" concept="6" />
+      <node id="5530189148631467418" at="34,148,35,457" concept="6" />
+      <node id="5530189148631460158" at="37,0,38,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="5530189148631460158" at="16,0,19,0" concept="1" trace="OrderByStatement_Constraints#()V" />
+      <node id="5530189148631460158" at="27,0,30,5" concept="3" />
+      <node id="5530189148631460158" at="34,0,37,0" concept="10" trace="static_canBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="5530189148631460158" at="20,0,24,0" concept="4" trace="hasOwnCanBeParentMethod#()Z" />
+      <node id="5530189148631460158" at="24,0,34,0" concept="4" trace="canBeParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="5530189148631460158" at="16,41,17,147" />
+      <scope id="5530189148631460158" at="21,44,22,16" />
+      <scope id="5530189148631460158" at="28,51,29,68" />
+      <scope id="5530189148631467250" at="34,148,35,457" />
+      <scope id="5530189148631460158" at="16,0,19,0" />
+      <scope id="5530189148631460158" at="34,0,37,0">
+        <var name="childConcept" id="5530189148631460158" />
+        <var name="childNode" id="5530189148631460158" />
+        <var name="link" id="5530189148631460158" />
+        <var name="node" id="5530189148631460158" />
+        <var name="operationContext" id="5530189148631460158" />
+      </scope>
+      <scope id="5530189148631460158" at="20,0,24,0" />
+      <scope id="5530189148631460158" at="25,188,32,18">
+        <var name="result" id="5530189148631460158" />
+      </scope>
+      <scope id="5530189148631460158" at="24,0,34,0">
+        <var name="checkingNodeContext" id="5530189148631460158" />
+        <var name="childConcept" id="5530189148631460158" />
+        <var name="childNode" id="5530189148631460158" />
+        <var name="link" id="5530189148631460158" />
+        <var name="node" id="5530189148631460158" />
+        <var name="operationContext" id="5530189148631460158" />
+      </scope>
+      <unit id="5530189148631460158" at="15,0,39,0" name="neo4j.cypher.constraints.OrderByStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/5915353355168151118">
+    <file name="ICypherExpression_Constraints.java">
+      <node id="5915353355168151118" at="16,42,17,157" concept="11" />
+      <node id="5915353355168151118" at="21,43,22,16" concept="6" />
+      <node id="5915353355168151118" at="25,200,26,96" concept="5" />
+      <node id="5915353355168151118" at="26,96,27,0" concept="8" />
+      <node id="5915353355168151118" at="28,51,29,67" concept="2" />
+      <node id="5915353355168151118" at="30,5,31,0" concept="8" />
+      <node id="5915353355168151118" at="31,0,32,18" concept="6" />
+      <node id="5915353355168299626" at="34,148,35,978" concept="6" />
+      <node id="5915353355168151118" at="37,0,38,0" concept="9" trace="canBeChildBreakingPoint" />
+      <node id="5915353355168151118" at="16,0,19,0" concept="1" trace="ICypherExpression_Constraints#()V" />
+      <node id="5915353355168151118" at="27,0,30,5" concept="3" />
+      <node id="5915353355168151118" at="34,0,37,0" concept="10" trace="static_canBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="5915353355168151118" at="20,0,24,0" concept="4" trace="hasOwnCanBeChildMethod#()Z" />
+      <node id="5915353355168151118" at="24,0,34,0" concept="4" trace="canBeChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="5915353355168151118" at="16,42,17,157" />
+      <scope id="5915353355168151118" at="21,43,22,16" />
+      <scope id="5915353355168151118" at="28,51,29,67" />
+      <scope id="5915353355168151171" at="34,148,35,978" />
+      <scope id="5915353355168151118" at="16,0,19,0" />
+      <scope id="5915353355168151118" at="34,0,37,0">
+        <var name="childConcept" id="5915353355168151118" />
+        <var name="link" id="5915353355168151118" />
+        <var name="node" id="5915353355168151118" />
+        <var name="operationContext" id="5915353355168151118" />
+        <var name="parentNode" id="5915353355168151118" />
+      </scope>
+      <scope id="5915353355168151118" at="20,0,24,0" />
+      <scope id="5915353355168151118" at="25,200,32,18">
+        <var name="result" id="5915353355168151118" />
+      </scope>
+      <scope id="5915353355168151118" at="24,0,34,0">
+        <var name="checkingNodeContext" id="5915353355168151118" />
+        <var name="childConcept" id="5915353355168151118" />
+        <var name="link" id="5915353355168151118" />
+        <var name="node" id="5915353355168151118" />
+        <var name="operationContext" id="5915353355168151118" />
+        <var name="parentNode" id="5915353355168151118" />
+      </scope>
+      <unit id="5915353355168151118" at="15,0,39,0" name="neo4j.cypher.constraints.ICypherExpression_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/6440869843963823838">
+    <file name="StartAssignmentStatement_Constraints.java">
+      <node id="6440869843963823838" at="17,49,18,155" concept="11" />
+      <node id="6440869843963823838" at="22,44,23,16" concept="6" />
+      <node id="6440869843963823838" at="26,188,27,96" concept="5" />
+      <node id="6440869843963823838" at="27,96,28,0" concept="8" />
+      <node id="6440869843963823838" at="29,51,30,68" concept="2" />
+      <node id="6440869843963823838" at="31,5,32,0" concept="8" />
+      <node id="6440869843963823838" at="32,0,33,18" concept="6" />
+      <node id="6440869843963868598" at="36,395,37,19" concept="6" />
+      <node id="6440869843963868596" at="38,5,39,16" concept="6" />
+      <node id="6440869843963823838" at="41,0,42,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="6440869843963823838" at="17,0,20,0" concept="1" trace="StartAssignmentStatement_Constraints#()V" />
+      <node id="6440869843963823838" at="28,0,31,5" concept="3" />
+      <node id="6440869843963836192" at="35,148,38,5" concept="3" />
+      <node id="6440869843963823838" at="21,0,25,0" concept="4" trace="hasOwnCanBeParentMethod#()Z" />
+      <node id="6440869843963823838" at="35,0,41,0" concept="10" trace="static_canBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="6440869843963823838" at="25,0,35,0" concept="4" trace="canBeParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="6440869843963823838" at="17,49,18,155" />
+      <scope id="6440869843963823838" at="22,44,23,16" />
+      <scope id="6440869843963823838" at="29,51,30,68" />
+      <scope id="6440869843963836194" at="36,395,37,19" />
+      <scope id="6440869843963823838" at="17,0,20,0" />
+      <scope id="6440869843963823838" at="21,0,25,0" />
+      <scope id="6440869843963823840" at="35,148,39,16" />
+      <scope id="6440869843963823838" at="35,0,41,0">
+        <var name="childConcept" id="6440869843963823838" />
+        <var name="childNode" id="6440869843963823838" />
+        <var name="link" id="6440869843963823838" />
+        <var name="node" id="6440869843963823838" />
+        <var name="operationContext" id="6440869843963823838" />
+      </scope>
+      <scope id="6440869843963823838" at="26,188,33,18">
+        <var name="result" id="6440869843963823838" />
+      </scope>
+      <scope id="6440869843963823838" at="25,0,35,0">
+        <var name="checkingNodeContext" id="6440869843963823838" />
+        <var name="childConcept" id="6440869843963823838" />
+        <var name="childNode" id="6440869843963823838" />
+        <var name="link" id="6440869843963823838" />
+        <var name="node" id="6440869843963823838" />
+        <var name="operationContext" id="6440869843963823838" />
+      </scope>
+      <unit id="6440869843963823838" at="16,0,43,0" name="neo4j.cypher.constraints.StartAssignmentStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/7352030329465766957">
+    <file name="OrderByExpression_Constraints.java">
+      <node id="7352030329465766957" at="16,42,17,148" concept="11" />
+      <node id="7352030329465766957" at="21,44,22,16" concept="6" />
+      <node id="7352030329465766957" at="25,188,26,96" concept="5" />
+      <node id="7352030329465766957" at="26,96,27,0" concept="8" />
+      <node id="7352030329465766957" at="28,51,29,68" concept="2" />
+      <node id="7352030329465766957" at="30,5,31,0" concept="8" />
+      <node id="7352030329465766957" at="31,0,32,18" concept="6" />
+      <node id="7352030329465766960" at="34,148,35,442" concept="6" />
+      <node id="7352030329465766957" at="37,0,38,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="7352030329465766957" at="16,0,19,0" concept="1" trace="OrderByExpression_Constraints#()V" />
+      <node id="7352030329465766957" at="27,0,30,5" concept="3" />
+      <node id="7352030329465766957" at="34,0,37,0" concept="10" trace="static_canBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="7352030329465766957" at="20,0,24,0" concept="4" trace="hasOwnCanBeParentMethod#()Z" />
+      <node id="7352030329465766957" at="24,0,34,0" concept="4" trace="canBeParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="7352030329465766957" at="16,42,17,148" />
+      <scope id="7352030329465766957" at="21,44,22,16" />
+      <scope id="7352030329465766957" at="28,51,29,68" />
+      <scope id="7352030329465766959" at="34,148,35,442" />
+      <scope id="7352030329465766957" at="16,0,19,0" />
+      <scope id="7352030329465766957" at="34,0,37,0">
+        <var name="childConcept" id="7352030329465766957" />
+        <var name="childNode" id="7352030329465766957" />
+        <var name="link" id="7352030329465766957" />
+        <var name="node" id="7352030329465766957" />
+        <var name="operationContext" id="7352030329465766957" />
+      </scope>
+      <scope id="7352030329465766957" at="20,0,24,0" />
+      <scope id="7352030329465766957" at="25,188,32,18">
+        <var name="result" id="7352030329465766957" />
+      </scope>
+      <scope id="7352030329465766957" at="24,0,34,0">
+        <var name="checkingNodeContext" id="7352030329465766957" />
+        <var name="childConcept" id="7352030329465766957" />
+        <var name="childNode" id="7352030329465766957" />
+        <var name="link" id="7352030329465766957" />
+        <var name="node" id="7352030329465766957" />
+        <var name="operationContext" id="7352030329465766957" />
+      </scope>
+      <unit id="7352030329465766957" at="15,0,39,0" name="neo4j.cypher.constraints.OrderByExpression_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/7352030329465767393">
+    <file name="NamedNodeRef_Constraints.java">
+      <node id="7352030329465767393" at="36,37,37,143" concept="11" />
+      <node id="7352030329465767393" at="40,0,41,0" concept="9" trace="LOG" />
+      <node id="7352030329465767393" at="42,90,43,131" concept="5" />
+      <node id="7352030329465767393" at="46,44,47,20" concept="6" />
+      <node id="5911057593638596058" at="54,142,55,0" concept="8" />
+      <node id="2580830369696559370" at="57,40,58,538" concept="2" />
+      <node id="4660597163991659105" at="60,13,61,0" concept="8" />
+      <node id="4660597163991659107" at="62,38,63,43" concept="2" />
+      <node id="6384283002380946834" at="64,13,65,0" concept="8" />
+      <node id="6384283002380946901" at="65,0,66,46" concept="7" />
+      <node id="5911057593638532476" at="66,46,67,637" concept="5" />
+      <node id="6384283002380946836" at="67,637,68,142" concept="5" />
+      <node id="6384283002380946899" at="68,142,69,0" concept="8" />
+      <node id="2580830369696549756" at="69,0,70,61" concept="5" />
+      <node id="2580830369696549778" at="70,61,71,0" concept="8" />
+      <node id="5911057593638532437" at="71,0,72,100" concept="7" />
+      <node id="6384283002380949855" at="74,43,75,270" concept="5" />
+      <node id="5911057593638532470" at="75,270,76,0" concept="8" />
+      <node id="5911057593638598122" at="76,0,77,39" concept="5" />
+      <node id="5911057593638645727" at="77,39,78,0" concept="8" />
+      <node id="5911057593638645729" at="79,42,80,561" concept="2" />
+      <node id="5911057593638598120" at="81,17,82,0" concept="8" />
+      <node id="5911057593638598128" at="83,63,84,32" concept="2" />
+      <node id="5911057593638532471" at="86,44,87,212" concept="2" />
+      <node id="8807834474661677434" at="88,19,89,0" concept="8" />
+      <node id="8807834474661709745" at="91,46,92,70" concept="2" />
+      <node id="8807834474661850065" at="93,21,94,50" concept="7" />
+      <node id="8807834474661724158" at="94,50,95,0" concept="8" />
+      <node id="8807834474661854472" at="95,0,96,277" concept="5" />
+      <node id="8807834474661854470" at="96,277,97,0" concept="8" />
+      <node id="8807834474661853194" at="98,58,99,93" concept="5" />
+      <node id="8807834474661854258" at="99,93,100,0" concept="8" />
+      <node id="8807834474661854481" at="102,53,103,0" concept="8" />
+      <node id="8807834474661854484" at="103,0,104,252" concept="5" />
+      <node id="8807834474661854482" at="104,252,105,0" concept="8" />
+      <node id="8807834474661854478" at="106,231,107,53" concept="7" />
+      <node id="8807834474661854579" at="108,147,109,96" concept="2" />
+      <node id="8807834474661854373" at="112,63,113,105" concept="2" />
+      <node id="8807834474661854376" at="114,29,115,94" concept="2" />
+      <node id="8807834474661854630" at="118,25,119,0" concept="8" />
+      <node id="8807834474661854632" at="119,0,120,115" concept="2" />
+      <node id="8807834474661854318" at="120,115,121,0" concept="8" />
+      <node id="8807834474661854312" at="122,28,123,110" concept="7" />
+      <node id="8807834474661854316" at="123,110,124,66" concept="7" />
+      <node id="8807834474661854262" at="124,66,125,36" concept="2" />
+      <node id="5911057593638593209" at="128,46,129,59" concept="2" />
+      <node id="5911057593638598155" at="130,21,131,34" concept="2" />
+      <node id="5911057593638598182" at="133,17,134,0" concept="8" />
+      <node id="5911057593638813239" at="137,53,138,195" concept="6" />
+      <node id="2580830369696556501" at="143,15,144,0" concept="8" />
+      <node id="2580830369696573134" at="146,43,147,226" concept="5" />
+      <node id="2580830369696587089" at="147,226,148,66" concept="2" />
+      <node id="2580830369696556544" at="149,42,150,790" concept="2" />
+      <node id="2580830369696556598" at="151,17,152,0" concept="8" />
+      <node id="8807834474661677430" at="154,15,155,0" concept="8" />
+      <node id="8807834474661677432" at="155,0,156,45" concept="7" />
+      <node id="2580830369696549779" at="156,45,157,0" concept="8" />
+      <node id="2580830369696549812" at="157,0,158,25" concept="6" />
+      <node id="7352030329465767393" at="161,63,162,58" concept="6" />
+      <node id="7352030329465767393" at="166,7,167,22" concept="6" />
+      <node id="7352030329465767393" at="169,0,170,0" concept="9" trace="breakingNode_t1tmaf_a0a1a0a0a1a0b0a1a2" />
+      <node id="8807834474661854357" at="170,55,171,43" concept="6" />
+      <node id="7352030329465767393" at="36,0,39,0" concept="1" trace="NamedNodeRef_Constraints#()V" />
+      <node id="2580830369696559370" at="56,207,59,15" concept="3" />
+      <node id="4660597163991659107" at="61,0,64,13" concept="3" />
+      <node id="5911057593638645729" at="78,0,81,17" concept="3" />
+      <node id="5911057593638532471" at="85,71,88,19" concept="3" />
+      <node id="8807834474661709745" at="90,50,93,21" concept="3" />
+      <node id="8807834474661854496" at="107,53,110,29" concept="3" />
+      <node id="8807834474661854373" at="111,34,114,29" concept="3" />
+      <node id="5911057593638593209" at="127,125,130,21" concept="3" />
+      <node id="5911057593638813235" at="137,0,140,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="2580830369696556544" at="148,66,151,17" concept="3" />
+      <node id="8807834474661854357" at="170,0,173,0" concept="10" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="7352030329465767393" at="45,0,49,0" concept="4" trace="hasOwnScopeProvider#()Z" />
+      <node id="8807834474661854260" at="122,26,126,21" concept="0" />
+      <node id="7352030329465767393" at="160,0,164,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2580830369696559447" at="55,0,60,13" concept="3" />
+      <node id="8807834474661854370" at="111,32,116,27" concept="0" />
+      <node id="5911057593638598189" at="135,29,140,22" concept="2" />
+      <node id="5911057593638598184" at="134,0,141,17" concept="3" />
+      <node id="2580830369696556540" at="146,0,154,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2580830369696556511" at="144,0,154,15" concept="2" />
+      <node id="8807834474661854361" at="105,0,116,27" concept="3" />
+      <node id="8807834474661854342" at="102,0,118,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8807834474661853187" at="100,0,118,25" concept="2" />
+      <node id="8807834474661854256" at="97,0,126,21" concept="3" />
+      <node id="8807834474661677436" at="89,0,132,19" concept="3" />
+      <node id="6384283002380949910" at="82,0,133,17" concept="3" />
+      <node id="6384283002380949786" at="74,0,143,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="6384283002380949759" at="72,100,143,15" concept="2" />
+      <node id="7352030329465767393" at="53,0,160,0" concept="4" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="7352030329465767393" at="51,56,164,10" concept="6" />
+      <node id="7352030329465767393" at="49,0,166,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7352030329465767393" at="43,131,166,7" concept="2" />
+      <node id="7352030329465767393" at="41,0,169,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7352030329465767393" at="36,37,37,143" />
+      <scope id="7352030329465767393" at="46,44,47,20" />
+      <scope id="2580830369696559370" at="57,40,58,538" />
+      <scope id="4660597163991659107" at="62,38,63,43" />
+      <scope id="5911057593638645729" at="79,42,80,561" />
+      <scope id="6384283002380949911" at="83,63,84,32" />
+      <scope id="5911057593638532471" at="86,44,87,212" />
+      <scope id="8807834474661709745" at="91,46,92,70" />
+      <scope id="8807834474661854497" at="108,147,109,96" />
+      <scope id="8807834474661854373" at="112,63,113,105" />
+      <scope id="5911057593638593209" at="128,46,129,59" />
+      <scope id="5911057593638813236" at="137,53,138,195" />
+      <scope id="2580830369696556544" at="149,42,150,790" />
+      <scope id="7352030329465767393" at="161,63,162,58" />
+      <scope id="8807834474661854357" at="170,55,171,43" />
+      <scope id="7352030329465767393" at="36,0,39,0" />
+      <scope id="2580830369696559448" at="56,207,59,15" />
+      <scope id="8807834474661854261" at="122,28,125,36" />
+      <scope id="5911057593638813235" at="137,0,140,0">
+        <var name="it" id="5911057593638813235" />
+      </scope>
+      <scope id="8807834474661854357" at="170,0,173,0">
+        <var name="str" id="8807834474661854357" />
+      </scope>
+      <scope id="7352030329465767393" at="45,0,49,0" />
+      <scope id="8807834474661854362" at="106,231,110,29" />
+      <scope id="8807834474661854371" at="111,34,115,94" />
+      <scope id="8807834474661709750" at="127,125,131,34" />
+      <scope id="7352030329465767393" at="160,0,164,0" />
+      <scope id="5911057593638598185" at="135,29,140,22" />
+      <scope id="2580830369696556541" at="146,43,152,0">
+        <var name="cypherStatement" id="2580830369696573135" />
+      </scope>
+      <scope id="2580830369696556540" at="146,0,154,0">
+        <var name="it" id="2580830369696556540" />
+      </scope>
+      <scope id="8807834474661854343" at="102,53,116,27">
+        <var name="itOrderedExpression" id="8807834474661854485" />
+      </scope>
+      <scope id="8807834474661854342" at="102,0,118,0">
+        <var name="it" id="8807834474661854342" />
+      </scope>
+      <scope id="8807834474661854257" at="98,58,121,0">
+        <var name="visibleCypherStatementNodes" id="8807834474661853195" />
+      </scope>
+      <scope id="8807834474661677437" at="90,50,126,21">
+        <var name="nodeOrderedExpression" id="8807834474661854473" />
+      </scope>
+      <scope id="5911057593638532444" at="85,71,132,19" />
+      <scope id="6384283002380949787" at="74,43,141,17">
+        <var name="addAll" id="5911057593638598123" />
+        <var name="currNodeOrder" id="6384283002380949856" />
+      </scope>
+      <scope id="6384283002380949786" at="74,0,143,0">
+        <var name="it" id="6384283002380949786" />
+      </scope>
+      <scope id="2580830369696542276" at="54,142,158,25">
+        <var name="currCypherStatement" id="5911057593638532477" />
+        <var name="currCypherStatementOrder" id="6384283002380946837" />
+        <var name="nodes" id="2580830369696549757" />
+      </scope>
+      <scope id="7352030329465767393" at="53,0,160,0">
+        <var name="_context" id="7352030329465767393" />
+        <var name="operationContext" id="7352030329465767393" />
+      </scope>
+      <scope id="7352030329465767393" at="51,56,164,10" />
+      <scope id="7352030329465767393" at="49,0,166,0" />
+      <scope id="7352030329465767393" at="42,90,167,22">
+        <var name="references" id="7352030329465767393" />
+      </scope>
+      <scope id="7352030329465767393" at="41,0,169,0" />
+      <unit id="5911057593638813235" at="136,289,140,19" name="neo4j.cypher.constraints.NamedNodeRef_Constraints$4" />
+      <unit id="2580830369696556540" at="145,54,154,13" name="neo4j.cypher.constraints.NamedNodeRef_Constraints$3" />
+      <unit id="8807834474661854342" at="101,255,118,23" name="neo4j.cypher.constraints.NamedNodeRef_Constraints$4" />
+      <unit id="6384283002380949786" at="73,462,143,13" name="neo4j.cypher.constraints.NamedNodeRef_Constraints$3" />
+      <unit id="7352030329465767393" at="52,19,164,9" name="neo4j.cypher.constraints.NamedNodeRef_Constraints$2" />
+      <unit id="7352030329465767393" at="44,153,166,5" name="neo4j.cypher.constraints.NamedNodeRef_Constraints$1" />
+      <unit id="7352030329465767393" at="35,0,174,0" name="neo4j.cypher.constraints.NamedNodeRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/7506834120768604704">
+    <file name="WithStatement_Constraints.java">
+      <node id="7506834120768604704" at="16,38,17,144" concept="11" />
+      <node id="7506834120768604704" at="21,46,22,16" concept="6" />
+      <node id="7506834120768604704" at="25,199,26,102" concept="5" />
+      <node id="7506834120768604704" at="26,102,27,0" concept="8" />
+      <node id="7506834120768604704" at="28,51,29,71" concept="2" />
+      <node id="7506834120768604704" at="30,5,31,0" concept="8" />
+      <node id="7506834120768604704" at="31,0,32,18" concept="6" />
+      <node id="7506834120768604707" at="34,169,35,3339" concept="6" />
+      <node id="7506834120768604704" at="37,0,38,0" concept="9" trace="canBeAncesctorBreakingPoint" />
+      <node id="7506834120768604704" at="16,0,19,0" concept="1" trace="WithStatement_Constraints#()V" />
+      <node id="7506834120768604704" at="27,0,30,5" concept="3" />
+      <node id="7506834120768604704" at="34,0,37,0" concept="10" trace="static_canBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="7506834120768604704" at="20,0,24,0" concept="4" trace="hasOwnCanBeAncestorMethod#()Z" />
+      <node id="7506834120768604704" at="24,0,34,0" concept="4" trace="canBeAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="7506834120768604704" at="16,38,17,144" />
+      <scope id="7506834120768604704" at="21,46,22,16" />
+      <scope id="7506834120768604704" at="28,51,29,71" />
+      <scope id="7506834120768604706" at="34,169,35,3339" />
+      <scope id="7506834120768604704" at="16,0,19,0" />
+      <scope id="7506834120768604704" at="34,0,37,0">
+        <var name="childConcept" id="7506834120768604704" />
+        <var name="childNode" id="7506834120768604704" />
+        <var name="link" id="7506834120768604704" />
+        <var name="node" id="7506834120768604704" />
+        <var name="operationContext" id="7506834120768604704" />
+        <var name="parentNode" id="7506834120768604704" />
+      </scope>
+      <scope id="7506834120768604704" at="20,0,24,0" />
+      <scope id="7506834120768604704" at="25,199,32,18">
+        <var name="result" id="7506834120768604704" />
+      </scope>
+      <scope id="7506834120768604704" at="24,0,34,0">
+        <var name="checkingNodeContext" id="7506834120768604704" />
+        <var name="childConcept" id="7506834120768604704" />
+        <var name="childNode" id="7506834120768604704" />
+        <var name="context" id="7506834120768604704" />
+        <var name="link" id="7506834120768604704" />
+        <var name="node" id="7506834120768604704" />
+        <var name="parentNode" id="7506834120768604704" />
+      </scope>
+      <unit id="7506834120768604704" at="15,0,39,0" name="neo4j.cypher.constraints.WithStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/769752699177622177">
+    <file name="DeleteStatement_Constraints.java">
+      <node id="769752699177622177" at="16,40,17,146" concept="11" />
+      <node id="769752699177622177" at="21,46,22,16" concept="6" />
+      <node id="769752699177622177" at="25,199,26,102" concept="5" />
+      <node id="769752699177622177" at="26,102,27,0" concept="8" />
+      <node id="769752699177622177" at="28,51,29,71" concept="2" />
+      <node id="769752699177622177" at="30,5,31,0" concept="8" />
+      <node id="769752699177622177" at="31,0,32,18" concept="6" />
+      <node id="769752699177622181" at="34,169,35,672" concept="6" />
+      <node id="769752699177622177" at="37,0,38,0" concept="9" trace="canBeAncesctorBreakingPoint" />
+      <node id="769752699177622177" at="16,0,19,0" concept="1" trace="DeleteStatement_Constraints#()V" />
+      <node id="769752699177622177" at="27,0,30,5" concept="3" />
+      <node id="769752699177622177" at="34,0,37,0" concept="10" trace="static_canBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="769752699177622177" at="20,0,24,0" concept="4" trace="hasOwnCanBeAncestorMethod#()Z" />
+      <node id="769752699177622177" at="24,0,34,0" concept="4" trace="canBeAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="769752699177622177" at="16,40,17,146" />
+      <scope id="769752699177622177" at="21,46,22,16" />
+      <scope id="769752699177622177" at="28,51,29,71" />
+      <scope id="769752699177622179" at="34,169,35,672" />
+      <scope id="769752699177622177" at="16,0,19,0" />
+      <scope id="769752699177622177" at="34,0,37,0">
+        <var name="childConcept" id="769752699177622177" />
+        <var name="childNode" id="769752699177622177" />
+        <var name="link" id="769752699177622177" />
+        <var name="node" id="769752699177622177" />
+        <var name="operationContext" id="769752699177622177" />
+        <var name="parentNode" id="769752699177622177" />
+      </scope>
+      <scope id="769752699177622177" at="20,0,24,0" />
+      <scope id="769752699177622177" at="25,199,32,18">
+        <var name="result" id="769752699177622177" />
+      </scope>
+      <scope id="769752699177622177" at="24,0,34,0">
+        <var name="checkingNodeContext" id="769752699177622177" />
+        <var name="childConcept" id="769752699177622177" />
+        <var name="childNode" id="769752699177622177" />
+        <var name="context" id="769752699177622177" />
+        <var name="link" id="769752699177622177" />
+        <var name="node" id="769752699177622177" />
+        <var name="parentNode" id="769752699177622177" />
+      </scope>
+      <unit id="769752699177622177" at="15,0,39,0" name="neo4j.cypher.constraints.DeleteStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/769752699177833313">
+    <file name="SetAssignmentStatement_Constraints.java">
+      <node id="769752699177833313" at="17,47,18,152" concept="11" />
+      <node id="769752699177833313" at="22,44,23,16" concept="6" />
+      <node id="769752699177833313" at="26,188,27,96" concept="5" />
+      <node id="769752699177833313" at="27,96,28,0" concept="8" />
+      <node id="769752699177833313" at="29,51,30,68" concept="2" />
+      <node id="769752699177833313" at="31,5,32,0" concept="8" />
+      <node id="769752699177833313" at="32,0,33,18" concept="6" />
+      <node id="769752699177833313" at="36,46,37,16" concept="6" />
+      <node id="769752699177833313" at="40,199,41,102" concept="5" />
+      <node id="769752699177833313" at="41,102,42,0" concept="8" />
+      <node id="769752699177833313" at="43,51,44,71" concept="2" />
+      <node id="769752699177833313" at="45,5,46,0" concept="8" />
+      <node id="769752699177833313" at="46,0,47,18" concept="6" />
+      <node id="769752699177906527" at="50,193,51,454" concept="6" />
+      <node id="1331800591705096127" at="52,5,53,0" concept="8" />
+      <node id="1331800591705096297" at="55,592,56,234" concept="6" />
+      <node id="769752699177906522" at="58,5,59,0" concept="8" />
+      <node id="769752699177906524" at="59,0,60,16" concept="6" />
+      <node id="769752699177838910" at="62,169,63,55" concept="7" />
+      <node id="769752699177690480" at="63,55,64,3567" concept="6" />
+      <node id="769752699177833313" at="66,0,67,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="769752699177833313" at="67,0,68,0" concept="9" trace="canBeAncesctorBreakingPoint" />
+      <node id="769752699177833313" at="17,0,20,0" concept="1" trace="SetAssignmentStatement_Constraints#()V" />
+      <node id="769752699177833313" at="28,0,31,5" concept="3" />
+      <node id="769752699177833313" at="42,0,45,5" concept="3" />
+      <node id="769752699177906472" at="49,148,52,5" concept="3" />
+      <node id="1331800591705096136" at="54,194,57,7" concept="3" />
+      <node id="769752699177833313" at="21,0,25,0" concept="4" trace="hasOwnCanBeParentMethod#()Z" />
+      <node id="769752699177833313" at="35,0,39,0" concept="4" trace="hasOwnCanBeAncestorMethod#()Z" />
+      <node id="769752699177833313" at="62,0,66,0" concept="10" trace="static_canBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="1331800591705096129" at="53,0,58,5" concept="3" />
+      <node id="769752699177833313" at="25,0,35,0" concept="4" trace="canBeParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="769752699177833313" at="39,0,49,0" concept="4" trace="canBeAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="769752699177833313" at="49,0,62,0" concept="10" trace="static_canBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <scope id="769752699177833313" at="17,47,18,152" />
+      <scope id="769752699177833313" at="22,44,23,16" />
+      <scope id="769752699177833313" at="29,51,30,68" />
+      <scope id="769752699177833313" at="36,46,37,16" />
+      <scope id="769752699177833313" at="43,51,44,71" />
+      <scope id="769752699177906474" at="50,193,51,454" />
+      <scope id="1331800591705096137" at="55,592,56,234" />
+      <scope id="769752699177833315" at="62,169,64,3567" />
+      <scope id="769752699177833313" at="17,0,20,0" />
+      <scope id="1331800591705096130" at="54,194,57,7" />
+      <scope id="769752699177833313" at="21,0,25,0" />
+      <scope id="769752699177833313" at="35,0,39,0" />
+      <scope id="769752699177833313" at="62,0,66,0">
+        <var name="childConcept" id="769752699177833313" />
+        <var name="childNode" id="769752699177833313" />
+        <var name="link" id="769752699177833313" />
+        <var name="node" id="769752699177833313" />
+        <var name="operationContext" id="769752699177833313" />
+        <var name="parentNode" id="769752699177833313" />
+      </scope>
+      <scope id="769752699177833313" at="26,188,33,18">
+        <var name="result" id="769752699177833313" />
+      </scope>
+      <scope id="769752699177833313" at="40,199,47,18">
+        <var name="result" id="769752699177833313" />
+      </scope>
+      <scope id="769752699177833313" at="25,0,35,0">
+        <var name="checkingNodeContext" id="769752699177833313" />
+        <var name="childConcept" id="769752699177833313" />
+        <var name="childNode" id="769752699177833313" />
+        <var name="link" id="769752699177833313" />
+        <var name="node" id="769752699177833313" />
+        <var name="operationContext" id="769752699177833313" />
+      </scope>
+      <scope id="769752699177833313" at="39,0,49,0">
+        <var name="checkingNodeContext" id="769752699177833313" />
+        <var name="childConcept" id="769752699177833313" />
+        <var name="childNode" id="769752699177833313" />
+        <var name="context" id="769752699177833313" />
+        <var name="link" id="769752699177833313" />
+        <var name="node" id="769752699177833313" />
+        <var name="parentNode" id="769752699177833313" />
+      </scope>
+      <scope id="769752699177906471" at="49,148,60,16" />
+      <scope id="769752699177833313" at="49,0,62,0">
+        <var name="childConcept" id="769752699177833313" />
+        <var name="childNode" id="769752699177833313" />
+        <var name="link" id="769752699177833313" />
+        <var name="node" id="769752699177833313" />
+        <var name="operationContext" id="769752699177833313" />
+      </scope>
+      <unit id="769752699177833313" at="16,0,69,0" name="neo4j.cypher.constraints.SetAssignmentStatement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/8069893813418305105">
+    <file name="INamedIdentifier_Constraints.java">
+      <node id="8069893813418305105" at="19,41,20,156" concept="11" />
+      <node id="8069893813418305105" at="24,84,25,119" concept="5" />
+      <node id="8069893813418305105" at="28,40,29,20" concept="6" />
+      <node id="8069893813418305105" at="32,70,33,37" concept="5" />
+      <node id="8069893813418305109" at="33,37,34,350" concept="6" />
+      <node id="8069893813418305105" at="36,7,37,22" concept="6" />
+      <node id="8069893813418305105" at="19,0,22,0" concept="1" trace="INamedIdentifier_Constraints#()V" />
+      <node id="8069893813418305105" at="27,0,31,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="8069893813418305105" at="31,0,36,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="8069893813418305105" at="25,119,36,7" concept="2" />
+      <node id="8069893813418305105" at="23,0,39,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="8069893813418305105" at="19,41,20,156" />
+      <scope id="8069893813418305105" at="28,40,29,20" />
+      <scope id="8069893813418305105" at="32,70,34,350">
+        <var name="propertyName" id="8069893813418305105" />
+      </scope>
+      <scope id="8069893813418305105" at="19,0,22,0" />
+      <scope id="8069893813418305105" at="27,0,31,0" />
+      <scope id="8069893813418305105" at="31,0,36,0">
+        <var name="node" id="8069893813418305105" />
+        <var name="propertyValue" id="8069893813418305105" />
+      </scope>
+      <scope id="8069893813418305105" at="24,84,37,22">
+        <var name="properties" id="8069893813418305105" />
+      </scope>
+      <scope id="8069893813418305105" at="23,0,39,0" />
+      <unit id="8069893813418305105" at="26,137,36,5" name="neo4j.cypher.constraints.INamedIdentifier_Constraints$1" />
+      <unit id="8069893813418305105" at="18,0,40,0" name="neo4j.cypher.constraints.INamedIdentifier_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/8069893813418312337">
+    <file name="Relationship_Constraints.java">
+      <node id="8069893813418312337" at="17,37,18,143" concept="11" />
+      <node id="8069893813418312337" at="22,44,23,16" concept="6" />
+      <node id="8069893813418312337" at="26,188,27,96" concept="5" />
+      <node id="8069893813418312337" at="27,96,28,0" concept="8" />
+      <node id="8069893813418312337" at="29,51,30,68" concept="2" />
+      <node id="8069893813418312337" at="31,5,32,0" concept="8" />
+      <node id="8069893813418312337" at="32,0,33,18" concept="6" />
+      <node id="4839691926370703737" at="36,360,37,683" concept="6" />
+      <node id="4839691926370703774" at="38,5,39,0" concept="8" />
+      <node id="8069893813418312340" at="39,0,40,233" concept="6" />
+      <node id="8069893813418312337" at="42,0,43,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="8069893813418312337" at="17,0,20,0" concept="1" trace="Relationship_Constraints#()V" />
+      <node id="8069893813418312337" at="28,0,31,5" concept="3" />
+      <node id="4839691926370703620" at="35,148,38,5" concept="3" />
+      <node id="8069893813418312337" at="21,0,25,0" concept="4" trace="hasOwnCanBeParentMethod#()Z" />
+      <node id="8069893813418312337" at="35,0,42,0" concept="10" trace="static_canBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="8069893813418312337" at="25,0,35,0" concept="4" trace="canBeParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="8069893813418312337" at="17,37,18,143" />
+      <scope id="8069893813418312337" at="22,44,23,16" />
+      <scope id="8069893813418312337" at="29,51,30,68" />
+      <scope id="4839691926370703621" at="36,360,37,683" />
+      <scope id="8069893813418312337" at="17,0,20,0" />
+      <scope id="8069893813418312337" at="21,0,25,0" />
+      <scope id="8069893813418312339" at="35,148,40,233" />
+      <scope id="8069893813418312337" at="26,188,33,18">
+        <var name="result" id="8069893813418312337" />
+      </scope>
+      <scope id="8069893813418312337" at="35,0,42,0">
+        <var name="childConcept" id="8069893813418312337" />
+        <var name="childNode" id="8069893813418312337" />
+        <var name="link" id="8069893813418312337" />
+        <var name="node" id="8069893813418312337" />
+        <var name="operationContext" id="8069893813418312337" />
+      </scope>
+      <scope id="8069893813418312337" at="25,0,35,0">
+        <var name="checkingNodeContext" id="8069893813418312337" />
+        <var name="childConcept" id="8069893813418312337" />
+        <var name="childNode" id="8069893813418312337" />
+        <var name="link" id="8069893813418312337" />
+        <var name="node" id="8069893813418312337" />
+        <var name="operationContext" id="8069893813418312337" />
+      </scope>
+      <unit id="8069893813418312337" at="16,0,44,0" name="neo4j.cypher.constraints.Relationship_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/8069893813418349304">
+    <file name="NamedRelationshipRef_Constraints.java">
+      <node id="8069893813418349304" at="16,45,17,151" concept="11" />
+      <node id="8069893813418349304" at="21,44,22,16" concept="6" />
+      <node id="8069893813418349304" at="25,188,26,96" concept="5" />
+      <node id="8069893813418349304" at="26,96,27,0" concept="8" />
+      <node id="8069893813418349304" at="28,51,29,68" concept="2" />
+      <node id="8069893813418349304" at="30,5,31,0" concept="8" />
+      <node id="8069893813418349304" at="31,0,32,18" concept="6" />
+      <node id="2016478392891562377" at="34,148,35,342" concept="6" />
+      <node id="8069893813418349304" at="37,0,38,0" concept="9" trace="canBeParentBreakingPoint" />
+      <node id="2016478392891570332" at="38,55,39,43" concept="6" />
+      <node id="8069893813418349304" at="16,0,19,0" concept="1" trace="NamedRelationshipRef_Constraints#()V" />
+      <node id="8069893813418349304" at="27,0,30,5" concept="3" />
+      <node id="8069893813418349304" at="34,0,37,0" concept="10" trace="static_canBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <node id="2016478392891570332" at="38,0,41,0" concept="10" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="8069893813418349304" at="20,0,24,0" concept="4" trace="hasOwnCanBeParentMethod#()Z" />
+      <node id="8069893813418349304" at="24,0,34,0" concept="4" trace="canBeParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="8069893813418349304" at="16,45,17,151" />
+      <scope id="8069893813418349304" at="21,44,22,16" />
+      <scope id="8069893813418349304" at="28,51,29,68" />
+      <scope id="8069893813418349320" at="34,148,35,342" />
+      <scope id="2016478392891570332" at="38,55,39,43" />
+      <scope id="8069893813418349304" at="16,0,19,0" />
+      <scope id="8069893813418349304" at="34,0,37,0">
+        <var name="childConcept" id="8069893813418349304" />
+        <var name="childNode" id="8069893813418349304" />
+        <var name="link" id="8069893813418349304" />
+        <var name="node" id="8069893813418349304" />
+        <var name="operationContext" id="8069893813418349304" />
+      </scope>
+      <scope id="2016478392891570332" at="38,0,41,0">
+        <var name="str" id="2016478392891570332" />
+      </scope>
+      <scope id="8069893813418349304" at="20,0,24,0" />
+      <scope id="8069893813418349304" at="25,188,32,18">
+        <var name="result" id="8069893813418349304" />
+      </scope>
+      <scope id="8069893813418349304" at="24,0,34,0">
+        <var name="checkingNodeContext" id="8069893813418349304" />
+        <var name="childConcept" id="8069893813418349304" />
+        <var name="childNode" id="8069893813418349304" />
+        <var name="link" id="8069893813418349304" />
+        <var name="node" id="8069893813418349304" />
+        <var name="operationContext" id="8069893813418349304" />
+      </scope>
+      <unit id="8069893813418349304" at="15,0,42,0" name="neo4j.cypher.constraints.NamedRelationshipRef_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:7c28ecee-5ab5-4b97-b9e6-691aea2e2951(neo4j.cypher.constraints)/8069893813418359471">
+    <file name="Node_Constraints.java">
+      <node id="8069893813418359471" at="19,29,20,135" concept="11" />
+      <node id="8069893813418359471" at="24,84,25,119" concept="5" />
+      <node id="8069893813418359471" at="28,40,29,20" concept="6" />
+      <node id="8069893813418359471" at="32,70,33,37" concept="5" />
+      <node id="8069893813418359475" at="33,37,34,350" concept="6" />
+      <node id="8069893813418359471" at="36,7,37,22" concept="6" />
+      <node id="8069893813418359471" at="19,0,22,0" concept="1" trace="Node_Constraints#()V" />
+      <node id="8069893813418359471" at="27,0,31,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="8069893813418359471" at="31,0,36,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="8069893813418359471" at="25,119,36,7" concept="2" />
+      <node id="8069893813418359471" at="23,0,39,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="8069893813418359471" at="19,29,20,135" />
+      <scope id="8069893813418359471" at="28,40,29,20" />
+      <scope id="8069893813418359471" at="32,70,34,350">
+        <var name="propertyName" id="8069893813418359471" />
+      </scope>
+      <scope id="8069893813418359471" at="19,0,22,0" />
+      <scope id="8069893813418359471" at="27,0,31,0" />
+      <scope id="8069893813418359471" at="31,0,36,0">
+        <var name="node" id="8069893813418359471" />
+        <var name="propertyValue" id="8069893813418359471" />
+      </scope>
+      <scope id="8069893813418359471" at="24,84,37,22">
+        <var name="properties" id="8069893813418359471" />
+      </scope>
+      <scope id="8069893813418359471" at="23,0,39,0" />
+      <unit id="8069893813418359471" at="26,137,36,5" name="neo4j.cypher.constraints.Node_Constraints$1" />
+      <unit id="8069893813418359471" at="18,0,40,0" name="neo4j.cypher.constraints.Node_Constraints" />
+    </file>
+  </root>
+</debug-info>
+
