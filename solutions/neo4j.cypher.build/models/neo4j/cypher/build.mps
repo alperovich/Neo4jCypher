@@ -346,6 +346,30 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="xbUX28fxn4" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5xa9wY2vh7j" resolve="mpsExecutionPlugin" />
+      <node concept="398BVA" id="xbUX28fxn5" role="2JcizS">
+        <ref role="398BVh" node="6ZkA9WG7jRR" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="xbUX28fxn6" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5mc7nVumjii" resolve="mpsDebuggerPlugin" />
+      <node concept="398BVA" id="xbUX28fxn7" role="2JcizS">
+        <ref role="398BVh" node="6ZkA9WG7jRR" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="xbUX28kZH7" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:ymnOULAEsd" resolve="mpsTesting" />
+      <node concept="398BVA" id="xbUX28kZH8" role="2JcizS">
+        <ref role="398BVh" node="6ZkA9WG7jRR" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="xbUX28nvmz" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:6qT2v0qOlpw" resolve="mpsJava" />
+      <node concept="398BVA" id="xbUX28nvrV" role="2JcizS">
+        <ref role="398BVh" node="6ZkA9WG7jRR" resolve="mps_home" />
+      </node>
+    </node>
     <node concept="1l3spV" id="6ZkA9WG7jSP" role="1l3spN">
       <node concept="3_I8Xc" id="6ZkA9WG7jSX" role="39821P">
         <ref role="3_I8Xa" to="ffeo:1diLdO26H79" resolve="languages" />
@@ -430,6 +454,30 @@
         </node>
         <node concept="3_I8Xc" id="6ZkA9WG7jTo" role="39821P">
           <ref role="3_I8Xa" to="ffeo:ymnOULBdbM" resolve="mps-core" />
+        </node>
+        <node concept="3_I8Xc" id="xbUX289EaI" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
+        </node>
+        <node concept="3_I8Xc" id="xbUX28fy69" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWRsZ0" resolve="mps-execution-api" />
+        </node>
+        <node concept="3_I8Xc" id="xbUX28fy6a" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:35y4BF72kxA" resolve="mps-execution-configurations" />
+        </node>
+        <node concept="3_I8Xc" id="xbUX28fy6b" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:35y4BF72i$D" resolve="mps-execution-languages" />
+        </node>
+        <node concept="3_I8Xc" id="xbUX28lDFg" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
+        </node>
+        <node concept="3_I8Xc" id="xbUX28fy6d" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5pU" resolve="mps-debugger-api" />
+        </node>
+        <node concept="3_I8Xc" id="xbUX28fy6e" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5yu" resolve="mps-debugger-java" />
+        </node>
+        <node concept="3_I8Xc" id="xbUX28nIL8" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1CY6j2K5DAF" resolve="mps-java" />
         </node>
         <node concept="m$_wl" id="6ZkA9WG7jTp" role="39821P">
           <ref role="m_rDy" node="6ZkA9WG7jSG" resolve="Neo4jCypher_corlab" />
@@ -1110,6 +1158,22 @@
             <ref role="3ygNvj" node="6ZkA9WG7jSP" />
           </node>
           <node concept="398223" id="6ZkA9WG7jZ7" role="39821P">
+            <node concept="28jJK3" id="6ZkA9WG7jZj" role="39821P">
+              <property role="28jJZ5" value="755" />
+              <node concept="3co7Ac" id="6ZkA9WG7jZk" role="28jJR8">
+                <property role="3co7Am" value="lf" />
+                <property role="3cpA_W" value="true" />
+              </node>
+              <node concept="398BVA" id="6ZkA9WG7jZ2" role="28jJRO">
+                <ref role="398BVh" node="6ZkA9WG7jYn" resolve="mps_home" />
+                <node concept="2Ry0Ak" id="xbUX28nvJb" role="iGT6I">
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="xbUX28nvJe" role="2Ry0An">
+                    <property role="2Ry0Am" value="mps.sh" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="28jJK3" id="6ZkA9WG7jZ8" role="39821P">
               <property role="28jJZ5" value="755" />
               <node concept="398BVA" id="6ZkA9WG7jYy" role="28jJRO">
@@ -1193,22 +1257,9 @@
               </node>
             </node>
           </node>
-          <node concept="28jJK3" id="6ZkA9WG7jZj" role="39821P">
-            <property role="28jJZ5" value="755" />
-            <node concept="3co7Ac" id="6ZkA9WG7jZk" role="28jJR8">
-              <property role="3co7Am" value="lf" />
-              <property role="3cpA_W" value="true" />
-            </node>
-            <node concept="398BVA" id="6ZkA9WG7jZ2" role="28jJRO">
-              <ref role="398BVh" node="6ZkA9WG7jYn" resolve="mps_home" />
-              <node concept="2Ry0Ak" id="6ZkA9WG7jZ3" role="iGT6I">
-                <property role="2Ry0Am" value="mps.sh" />
-              </node>
-            </node>
-          </node>
           <node concept="3_J27D" id="6ZkA9WG7jZl" role="Nbhlr">
             <node concept="3Mxwew" id="6ZkA9WG7jZm" role="3MwsjC">
-              <property role="3MwjfP" value="Neo4jCypher_corlab " />
+              <property role="3MwjfP" value="Neo4jCypher_corlab_" />
             </node>
             <node concept="3Mxwey" id="6ZkA9WG7jZn" role="3MwsjC">
               <ref role="3Mxwex" node="6ZkA9WG7jYo" resolve="version" />
@@ -1593,7 +1644,7 @@
           </node>
           <node concept="3_J27D" id="6ZkA9WG7k2J" role="Nbhlr">
             <node concept="3Mxwew" id="6ZkA9WG7k2K" role="3MwsjC">
-              <property role="3MwjfP" value="Neo4jCypher_corlab " />
+              <property role="3MwjfP" value="Neo4jCypher_corlab_" />
             </node>
             <node concept="3Mxwey" id="6ZkA9WG7k2L" role="3MwsjC">
               <ref role="3Mxwex" node="6ZkA9WG7jYo" resolve="version" />
@@ -1605,7 +1656,7 @@
             <ref role="3Mxwex" node="6ZkA9WG7jRN" resolve="build.number" />
           </node>
           <node concept="3Mxwew" id="6ZkA9WG7k2O" role="3MwsjC">
-            <property role="3MwjfP" value=".zip" />
+            <property role="3MwjfP" value="-windows.zip" />
           </node>
         </node>
       </node>
@@ -1722,6 +1773,22 @@
               </node>
             </node>
             <node concept="398223" id="6ZkA9WG7k4I" role="39821P">
+              <node concept="28jJK3" id="xbUX28nvJQ" role="39821P">
+                <property role="28jJZ5" value="755" />
+                <node concept="3co7Ac" id="xbUX28nvJR" role="28jJR8">
+                  <property role="3co7Am" value="lf" />
+                  <property role="3cpA_W" value="true" />
+                </node>
+                <node concept="398BVA" id="xbUX28nvJS" role="28jJRO">
+                  <ref role="398BVh" node="6ZkA9WG7jYn" resolve="mps_home" />
+                  <node concept="2Ry0Ak" id="xbUX28nvJT" role="iGT6I">
+                    <property role="2Ry0Am" value="bin" />
+                    <node concept="2Ry0Ak" id="xbUX28nvJU" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps.sh" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3_J27D" id="6ZkA9WG7k4J" role="Nbhlr">
                 <node concept="3Mxwew" id="6ZkA9WG7k4K" role="3MwsjC">
                   <property role="3MwjfP" value="bin" />
@@ -1835,23 +1902,10 @@
                 </node>
               </node>
             </node>
-            <node concept="28jJK3" id="6ZkA9WG7k4V" role="39821P">
-              <property role="28jJZ5" value="755" />
-              <node concept="3co7Ac" id="6ZkA9WG7k4W" role="28jJR8">
-                <property role="3co7Am" value="lf" />
-                <property role="3cpA_W" value="true" />
-              </node>
-              <node concept="398BVA" id="6ZkA9WG7k4p" role="28jJRO">
-                <ref role="398BVh" node="6ZkA9WG7jYn" resolve="mps_home" />
-                <node concept="2Ry0Ak" id="6ZkA9WG7k4q" role="iGT6I">
-                  <property role="2Ry0Am" value="mps.sh" />
-                </node>
-              </node>
-            </node>
           </node>
           <node concept="3_J27D" id="6ZkA9WG7k4X" role="Nbhlr">
             <node concept="3Mxwew" id="6ZkA9WG7k4Y" role="3MwsjC">
-              <property role="3MwjfP" value="Neo4jCypher_corlab " />
+              <property role="3MwjfP" value="Neo4jCypher_corlab_" />
             </node>
             <node concept="3Mxwey" id="6ZkA9WG7k4Z" role="3MwsjC">
               <ref role="3Mxwex" node="6ZkA9WG7jYo" resolve="version" />

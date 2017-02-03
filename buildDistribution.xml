@@ -20,80 +20,87 @@
   <target name="assemble" depends="fetchDependencies">
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz" />
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/Neo4jCypher_corlab ${version}" />
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/Neo4jCypher_corlab ${version}/bin" />
-    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/Neo4jCypher_corlab ${version}/bin">
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/Neo4jCypher_corlab_${version}" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/Neo4jCypher_corlab_${version}/bin" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" />
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755">
+      <fileset file="${mps_home}/bin/mps.sh" />
+      <filterchain>
+        <fixcrlf eol="lf" eof="remove" />
+      </filterchain>
+    </copy>
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/Neo4jCypher_corlab_${version}/bin">
       <fileset file="${mps_home}/bin/mps.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
-    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/Neo4jCypher_corlab ${version}/bin">
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/Neo4jCypher_corlab_${version}/bin">
       <fileset file="${mps_home}/bin/mps64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" />
-    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755">
-      <fileset file="${mps_home}/mps.sh" />
+    <tar destfile="${build.layout}/${Neo4jCypher_corlab.build.number}-linux.tar.gz" compression="gzip" longfile="gnu">
+      <tarfileset dir="${artifacts.Neo4jCypher_corlab}" prefix="Neo4jCypher_corlab_${version}" />
+      <tarfileset dir="${mps_home}/bin/linux" prefix="Neo4jCypher_corlab_${version}/bin">
+        <exclude name="**/fsnotifier" />
+        <exclude name="**/fsnotifier64" />
+      </tarfileset>
+      <tarfileset file="${mps_home}/bin/linux/fsnotifier" prefix="Neo4jCypher_corlab_${version}/bin" filemode="755" />
+      <tarfileset file="${mps_home}/bin/linux/fsnotifier64" prefix="Neo4jCypher_corlab_${version}/bin" filemode="755" />
+      <tarfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" filemode="755" prefix="Neo4jCypher_corlab_${version}/bin" />
+      <tarfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz" />
+    </tar>
+    <zip destfile="${build.layout}/${Neo4jCypher_corlab.build.number}-windows.zip">
+      <zipfileset dir="${artifacts.Neo4jCypher_corlab}" prefix="Neo4jCypher_corlab_${version}" />
+      <zipfileset file="${mps_home}/bin/mps.vmoptions" prefix="Neo4jCypher_corlab_${version}/bin" />
+      <zipfileset file="${mps_home}/bin/mps.exe.vmoptions" prefix="Neo4jCypher_corlab_${version}/bin" />
+      <zipfileset file="${mps_home}/bin/mps64.vmoptions" prefix="Neo4jCypher_corlab_${version}/bin" />
+      <zipfileset file="${mps_home}/bin/mps64.exe.vmoptions" prefix="Neo4jCypher_corlab_${version}/bin" />
+      <zipfileset dir="${mps_home}/bin/win" prefix="Neo4jCypher_corlab_${version}/bin/win">
+        <exclude name="**/*.exe" />
+      </zipfileset>
+      <zipfileset dir="${mps_home}/bin/win" prefix="Neo4jCypher_corlab_${version}/bin/win" filemode="755">
+        <include name="**/*.exe" />
+      </zipfileset>
+      <zipfileset dir="${mps_home}/bin/linux" prefix="Neo4jCypher_corlab_${version}/bin/linux">
+        <exclude name="**/fsnotifier" />
+        <exclude name="**/fsnotifier64" />
+      </zipfileset>
+      <zipfileset file="${mps_home}/bin/linux/fsnotifier" prefix="Neo4jCypher_corlab_${version}/bin/linux" filemode="755" />
+      <zipfileset file="${mps_home}/bin/linux/fsnotifier64" prefix="Neo4jCypher_corlab_${version}/bin/linux" filemode="755" />
+      <zipfileset dir="${mps_home}/bin/nix" prefix="Neo4jCypher_corlab_${version}/bin/nix" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="Neo4jCypher_corlab_${version}/bin/mac" />
+      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="Neo4jCypher_corlab_${version}/bin/mac" />
+      <zipfileset file="${mps_home}/bin/mac/restarter" prefix="Neo4jCypher_corlab_${version}/bin/mac" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="Neo4jCypher_corlab_${version}/bin/mac" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/printenv.py" prefix="Neo4jCypher_corlab_${version}/bin/mac" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="Neo4jCypher_corlab_${version}/bin/mac/Contents" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="Neo4jCypher_corlab_${version}/bin/mac/Contents/Resources" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="Neo4jCypher_corlab_${version}/bin/mac/Contents/MacOS" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/idea_appLauncher" prefix="Neo4jCypher_corlab_${version}/bin/mac/Contents/MacOS" filemode="644" />
+      <zipfileset file="${mps_home}/mps.sh" prefix="Neo4jCypher_corlab_${version}" filemode="755" />
+      <zipfileset file="${mps_home}/mps.bat" prefix="Neo4jCypher_corlab_${version}" filemode="755" />
+    </zip>
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab_${version}.app" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab_${version}.app/Contents" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab_${version}.app/Contents/bin" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" />
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755">
+      <fileset file="${mps_home}/bin/mps.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
-    <tar destfile="${build.layout}/${Neo4jCypher_corlab.build.number}-linux.tar.gz" compression="gzip" longfile="gnu">
-      <tarfileset dir="${artifacts.Neo4jCypher_corlab}" prefix="Neo4jCypher_corlab ${version}" />
-      <tarfileset dir="${mps_home}/bin/linux" prefix="Neo4jCypher_corlab ${version}/bin">
-        <exclude name="**/fsnotifier" />
-        <exclude name="**/fsnotifier64" />
-      </tarfileset>
-      <tarfileset file="${mps_home}/bin/linux/fsnotifier" prefix="Neo4jCypher_corlab ${version}/bin" filemode="755" />
-      <tarfileset file="${mps_home}/bin/linux/fsnotifier64" prefix="Neo4jCypher_corlab ${version}/bin" filemode="755" />
-      <tarfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" filemode="755" prefix="Neo4jCypher_corlab ${version}" />
-      <tarfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz" />
-    </tar>
-    <zip destfile="${build.layout}/${Neo4jCypher_corlab.build.number}.zip">
-      <zipfileset dir="${artifacts.Neo4jCypher_corlab}" prefix="Neo4jCypher_corlab ${version}" />
-      <zipfileset file="${mps_home}/bin/mps.vmoptions" prefix="Neo4jCypher_corlab ${version}/bin" />
-      <zipfileset file="${mps_home}/bin/mps.exe.vmoptions" prefix="Neo4jCypher_corlab ${version}/bin" />
-      <zipfileset file="${mps_home}/bin/mps64.vmoptions" prefix="Neo4jCypher_corlab ${version}/bin" />
-      <zipfileset file="${mps_home}/bin/mps64.exe.vmoptions" prefix="Neo4jCypher_corlab ${version}/bin" />
-      <zipfileset dir="${mps_home}/bin/win" prefix="Neo4jCypher_corlab ${version}/bin/win">
-        <exclude name="**/*.exe" />
-      </zipfileset>
-      <zipfileset dir="${mps_home}/bin/win" prefix="Neo4jCypher_corlab ${version}/bin/win" filemode="755">
-        <include name="**/*.exe" />
-      </zipfileset>
-      <zipfileset dir="${mps_home}/bin/linux" prefix="Neo4jCypher_corlab ${version}/bin/linux">
-        <exclude name="**/fsnotifier" />
-        <exclude name="**/fsnotifier64" />
-      </zipfileset>
-      <zipfileset file="${mps_home}/bin/linux/fsnotifier" prefix="Neo4jCypher_corlab ${version}/bin/linux" filemode="755" />
-      <zipfileset file="${mps_home}/bin/linux/fsnotifier64" prefix="Neo4jCypher_corlab ${version}/bin/linux" filemode="755" />
-      <zipfileset dir="${mps_home}/bin/nix" prefix="Neo4jCypher_corlab ${version}/bin/nix" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="Neo4jCypher_corlab ${version}/bin/mac" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="Neo4jCypher_corlab ${version}/bin/mac" />
-      <zipfileset file="${mps_home}/bin/mac/restarter" prefix="Neo4jCypher_corlab ${version}/bin/mac" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="Neo4jCypher_corlab ${version}/bin/mac" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/printenv.py" prefix="Neo4jCypher_corlab ${version}/bin/mac" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="Neo4jCypher_corlab ${version}/bin/mac/Contents" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="Neo4jCypher_corlab ${version}/bin/mac/Contents/Resources" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="Neo4jCypher_corlab ${version}/bin/mac/Contents/MacOS" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/idea_appLauncher" prefix="Neo4jCypher_corlab ${version}/bin/mac/Contents/MacOS" filemode="644" />
-      <zipfileset file="${mps_home}/mps.sh" prefix="Neo4jCypher_corlab ${version}" filemode="755" />
-      <zipfileset file="${mps_home}/mps.bat" prefix="Neo4jCypher_corlab ${version}" filemode="755" />
-    </zip>
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab ${version}.app" />
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab ${version}.app/Contents" />
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab ${version}.app/Contents/bin" />
-    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab ${version}.app/Contents/bin">
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab_${version}.app/Contents/bin">
       <fileset file="${mps_home}/bin/mps.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
-    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab ${version}.app/Contents/bin">
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/Neo4jCypher_corlab_${version}.app/Contents/bin">
       <fileset file="${mps_home}/bin/mps64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
@@ -106,25 +113,18 @@
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" />
-    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755">
-      <fileset file="${mps_home}/mps.sh" />
-      <filterchain>
-        <fixcrlf eol="lf" eof="remove" />
-      </filterchain>
-    </copy>
     <zip destfile="${build.layout}/${Neo4jCypher_corlab.build.number}-macos.zip">
-      <zipfileset dir="${artifacts.Neo4jCypher_corlab}" prefix="Neo4jCypher_corlab ${version}.app/Contents" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="Neo4jCypher_corlab ${version}.app/Contents" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="Neo4jCypher_corlab ${version}.app/Contents/Resources" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="Neo4jCypher_corlab ${version}.app/Contents/MacOS" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/idea_appLauncher" prefix="Neo4jCypher_corlab ${version}.app/Contents/MacOS" filemode="644" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="Neo4jCypher_corlab ${version}.app/Contents/bin" />
-      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="Neo4jCypher_corlab ${version}.app/Contents/bin" />
-      <zipfileset file="${mps_home}/bin/mac/restarter" prefix="Neo4jCypher_corlab ${version}.app/Contents/bin" filemode="755" />
-      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="Neo4jCypher_corlab ${version}.app/Contents/bin" filemode="755" />
-      <zipfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" filemode="755" prefix="Neo4jCypher_corlab ${version}.app/Contents" />
-      <zipfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f7551" filemode="755" prefix="Neo4jCypher_corlab ${version}.app/Contents/bin" />
+      <zipfileset dir="${artifacts.Neo4jCypher_corlab}" prefix="Neo4jCypher_corlab_${version}.app/Contents" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="Neo4jCypher_corlab_${version}.app/Contents" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="Neo4jCypher_corlab_${version}.app/Contents/Resources" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="Neo4jCypher_corlab_${version}.app/Contents/MacOS" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/idea_appLauncher" prefix="Neo4jCypher_corlab_${version}.app/Contents/MacOS" filemode="644" />
+      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="Neo4jCypher_corlab_${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="Neo4jCypher_corlab_${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/restarter" prefix="Neo4jCypher_corlab_${version}.app/Contents/bin" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="Neo4jCypher_corlab_${version}.app/Contents/bin" filemode="755" />
+      <zipfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" filemode="755" prefix="Neo4jCypher_corlab_${version}.app/Contents/bin" />
+      <zipfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f7551" filemode="755" prefix="Neo4jCypher_corlab_${version}.app/Contents/bin" />
       <fileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">Neo4jCypher_corlabDistribution.version=${version}${line.separator}Neo4jCypher_corlab.date=${Neo4jCypher_corlab.date}${line.separator}Neo4jCypher_corlab.build.number=${Neo4jCypher_corlab.build.number}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>

@@ -13,6 +13,10 @@
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsExecutionPlugin" location="${mps_home}" />
+  <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}" />
+  <property name="artifacts.mpsTesting" location="${mps_home}" />
+  <property name="artifacts.mpsJava" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
@@ -106,6 +110,38 @@
     <mkdir dir="${build.layout}/plugins/mps-core" />
     <copy todir="${build.layout}/plugins/mps-core">
       <fileset dir="${artifacts.mps}/plugins/mps-core" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-make" />
+    <copy todir="${build.layout}/plugins/mps-make">
+      <fileset dir="${artifacts.mps}/plugins/mps-make" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-api" />
+    <copy todir="${build.layout}/plugins/mps-execution-api">
+      <fileset dir="${artifacts.mps}/plugins/mps-execution-api" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-configurations" />
+    <copy todir="${build.layout}/plugins/mps-execution-configurations">
+      <fileset dir="${artifacts.mps}/plugins/mps-execution-configurations" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-languages" />
+    <copy todir="${build.layout}/plugins/mps-execution-languages">
+      <fileset dir="${artifacts.mps}/plugins/mps-execution-languages" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-testing" />
+    <copy todir="${build.layout}/plugins/mps-testing">
+      <fileset dir="${artifacts.mps}/plugins/mps-testing" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-debugger-api" />
+    <copy todir="${build.layout}/plugins/mps-debugger-api">
+      <fileset dir="${artifacts.mps}/plugins/mps-debugger-api" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-debugger-java" />
+    <copy todir="${build.layout}/plugins/mps-debugger-java">
+      <fileset dir="${artifacts.mps}/plugins/mps-debugger-java" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-java" />
+    <copy todir="${build.layout}/plugins/mps-java">
+      <fileset dir="${artifacts.mps}/plugins/mps-java" />
     </copy>
     <mkdir dir="${build.layout}/plugins/Neo4jCypher_corlab" />
     <mkdir dir="${build.layout}/plugins/Neo4jCypher_corlab/META-INF" />
