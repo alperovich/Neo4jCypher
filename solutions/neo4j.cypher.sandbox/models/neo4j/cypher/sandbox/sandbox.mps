@@ -258,30 +258,6 @@
         <child id="2979687674397788069" name="returnStatement" index="RjJQ2" />
         <child id="2979687674397766685" name="orderByStatement" index="RjOSU" />
       </concept>
-      <concept id="1325020284374172185" name="neo4j.cypher.structure.UpperMStringFunction" flags="ng" index="2Sb2zO" />
-      <concept id="1325020284374105829" name="neo4j.cypher.structure.LTrimMStringFunction" flags="ng" index="2Sblg8" />
-      <concept id="1325020284374105854" name="neo4j.cypher.structure.RTrimMStringFunction" flags="ng" index="2Sblgj" />
-      <concept id="1325020284374105796" name="neo4j.cypher.structure.LeftMStringFunction" flags="ng" index="2SblgD">
-        <child id="1325020284374105798" name="length" index="2SblgF" />
-      </concept>
-      <concept id="1325020284374105817" name="neo4j.cypher.structure.RightMStringFunction" flags="ng" index="2SblgO">
-        <child id="1325020284374105818" name="length" index="2SblgR" />
-      </concept>
-      <concept id="1325020284374105868" name="neo4j.cypher.structure.TrimMStringFunction" flags="ng" index="2Sblnx" />
-      <concept id="1325020284374105880" name="neo4j.cypher.structure.LowerMStringFunction" flags="ng" index="2SblnP" />
-      <concept id="1325020284374084159" name="neo4j.cypher.structure.ModifyStringFunction" flags="ng" index="2SbC3i">
-        <child id="1325020284374084175" name="original" index="2SbC2y" />
-      </concept>
-      <concept id="1325020284374084158" name="neo4j.cypher.structure.StrStringFunction" flags="ng" index="2SbC3j">
-        <child id="1325020284374084160" name="expression" index="2SbC2H" />
-      </concept>
-      <concept id="1325020284374086148" name="neo4j.cypher.structure.SubstringMStringFunction" flags="ng" index="2SbDzD">
-        <child id="1325020284374086149" name="start" index="2SbDzC" />
-        <child id="1325020284374086150" name="length" index="2SbDzF" />
-      </concept>
-      <concept id="1325020284374319148" name="neo4j.cypher.structure.CypherIntegerConstant" flags="ng" index="2ScIF1">
-        <property id="1068580320021" name="value" index="3cmrfI" />
-      </concept>
       <concept id="7918996842015188022" name="neo4j.cypher.structure.NamedPropertyContainerRef" flags="ng" index="2W98At">
         <reference id="7918996842015188023" name="propertyContainer" index="2W98As" />
       </concept>
@@ -302,7 +278,6 @@
       <concept id="5206628397327069922" name="neo4j.cypher.structure.ApStringLiteral" flags="ng" index="1cppCj">
         <property id="5206628397327237187" name="value" index="1cpQyM" />
       </concept>
-      <concept id="5206628397327933191" name="neo4j.cypher.structure.CypherNotEqualsExpression" flags="ng" index="1csfvQ" />
       <concept id="5206628397327870200" name="neo4j.cypher.structure.CypherEqualsExpression" flags="ng" index="1css09" />
       <concept id="5206628397327875922" name="neo4j.cypher.structure.CypherAndExpression" flags="ng" index="1cstuz" />
       <concept id="5206628397327875926" name="neo4j.cypher.structure.CypherOrExpression" flags="ng" index="1cstuB" />
@@ -409,23 +384,11 @@
           </node>
         </node>
         <node concept="pcvyE" id="7_lh_jBgzSX" role="iZB7Q">
-          <node concept="1cstuz" id="7w8iNMEe_5H" role="iYdWe">
-            <node concept="1csfvQ" id="7w8iNMEe_7q" role="3uHU7w">
-              <node concept="2W98At" id="7w8iNMEe_8a" role="3uHU7w">
-                <ref role="2W98As" node="7_lh_jBdCi8" resolve="testnode" />
-              </node>
-              <node concept="2W98At" id="7w8iNMEe_6G" role="3uHU7B">
-                <ref role="2W98As" node="7_lh_jBdCi8" resolve="testnode" />
-              </node>
+          <node concept="2OqwBi" id="gyMTZTukFP" role="iYdWe">
+            <node concept="2W98At" id="7_lh_jBg$k$" role="2Oq$k0">
+              <ref role="2W98As" node="7_lh_jBdCi8" resolve="testnode" />
             </node>
-            <node concept="1css09" id="7w8iNMEe_4K" role="3uHU7B">
-              <node concept="2W98At" id="7_lh_jBg$k$" role="3uHU7B">
-                <ref role="2W98As" node="7_lh_jBdCi8" resolve="testnode" />
-              </node>
-              <node concept="2W98At" id="7w8iNMEe_5c" role="3uHU7w">
-                <ref role="2W98As" node="7_lh_jBdCi8" resolve="testnode" />
-              </node>
-            </node>
+            <node concept="vXAMB" id="gyMTZTukGF" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -2485,62 +2448,8 @@
       <node concept="1NjeTL" id="6T$Np6N_tuy" role="19hGhQ">
         <node concept="RjJQ4" id="6T$Np6N_tuA" role="peicx">
           <node concept="peh7w" id="6T$Np6N_tuC" role="RjJQ2">
-            <node concept="2Sblnx" id="7w8iNMEIri$" role="pcflg">
-              <node concept="Xl_RD" id="7w8iNMEIrji" role="2SbC2y">
-                <property role="Xl_RC" value="  Hi tHEre  " />
-              </node>
-            </node>
-            <node concept="2Sblg8" id="7w8iNMEIq1E" role="pcflg">
-              <node concept="Xl_RD" id="7w8iNMEIq2D" role="2SbC2y">
-                <property role="Xl_RC" value="  Hi tHEre  " />
-              </node>
-            </node>
-            <node concept="2Sblgj" id="7w8iNMEGxq8" role="pcflg">
-              <node concept="Xl_RD" id="7w8iNMEGxqr" role="2SbC2y">
-                <property role="Xl_RC" value="  Hi tHEre  " />
-              </node>
-            </node>
-            <node concept="2SblnP" id="7w8iNMEIrfK" role="pcflg">
-              <node concept="Xl_RD" id="7w8iNMEIrgf" role="2SbC2y">
-                <property role="Xl_RC" value="  Hi tHEre  " />
-              </node>
-            </node>
-            <node concept="2Sb2zO" id="7w8iNMEIrgN" role="pcflg">
-              <node concept="Xl_RD" id="7w8iNMEIrho" role="2SbC2y">
-                <property role="Xl_RC" value="  Hi tHEre  " />
-              </node>
-            </node>
-            <node concept="2SbC3j" id="7w8iNMEIrjt" role="pcflg">
-              <node concept="Xl_RD" id="7w8iNMEIrkb" role="2SbC2H">
-                <property role="Xl_RC" value="  Hi tHEre  " />
-              </node>
-            </node>
-            <node concept="2SbDzD" id="7w8iNMEIrl0" role="pcflg">
-              <node concept="2ScIF1" id="7w8iNMEIrmo" role="2SbDzC">
-                <property role="3cmrfI" value="3" />
-              </node>
-              <node concept="2ScIF1" id="7w8iNMEIrmF" role="2SbDzF">
-                <property role="3cmrfI" value="4" />
-              </node>
-              <node concept="Xl_RD" id="7w8iNMEIrm7" role="2SbC2y">
-                <property role="Xl_RC" value="  Hi tHEre  " />
-              </node>
-            </node>
-            <node concept="2SblgO" id="7w8iNMEIrnR" role="pcflg">
-              <node concept="2ScIF1" id="7w8iNMEIrpg" role="2SblgR">
-                <property role="3cmrfI" value="4" />
-              </node>
-              <node concept="Xl_RD" id="7w8iNMEIrp2" role="2SbC2y">
-                <property role="Xl_RC" value="  Hi tHEre  " />
-              </node>
-            </node>
-            <node concept="2SblgD" id="7w8iNMEIrqw" role="pcflg">
-              <node concept="2ScIF1" id="7w8iNMEIrs2" role="2SblgF">
-                <property role="3cmrfI" value="4" />
-              </node>
-              <node concept="Xl_RD" id="7w8iNMEIrrO" role="2SbC2y">
-                <property role="Xl_RC" value="  Hi tHEre  " />
-              </node>
+            <node concept="2W98At" id="6T$Np6N_GJP" role="pcflg">
+              <ref role="2W98As" node="6T$Np6N_GIX" resolve="zxczczxc" />
             </node>
             <node concept="2W98At" id="4v3gMT5GjTR" role="pcflg">
               <ref role="2W98As" node="m8YdCdM8Og" resolve="asdf" />
