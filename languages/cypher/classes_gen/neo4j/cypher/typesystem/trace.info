@@ -17,7 +17,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="10,0,210,0" name="neo4j.cypher.typesystem.TypesystemDescriptor" />
+      <unit at="10,0,226,0" name="neo4j.cypher.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:1549d4d9-195d-4192-a8ca-9bdca0139ffa(neo4j.cypher.typesystem)/1325020284374084116">
@@ -1202,6 +1202,126 @@
       </scope>
       <unit id="3693218356000944522" at="29,54,38,7" name="neo4j.cypher.typesystem.typeof_CypherQueryExecute_InferenceRule$1" />
       <unit id="3693218355999920119" at="21,0,67,0" name="neo4j.cypher.typesystem.typeof_CypherQueryExecute_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:1549d4d9-195d-4192-a8ca-9bdca0139ffa(neo4j.cypher.typesystem)/3888584195224581216">
+    <file name="typeof_AggregateFunction_InferenceRule.java">
+      <node id="3888584195224632042" at="17,130,18,310" concept="4" />
+      <node id="3888584195224581216" at="20,50,21,148" concept="9" />
+      <node id="3888584195224581216" at="23,68,24,102" concept="9" />
+      <node id="3888584195224581216" at="26,30,27,17" concept="9" />
+      <node id="3888584195224581216" at="15,0,17,0" concept="2" trace="typeof_AggregateFunction_InferenceRule#()V" />
+      <node id="3888584195224581216" at="17,0,20,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="3888584195224581216" at="20,0,23,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3888584195224581216" at="23,0,26,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3888584195224581216" at="26,0,29,0" concept="7" trace="overrides#()Z" />
+      <scope id="3888584195224581216" at="15,51,15,51" />
+      <scope id="3888584195224581217" at="17,130,18,310" />
+      <scope id="3888584195224581216" at="20,50,21,148" />
+      <scope id="3888584195224581216" at="23,68,24,102" />
+      <scope id="3888584195224581216" at="26,30,27,17" />
+      <scope id="3888584195224581216" at="15,0,17,0" />
+      <scope id="3888584195224581216" at="17,0,20,0">
+        <var name="aggregateFunction" id="3888584195224581216" />
+        <var name="status" id="3888584195224581216" />
+        <var name="typeCheckingContext" id="3888584195224581216" />
+      </scope>
+      <scope id="3888584195224581216" at="20,0,23,0" />
+      <scope id="3888584195224581216" at="23,0,26,0">
+        <var name="argument" id="3888584195224581216" />
+      </scope>
+      <scope id="3888584195224581216" at="26,0,29,0" />
+      <unit id="3888584195224581216" at="14,0,30,0" name="neo4j.cypher.typesystem.typeof_AggregateFunction_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:1549d4d9-195d-4192-a8ca-9bdca0139ffa(neo4j.cypher.typesystem)/3888584195225564263">
+    <file name="typeof_MathFunction_InferenceRule.java">
+      <node id="3888584195225564270" at="17,125,18,305" concept="4" />
+      <node id="3888584195225564263" at="20,50,21,143" concept="9" />
+      <node id="3888584195225564263" at="23,68,24,102" concept="9" />
+      <node id="3888584195225564263" at="26,30,27,17" concept="9" />
+      <node id="3888584195225564263" at="15,0,17,0" concept="2" trace="typeof_MathFunction_InferenceRule#()V" />
+      <node id="3888584195225564263" at="17,0,20,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="3888584195225564263" at="20,0,23,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3888584195225564263" at="23,0,26,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3888584195225564263" at="26,0,29,0" concept="7" trace="overrides#()Z" />
+      <scope id="3888584195225564263" at="15,46,15,46" />
+      <scope id="3888584195225564264" at="17,125,18,305" />
+      <scope id="3888584195225564263" at="20,50,21,143" />
+      <scope id="3888584195225564263" at="23,68,24,102" />
+      <scope id="3888584195225564263" at="26,30,27,17" />
+      <scope id="3888584195225564263" at="15,0,17,0" />
+      <scope id="3888584195225564263" at="17,0,20,0">
+        <var name="mathFunction" id="3888584195225564263" />
+        <var name="status" id="3888584195225564263" />
+        <var name="typeCheckingContext" id="3888584195225564263" />
+      </scope>
+      <scope id="3888584195225564263" at="20,0,23,0" />
+      <scope id="3888584195225564263" at="23,0,26,0">
+        <var name="argument" id="3888584195225564263" />
+      </scope>
+      <scope id="3888584195225564263" at="26,0,29,0" />
+      <unit id="3888584195225564263" at="14,0,30,0" name="neo4j.cypher.typesystem.typeof_MathFunction_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:1549d4d9-195d-4192-a8ca-9bdca0139ffa(neo4j.cypher.typesystem)/3888584195225565787">
+    <file name="typeof_PathFunction_InferenceRule.java">
+      <node id="3888584195225565794" at="17,125,18,305" concept="4" />
+      <node id="3888584195225565787" at="20,50,21,143" concept="9" />
+      <node id="3888584195225565787" at="23,68,24,102" concept="9" />
+      <node id="3888584195225565787" at="26,30,27,17" concept="9" />
+      <node id="3888584195225565787" at="15,0,17,0" concept="2" trace="typeof_PathFunction_InferenceRule#()V" />
+      <node id="3888584195225565787" at="17,0,20,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="3888584195225565787" at="20,0,23,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3888584195225565787" at="23,0,26,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3888584195225565787" at="26,0,29,0" concept="7" trace="overrides#()Z" />
+      <scope id="3888584195225565787" at="15,46,15,46" />
+      <scope id="3888584195225565788" at="17,125,18,305" />
+      <scope id="3888584195225565787" at="20,50,21,143" />
+      <scope id="3888584195225565787" at="23,68,24,102" />
+      <scope id="3888584195225565787" at="26,30,27,17" />
+      <scope id="3888584195225565787" at="15,0,17,0" />
+      <scope id="3888584195225565787" at="17,0,20,0">
+        <var name="pathFunction" id="3888584195225565787" />
+        <var name="status" id="3888584195225565787" />
+        <var name="typeCheckingContext" id="3888584195225565787" />
+      </scope>
+      <scope id="3888584195225565787" at="20,0,23,0" />
+      <scope id="3888584195225565787" at="23,0,26,0">
+        <var name="argument" id="3888584195225565787" />
+      </scope>
+      <scope id="3888584195225565787" at="26,0,29,0" />
+      <unit id="3888584195225565787" at="14,0,30,0" name="neo4j.cypher.typesystem.typeof_PathFunction_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:1549d4d9-195d-4192-a8ca-9bdca0139ffa(neo4j.cypher.typesystem)/3888584195225569980">
+    <file name="typeof_TypeScalarFunction_InferenceRule.java">
+      <node id="3888584195225569987" at="17,131,18,321" concept="4" />
+      <node id="3888584195225569980" at="20,50,21,149" concept="9" />
+      <node id="3888584195225569980" at="23,68,24,102" concept="9" />
+      <node id="3888584195225569980" at="26,30,27,17" concept="9" />
+      <node id="3888584195225569980" at="15,0,17,0" concept="2" trace="typeof_TypeScalarFunction_InferenceRule#()V" />
+      <node id="3888584195225569980" at="17,0,20,0" concept="7" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <node id="3888584195225569980" at="20,0,23,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3888584195225569980" at="23,0,26,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3888584195225569980" at="26,0,29,0" concept="7" trace="overrides#()Z" />
+      <scope id="3888584195225569980" at="15,52,15,52" />
+      <scope id="3888584195225569981" at="17,131,18,321" />
+      <scope id="3888584195225569980" at="20,50,21,149" />
+      <scope id="3888584195225569980" at="23,68,24,102" />
+      <scope id="3888584195225569980" at="26,30,27,17" />
+      <scope id="3888584195225569980" at="15,0,17,0" />
+      <scope id="3888584195225569980" at="17,0,20,0">
+        <var name="status" id="3888584195225569980" />
+        <var name="typeCheckingContext" id="3888584195225569980" />
+        <var name="typeScalarFunction" id="3888584195225569980" />
+      </scope>
+      <scope id="3888584195225569980" at="20,0,23,0" />
+      <scope id="3888584195225569980" at="23,0,26,0">
+        <var name="argument" id="3888584195225569980" />
+      </scope>
+      <scope id="3888584195225569980" at="26,0,29,0" />
+      <unit id="3888584195225569980" at="14,0,30,0" name="neo4j.cypher.typesystem.typeof_TypeScalarFunction_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:1549d4d9-195d-4192-a8ca-9bdca0139ffa(neo4j.cypher.typesystem)/3893499198692066614">

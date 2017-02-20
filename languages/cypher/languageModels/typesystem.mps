@@ -3239,5 +3239,93 @@
       <ref role="1YaFvo" to="qgu4:4PrC42aiUNe" resolve="LimitStatement" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3nR1F$jzNhw">
+    <property role="TrG5h" value="typeof_AggregateFunction" />
+    <property role="3GE5qa" value="lang.expression.function.aggregate" />
+    <node concept="3clFbS" id="3nR1F$jzNhx" role="18ibNy">
+      <node concept="3clFbF" id="3nR1F$jzZFE" role="3cqZAp">
+        <node concept="1Z2H0r" id="3nR1F$jzZFA" role="3clFbG">
+          <node concept="2OqwBi" id="3nR1F$jzZTw" role="1Z2MuG">
+            <node concept="1YBJjd" id="3nR1F$jzZHD" role="2Oq$k0">
+              <ref role="1YBMHb" node="3nR1F$jzNhz" resolve="aggregateFunction" />
+            </node>
+            <node concept="3TrEf2" id="3nR1F$j$085" role="2OqNvi">
+              <ref role="3Tt5mk" to="qgu4:4x1Ef44bwrI" resolve="expression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3nR1F$jzNhz" role="1YuTPh">
+      <property role="TrG5h" value="aggregateFunction" />
+      <ref role="1YaFvo" to="qgu4:2l6GyzbN8Bq" resolve="AggregateFunction" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3nR1F$jBzhB">
+    <property role="TrG5h" value="typeof_MathFunction" />
+    <property role="3GE5qa" value="lang.expression.function.math" />
+    <node concept="3clFbS" id="3nR1F$jBzhC" role="18ibNy">
+      <node concept="3clFbF" id="3nR1F$jBzhI" role="3cqZAp">
+        <node concept="1Z2H0r" id="3nR1F$jBzhJ" role="3clFbG">
+          <node concept="2OqwBi" id="3nR1F$jBzhK" role="1Z2MuG">
+            <node concept="1YBJjd" id="3nR1F$jBzm7" role="2Oq$k0">
+              <ref role="1YBMHb" node="3nR1F$jBzhE" resolve="mathFunction" />
+            </node>
+            <node concept="3TrEf2" id="3nR1F$jBz$T" role="2OqNvi">
+              <ref role="3Tt5mk" to="qgu4:3kCsi0BP3WH" resolve="expression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3nR1F$jBzhE" role="1YuTPh">
+      <property role="TrG5h" value="mathFunction" />
+      <ref role="1YaFvo" to="qgu4:3kCsi0BP3Wu" resolve="MathFunction" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3nR1F$jBzDr">
+    <property role="TrG5h" value="typeof_PathFunction" />
+    <property role="3GE5qa" value="lang.expression.function.path" />
+    <node concept="3clFbS" id="3nR1F$jBzDs" role="18ibNy">
+      <node concept="3clFbF" id="3nR1F$jBzDy" role="3cqZAp">
+        <node concept="1Z2H0r" id="3nR1F$jBzDz" role="3clFbG">
+          <node concept="2OqwBi" id="3nR1F$jBzD$" role="1Z2MuG">
+            <node concept="1YBJjd" id="3nR1F$jBzHV" role="2Oq$k0">
+              <ref role="1YBMHb" node="3nR1F$jBzDu" resolve="pathFunction" />
+            </node>
+            <node concept="3TrEf2" id="3nR1F$jBzYm" role="2OqNvi">
+              <ref role="3Tt5mk" to="qgu4:4cE2yDdDRr$" resolve="expression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3nR1F$jBzDu" role="1YuTPh">
+      <property role="TrG5h" value="pathFunction" />
+      <ref role="1YaFvo" to="qgu4:4cE2yDdDRrn" resolve="PathFunction" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3nR1F$jB$EW">
+    <property role="TrG5h" value="typeof_TypeScalarFunction" />
+    <property role="3GE5qa" value="lang.expression.function.scalar" />
+    <node concept="3clFbS" id="3nR1F$jB$EX" role="18ibNy">
+      <node concept="3clFbF" id="3nR1F$jB$F3" role="3cqZAp">
+        <node concept="1Z2H0r" id="3nR1F$jB$F4" role="3clFbG">
+          <node concept="2OqwBi" id="3nR1F$jB$F5" role="1Z2MuG">
+            <node concept="1YBJjd" id="3nR1F$jB$Js" role="2Oq$k0">
+              <ref role="1YBMHb" node="3nR1F$jB$EZ" resolve="typeScalarFunction" />
+            </node>
+            <node concept="3TrEf2" id="3nR1F$jB_1m" role="2OqNvi">
+              <ref role="3Tt5mk" to="qgu4:6R_VqJhKmiD" resolve="namedRelationshipRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3nR1F$jB$EZ" role="1YuTPh">
+      <property role="TrG5h" value="typeScalarFunction" />
+      <ref role="1YaFvo" to="qgu4:6R_VqJhKjfx" resolve="TypeScalarFunction" />
+    </node>
+  </node>
 </model>
 
