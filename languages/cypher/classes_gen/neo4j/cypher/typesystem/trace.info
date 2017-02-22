@@ -1236,7 +1236,7 @@
   </root>
   <root nodeRef="r:1549d4d9-195d-4192-a8ca-9bdca0139ffa(neo4j.cypher.typesystem)/3888584195225564263">
     <file name="typeof_MathFunction_InferenceRule.java">
-      <node id="3888584195225564270" at="17,125,18,305" concept="4" />
+      <node id="3888584195227549745" at="17,125,18,305" concept="4" />
       <node id="3888584195225564263" at="20,50,21,143" concept="9" />
       <node id="3888584195225564263" at="23,68,24,102" concept="9" />
       <node id="3888584195225564263" at="26,30,27,17" concept="9" />
