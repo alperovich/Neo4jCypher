@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -159,7 +159,6 @@
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
         <property id="3497141547781541444" name="major" index="2OjLBL" />
-        <child id="8108467228800445684" name="dialogImage" index="2t3ecf" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
@@ -263,12 +262,6 @@
         <ref role="398BVh" node="6ZkA9WG7sox" resolve="icons" />
         <node concept="2Ry0Ak" id="6ZkA9WG7vkg" role="iGT6I">
           <property role="2Ry0Am" value="MPS32.png" />
-        </node>
-      </node>
-      <node concept="398BVA" id="6ZkA9WG7vpA" role="2t3ecf">
-        <ref role="398BVh" node="6ZkA9WG7sox" resolve="icons" />
-        <node concept="2Ry0Ak" id="6ZkA9WG7vuR" role="iGT6I">
-          <property role="2Ry0Am" value="dialogImage.png" />
         </node>
       </node>
       <node concept="398BVA" id="6ZkA9WG7v$d" role="3vi$VU">
@@ -420,13 +413,13 @@
       </node>
       <node concept="398223" id="6ZkA9WG7jTk" role="39821P">
         <node concept="3_I8Xc" id="6ZkA9WG7jTl" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1diLdO26H81" resolve="svn4idea" />
+          <ref role="3_I8Xa" to="ffeo:3nGzrDEfcNJ" resolve="svn4idea" />
         </node>
         <node concept="3_I8Xc" id="6ZkA9WG7jTm" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1diLdO26H7T" resolve="cvsIntegration" />
         </node>
         <node concept="3_I8Xc" id="6ZkA9WG7jTn" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1diLdO26H8a" resolve="git4idea" />
+          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
         </node>
         <node concept="3_I8Xc" id="6ZkA9WG7jTo" role="39821P">
           <ref role="3_I8Xa" to="ffeo:ymnOULBdbM" resolve="mps-core" />
