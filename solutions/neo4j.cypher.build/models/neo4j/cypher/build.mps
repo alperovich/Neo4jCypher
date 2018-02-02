@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -79,6 +79,9 @@
         <child id="5617550519002745378" name="macros" index="1l3spd" />
         <child id="5617550519002745372" name="layout" index="1l3spN" />
       </concept>
+      <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
+        <property id="8654221991637384184" name="pattern" index="3qWCbO" />
+      </concept>
       <concept id="8577651205286814211" name="jetbrains.mps.build.structure.BuildLayout_Tar" flags="ng" index="1tmT9g">
         <property id="1979010778009209128" name="compression" index="AB_bT" />
       </concept>
@@ -101,6 +104,10 @@
       </concept>
       <concept id="5248329904288051100" name="jetbrains.mps.build.structure.BuildFileIncludeSelector" flags="ng" index="3LWZYx">
         <property id="5248329904288051101" name="pattern" index="3LWZYw" />
+      </concept>
+      <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
+        <child id="5248329904287794598" name="dir" index="3LXTmr" />
+        <child id="5248329904287794679" name="selectors" index="3LXTna" />
       </concept>
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
@@ -149,11 +156,15 @@
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
+        <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
+      </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
@@ -407,7 +418,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="6ZkA9WG7jTj" role="39821P">
-            <ref role="1zDrgn" node="6ZkA9WG7jRX" resolve="Neo4jCypher_corlab" />
+            <ref role="1zDrgn" node="6ZkA9WG7jRX" resolve="Neo4jCypher_corlab 1.0" />
           </node>
         </node>
       </node>
@@ -1010,6 +1021,21 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="2JMMm2nO5UB" role="3bR31x">
+          <node concept="3LXTmp" id="2JMMm2nO5UC" role="3rtmxm">
+            <node concept="3qWCbU" id="2JMMm2nO5UD" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="2JMMm2nO5UE" role="3LXTmr">
+              <node concept="2Ry0Ak" id="2JMMm2nO5UF" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2JMMm2nO5UG" role="2Ry0An">
+                  <property role="2Ry0Am" value="neo4j.cypher.runtime" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6ZkA9WG7jSE" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1082,6 +1108,21 @@
             <node concept="3bR9La" id="6ZkA9WG7kxH" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="6ZkA9WG7jS$" resolve="neo4j.cypher.runtime" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="2JMMm2nO5UI" role="3bR31x">
+          <node concept="3LXTmp" id="2JMMm2nO5UJ" role="3rtmxm">
+            <node concept="3qWCbU" id="2JMMm2nO5UK" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="2JMMm2nO5UL" role="3LXTmr">
+              <node concept="2Ry0Ak" id="2JMMm2nO5UM" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="2JMMm2nO5UN" role="2Ry0An">
+                  <property role="2Ry0Am" value="cypher" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
