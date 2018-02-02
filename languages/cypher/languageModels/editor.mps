@@ -2,8 +2,8 @@
 <model ref="r:3032a80e-f963-4201-b9cb-54fd187627a2(neo4j.cypher.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -2599,7 +2599,7 @@
   </node>
   <node concept="24kQdi" id="4cE2yDdEdTu">
     <property role="3GE5qa" value="lang.index" />
-    <ref role="1XX52x" to="qgu4:16qLoc3ISdV" resolve="Index" />
+    <ref role="1XX52x" to="qgu4:16qLoc3ISdV" resolve="Index_" />
     <node concept="1QoScp" id="hA6MXhx" role="2wV5jI">
       <property role="1QpmdY" value="true" />
       <node concept="gc7cB" id="hA6MXhy" role="1QoS34">
